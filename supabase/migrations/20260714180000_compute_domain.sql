@@ -4,6 +4,12 @@
 
 begin;
 
+set local lock_timeout = '10s';
+set local statement_timeout = '180s';
+select pg_advisory_xact_lock(
+  hashtextextended('computerecord:database-migrations', 0)
+);
+
 create schema if not exists extensions;
 create extension if not exists postgis with schema extensions;
 create schema if not exists core;
