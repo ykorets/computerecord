@@ -1,0 +1,14 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+.venv/
+node_modules/
+dist/
+.astro/
+.wrangler/
+coverage/
+tmp/
+output/
+*.log
+
