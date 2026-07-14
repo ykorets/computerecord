@@ -22,6 +22,11 @@ Definition of done:
 
 ## M1 — Shared truth baseline
 
+**Status: CLOSED 2026-07-14.** The sealed review, atomic promotion, generated
+mirror, site rebuild, and replay-safe no-op are recorded in
+[`docs/baselines/btw-mirror-v1.md`](baselines/btw-mirror-v1.md). CI pins that
+baseline and verifies the live BTW mirror against its v1 contract.
+
 Before adding a new domain, finish the open BTW truth-integrity work that the
 shared platform depends on.
 
@@ -40,6 +45,10 @@ Definition of done:
 - Compute work cannot regress the BTW mirror.
 
 ## M2 — Compute domain schema
+
+**Status: IN PROGRESS.** The first migration is implemented against the pinned
+BTW baseline and is required to pass ephemeral PostgreSQL regression scenarios
+before it can be considered for production application.
 
 Deliverables:
 
@@ -175,4 +184,3 @@ The public alpha should not be described as comprehensive until:
 4. Every published fact has compatible support.
 5. Freshness metrics are generated from real pipeline timestamps.
 6. The site contains no hand-maintained factual data.
-

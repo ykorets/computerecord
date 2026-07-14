@@ -37,8 +37,9 @@ engine, immutable source archive, review discipline, and publication model.
 
 ## Current phase
 
-`Data Foundation` — schema, source coverage, ingestion, evidence, temporal
-facts, review, and public snapshots. The public site comes after the data path
+`Data Foundation · M2` — the shared BTW truth baseline is closed; the Compute
+entity graph, typed temporal facts, evidence constraints, and capacity/status
+vocabularies are being built next. The public site comes after the data path
 works end to end.
 
 ## Public identity
@@ -46,4 +47,3 @@ works end to end.
 - Product: **The Compute Record**
 - Domain: **computerecord.com**
 - Attribution: **by Yaro Korets**
-
