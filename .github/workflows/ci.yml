@@ -1,0 +1,85 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  database:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgis/postgis:17-3.5-alpine
+        env:
+          POSTGRES_PASSWORD: test
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 2s
+          --health-timeout 5s
+          --health-retries 15
+    env:
+      PGURL: postgresql://postgres:test@127.0.0.1:5432/postgres
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout the immutable BTW truth baseline
+        uses: actions/checkout@v4
+        with:
+          repository: ykorets/btw
+          ref: ee25bc75da58f167c54055ee1514caabc7c4287f
+          path: _deps/btw
+      - name: Wait for the final PostGIS server
+        run: |
+          for attempt in {1..30}; do
+            if psql "$PGURL" -v ON_ERROR_STOP=1 -c \
+              'select postgis_version()' >/dev/null 2>&1; then
+              sleep 1
+              if psql "$PGURL" -v ON_ERROR_STOP=1 -c \
+                'select postgis_version()' >/dev/null 2>&1; then
+                exit 0
+              fi
+            fi
+            sleep 1
+          done
+          echo "final PostGIS server did not become stable" >&2
+          exit 1
+      - name: Apply the BTW shared schema
+        run: |
+          psql "$PGURL" -v ON_ERROR_STOP=1 -f _deps/btw/engine/schema/001_init.sql
+          psql "$PGURL" -v ON_ERROR_STOP=1 -c \
+            'create role anon; create role authenticated; create role service_role bypassrls;
+             create schema extensions;
+             alter extension "uuid-ossp" set schema extensions;
+             alter database postgres set search_path to public, extensions;'
+          for file in _deps/btw/engine/schema/00{2..8}_*.sql; do
+            psql "$PGURL" -v ON_ERROR_STOP=1 -f "$file"
+          done
+      - name: Apply the Compute Record domain migration
+        run: >-
+          psql "$PGURL" -v ON_ERROR_STOP=1
+          -f schema/migrations/001_compute_domain.sql
+      - name: Run Compute Record SQL regression scenarios
+        run: >-
+          psql "$PGURL" -v ON_ERROR_STOP=1
+          -f schema/regression/001_compute_domain_regression.sql
+
+  btw-mirror-compatibility:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the immutable BTW truth baseline
+        uses: actions/checkout@v4
+        with:
+          repository: ykorets/btw
+          ref: ee25bc75da58f167c54055ee1514caabc7c4287f
+          path: _deps/btw
+      - name: Checkout the current generated BTW mirror
+        uses: actions/checkout@v4
+        with:
+          repository: ykorets/btw
+          ref: mirror
+          path: _deps/btw-mirror
+      - name: Verify BTW public mirror v1 compatibility
+        run: >-
+          PYTHONPATH=_deps/btw/engine/src python
+          -m btw_engine.compat --data _deps/btw-mirror/data
