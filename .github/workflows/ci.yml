@@ -65,13 +65,13 @@ jobs:
           -f schema/regression/001_compute_domain_regression.sql
       - name: Prove the external baseline cannot be faked
         run: |
-          psql "$PGURL" -v ON_ERROR_STOP=1 -c +            'create database external_baseline_guard'
+          psql "$PGURL" -v ON_ERROR_STOP=1 -c 'create database external_baseline_guard'
           guard_url="${PGURL%/*}/external_baseline_guard"
-          if psql "$guard_url" -v ON_ERROR_STOP=1 +            -f supabase/migrations/20260711012826_init_engine_schema_v2.sql +            >external-baseline-guard.txt 2>&1; then
+          if psql "$guard_url" -v ON_ERROR_STOP=1 -f supabase/migrations/20260711012826_init_engine_schema_v2.sql >external-baseline-guard.txt 2>&1; then
             echo "external baseline guard unexpectedly succeeded" >&2
             exit 1
           fi
-          grep -F 'missing external BTW migration 20260711012826' +            external-baseline-guard.txt
+          grep -F 'missing external BTW migration 20260711012826' external-baseline-guard.txt
 
   btw-mirror-compatibility:
     runs-on: ubuntu-latest
