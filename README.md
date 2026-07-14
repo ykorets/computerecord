@@ -34,6 +34,7 @@ engine, immutable source archive, review discipline, and publication model.
 - [Target architecture](docs/architecture.md)
 - [ADR-001: shared evidence platform](docs/adr/ADR-001-shared-evidence-platform.md)
 - [Data Foundation roadmap](docs/roadmap.md)
+- [Production database deployment](docs/runbooks/database-deployment.md)
 
 ## Current phase
 
@@ -41,6 +42,9 @@ engine, immutable source archive, review discipline, and publication model.
 entity graph, typed temporal facts, evidence constraints, and capacity/status
 vocabularies are being built next. The public site comes after the data path
 works end to end.
+
+Database migrations live in `supabase/migrations/`. Production schema
+deployment is manual and runs only through the protected GitHub workflow.
 
 ## Public identity
 

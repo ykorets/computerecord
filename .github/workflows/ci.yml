@@ -22,9 +22,9 @@ jobs:
     env:
       PGURL: postgresql://postgres:test@127.0.0.1:5432/postgres
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
       - name: Checkout the immutable BTW truth baseline
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           repository: ykorets/btw
           ref: ee25bc75da58f167c54055ee1514caabc7c4287f
@@ -58,23 +58,32 @@ jobs:
       - name: Apply the Compute Record domain migration
         run: >-
           psql "$PGURL" -v ON_ERROR_STOP=1
-          -f schema/migrations/001_compute_domain.sql
+          -f supabase/migrations/20260714180000_compute_domain.sql
       - name: Run Compute Record SQL regression scenarios
         run: >-
           psql "$PGURL" -v ON_ERROR_STOP=1
           -f schema/regression/001_compute_domain_regression.sql
+      - name: Prove the external baseline cannot be faked
+        run: |
+          psql "$PGURL" -v ON_ERROR_STOP=1 -c 'create database external_baseline_guard'
+          guard_url="${PGURL%/*}/external_baseline_guard"
+          if psql "$guard_url" -v ON_ERROR_STOP=1 -f supabase/migrations/20260711012826_init_engine_schema_v2.sql >external-baseline-guard.txt 2>&1; then
+            echo "external baseline guard unexpectedly succeeded" >&2
+            exit 1
+          fi
+          grep -F 'missing external BTW migration 20260711012826' external-baseline-guard.txt
 
   btw-mirror-compatibility:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the immutable BTW truth baseline
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           repository: ykorets/btw
           ref: ee25bc75da58f167c54055ee1514caabc7c4287f
           path: _deps/btw
       - name: Checkout the current generated BTW mirror
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           repository: ykorets/btw
           ref: mirror
@@ -83,3 +92,20 @@ jobs:
         run: >-
           PYTHONPATH=_deps/btw/engine/src python
           -m btw_engine.compat --data _deps/btw-mirror/data
+
+  deployment-policy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: Verify the reviewed migration artifact
+        run: sha256sum --check deploy/manifests/001_compute_domain.sha256
+      - name: Validate the deployment manifest
+        run: |
+          actual_sha="$(cut -d ' ' -f 1 deploy/manifests/001_compute_domain.sha256)"
+          manifest_sha="$(jq -r '.migration.sha256' deploy/manifests/001_compute_domain.json)"
+          test "$actual_sha" = "$manifest_sha"
+          jq -e '
+            .target_project_ref == "txglwhwnmjtbijbgcpwd"
+            and .migration.version == "20260714180000"
+            and (.external_baseline | length) == 9
+          ' deploy/manifests/001_compute_domain.json >/dev/null

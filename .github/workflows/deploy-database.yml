@@ -1,0 +1,76 @@
+name: deploy database
+
+on:
+  workflow_dispatch:
+    inputs:
+      confirmation:
+        description: Type deploy-compute-001
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: production-database
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    name: production migration
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    environment: production
+    env:
+      SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
+      SUPABASE_DB_PASSWORD: ${{ secrets.PRODUCTION_DB_PASSWORD }}
+      SUPABASE_PROJECT_ID: ${{ secrets.PRODUCTION_PROJECT_ID }}
+      EXPECTED_PROJECT_ID: txglwhwnmjtbijbgcpwd
+      CONFIRMATION: ${{ inputs.confirmation }}
+    steps:
+      - name: Enforce the reviewed target and explicit confirmation
+        run: |
+          test "$CONFIRMATION" = "deploy-compute-001"
+          test -n "$SUPABASE_ACCESS_TOKEN"
+          test -n "$SUPABASE_DB_PASSWORD"
+          test "$SUPABASE_PROJECT_ID" = "$EXPECTED_PROJECT_ID"
+
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+
+      - name: Verify the reviewed migration artifact
+        run: sha256sum --check deploy/manifests/001_compute_domain.sha256
+
+      - name: Install the pinned Supabase CLI
+        uses: supabase/setup-cli@ab058987d8d6c725971f6cf9d0b5c98467e30bd1 # v1
+        with:
+          version: 2.109.1
+
+      - name: Link the exact production project
+        run: supabase link --project-ref "$SUPABASE_PROJECT_ID"
+
+      - name: Verify migration-history compatibility
+        run: supabase migration list 2>&1 | tee deploy-migration-before.txt
+
+      - name: Preview the exact migration plan
+        run: supabase db push --dry-run 2>&1 | tee deploy-dry-run.txt
+
+      - name: Apply pending migrations atomically
+        run: supabase db push
+
+      - name: Verify migration history and database functions
+        run: |
+          supabase migration list 2>&1 | tee deploy-migration-list.txt
+          supabase db push --dry-run
+          supabase db lint --linked --schema core,compute --level error
+
+      - name: Preserve deployment evidence
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: database-deployment-${{ github.run_id }}
+          path: |
+            deploy-migration-before.txt
+            deploy-dry-run.txt
+            deploy-migration-list.txt
+          if-no-files-found: ignore
+          retention-days: 90
