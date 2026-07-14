@@ -29,6 +29,21 @@ jobs:
           repository: ykorets/btw
           ref: ee25bc75da58f167c54055ee1514caabc7c4287f
           path: _deps/btw
+      - name: Wait for the final PostGIS server
+        run: |
+          for attempt in {1..30}; do
+            if psql "$PGURL" -v ON_ERROR_STOP=1 -c \
+              'select postgis_version()' >/dev/null 2>&1; then
+              sleep 1
+              if psql "$PGURL" -v ON_ERROR_STOP=1 -c \
+                'select postgis_version()' >/dev/null 2>&1; then
+                exit 0
+              fi
+            fi
+            sleep 1
+          done
+          echo "final PostGIS server did not become stable" >&2
+          exit 1
       - name: Apply the BTW shared schema
         run: |
           psql "$PGURL" -v ON_ERROR_STOP=1 -f _deps/btw/engine/schema/001_init.sql
