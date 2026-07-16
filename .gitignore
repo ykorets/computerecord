@@ -3,6 +3,8 @@
 .env.*
 !.env.example
 .venv/
+__pycache__/
+*.py[cod]
 node_modules/
 dist/
 .astro/
@@ -11,4 +13,3 @@ coverage/
 tmp/
 output/
 *.log
-

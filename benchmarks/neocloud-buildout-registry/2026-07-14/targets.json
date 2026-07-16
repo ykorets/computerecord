@@ -1,0 +1,2594 @@
+{
+  "classification": "benchmark_only",
+  "schema": "computerecord.coverage-benchmark-targets.v1",
+  "source": {
+    "name": "Neocloud Group Buildout Registry",
+    "url": "https://neocloudgroup.com/buildout-registry"
+  },
+  "targets": [
+    {
+      "benchmark_id": "neocloud-buildout-registry:abernathy",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Abernathy",
+        "operator": "Fluidstack"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=abernathy",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "TeraWulf: sale of majority Abernathy JV interest to Fluidstack (Jul 2026)",
+          "reported_type": "primary",
+          "url": "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Google-backed TeraWulf/Fluidstack Texas build",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/terawulf-and-fluidstack-to-develop-texas-data-center-in-google-backed-deal/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "TeraWulf-Fluidstack Abernathy JV (8-K, Oct 2025)",
+          "reported_type": "primary",
+          "url": "https://www.globenewswire.com/news-release/2025/10/28/3175363/0/en/TeraWulf-Expands-Strategic-Partnership-with-Fluidstack-Through-New-168-MW-AI-Compute-Joint-Venture.html"
+        }
+      ],
+      "source_location": {
+        "city": "Abernathy",
+        "counties": [
+          "Hale",
+          "Lubbock"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "abernathy"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:abilene",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Stargate Abilene",
+        "operator": "Crusoe"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=abilene",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Epoch AI: Stargate sites",
+          "reported_type": "secondary",
+          "url": "https://epochai.substack.com/p/openai-stargate-where-the-us-sites"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Crusoe newsroom (Sept 2025)",
+          "reported_type": "primary",
+          "url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live"
+        }
+      ],
+      "source_location": {
+        "city": "Abilene",
+        "counties": [
+          "Taylor"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "abilene"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:aligned-conesville-oh",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Aligned Conesville AI Campus",
+        "operator": "Aligned Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=aligned-conesville-oh",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": false,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Aligned PR: AIP/MGX/BlackRock GIP to acquire all equity (Oct 2025)",
+          "reported_type": "primary",
+          "url": "https://aligneddc.com/press-release/ai-infrastructure-partnership-aip-mgx-and-blackrocks-global-infrastructure-partners-gip-to-acquire-all-equity-in-aligned-data-centers/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Aligned PR: Ohio mega-scale AI campus (Jul 24, 2025)",
+          "reported_type": "primary",
+          "url": "https://aligneddc.com/press-release/aligned-data-centers-expands-in-ohio-with-new-mega-scale-ai-campus/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Frontier Group PR: Aligned expands at Conesville Industrial Park",
+          "reported_type": "primary",
+          "url": "https://frontier-companies.com/aligned-data-centers-expands-with-new-mega-scale-ai-campus-at-conesville-industrial-park/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Frontier Group PR: $58.7M Ohio DoD grant for park infrastructure",
+          "reported_type": "primary",
+          "url": "https://frontier-companies.com/coshocton-port-authority-secures-58-7-million-from-ohio-department-of-development-for-site-redevelopment-at-the-conesville-industrial-park/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Your Ohio News: groundbreaking Oct 11, 2025 (Holder Construction)",
+          "reported_type": "secondary",
+          "url": "https://www.yourohionews.com/coshocton/ground-broken-for-new-aligned-data-centers-campus-in-conesville/975588"
+        }
+      ],
+      "source_location": {
+        "city": "Conesville",
+        "counties": [
+          "Coshocton"
+        ],
+        "state": "OH"
+      },
+      "source_record_id": "aligned-conesville-oh"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:apld-delta-forge-1-alexandria-la",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Delta Forge 1",
+        "operator": "Applied Digital"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=apld-delta-forge-1-alexandria-la",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Applied Digital PR: new hyperscaler tenant at Delta Forge 1, $7.5B / 300 MW (2026-04-23)",
+          "reported_type": "primary",
+          "url": "https://ir.applieddigital.com/news-events/press-releases/detail/149/applied-digital-announces-new-u-s-based-high"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cleco PR: Cleco to power the Rapides Parish data center (full cost reimbursement, LPSC oversight)",
+          "reported_type": "primary",
+          "url": "https://www.cleco.com/media/press-releases/detail/2026/05/26/cleco-to-power-data-center-planned-for-rapides-parish"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "KALB fact-check: parish and permit documents (672.52 acres, phases, generators)",
+          "reported_type": "secondary",
+          "url": "https://www.kalb.com/2026/06/25/fact-check-what-early-documents-confirm-about-applied-digitals-data-center-coming-rapides-parish/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Louisiana LED: $3.6B Applied Digital AI factory campus, Rapides Parish",
+          "reported_type": "primary",
+          "url": "https://www.opportunitylouisiana.gov/news/central-louisiana-secures-3-6-billion-applied-digital-ai-factory-campus"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "SEC 8-K exhibit: the Delta Forge 1 lease press release",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001144879/000114487926000036/apld_deltaforgexprxfinal.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Alexandria",
+        "counties": [
+          "Rapides Parish"
+        ],
+        "state": "LA"
+      },
+      "source_record_id": "apld-delta-forge-1-alexandria-la"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:apld-polaris-forge-3-oliver-nd",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Polaris Forge 3",
+        "operator": "Applied Digital"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=apld-polaris-forge-3-oliver-nd",
+      "reported_stage": "planned",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Applied Digital PR: 1 GW milestone and the Polaris Forge 3 lease (2026-05-20)",
+          "reported_type": "primary",
+          "url": "https://ir.applieddigital.com/news-events/press-releases/detail/152/applied-digital-reaches-significant-milestone-surpassing-1"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Applied Digital signs a 430 MW lease with an unnamed hyperscaler",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/applied-digital-signs-430mw-data-center-lease-with-unnamed-hyperscaler/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "KFYR: Applied Digital rezoning application in Oliver County (2026-05-05)",
+          "reported_type": "secondary",
+          "url": "https://www.kfyrtv.com/2026/05/05/applied-digital-submits-rezoning-application-data-center-oliver-county/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "MDU PR: electric service agreement with Applied Digital for the proposed AI factory (2026-06-22)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/montana-dakota-utilities-announces-electric-service-agreement-with-applied-digital-for-proposed-ai-factory-302806791.html"
+        }
+      ],
+      "source_location": {
+        "city": "Center",
+        "counties": [
+          "Oliver"
+        ],
+        "state": "ND"
+      },
+      "source_record_id": "apld-polaris-forge-3-oliver-nd"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:barber-lake",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Barber Lake",
+        "operator": "Cipher Digital (formerly Cipher Mining)"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=barber-lake",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cipher: 168 MW / 10-yr Fluidstack agreement (+ Google backstop)",
+          "reported_type": "primary",
+          "url": "https://www.globenewswire.com/news-release/2025/09/25/3156107/0/en/Cipher-Mining-Signs-168-MW-10-Year-AI-Hosting-Agreement-with-Fluidstack.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cipher: +56 MW second Fluidstack deal (whole site)",
+          "reported_type": "primary",
+          "url": "https://www.globenewswire.com/news-release/2025/11/20/3191801/0/en/Cipher-Mining-Signs-Additional-56-MW-10-Year-AI-Hosting-Agreement-with-Fluidstack.html"
+        }
+      ],
+      "source_location": {
+        "city": "Colorado City",
+        "counties": [
+          "Mitchell"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "barber-lake"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:beale-de-soto-ks",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Beale De Soto Campus",
+        "operator": "Beale Infrastructure"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=beale-de-soto-ks",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": false,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Beale PR: De Soto campus announcement (Apr 28, 2026)",
+          "reported_type": "primary",
+          "url": "https://bealeinfra.com/beale-infrastructure-announces-hyperscale-kansas-data-center-campus-advancing-3-billion-infrastructure-investment/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "City of De Soto: Beale Data Center project page",
+          "reported_type": "primary",
+          "url": "https://www.desotoks.us/496/Beale-Data-Center"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "KCC news release: LLPS large-load tariff approval (Nov 6, 2025)",
+          "reported_type": "primary",
+          "url": "https://www.kcc.ks.gov/news-11-6-25"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Evergy 8-K: four large customer ESAs signed (Feb 19, 2026)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1711269/000119312526058075/d29762dex991.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Blue Owl Digital Infrastructure Trust Form 10: Beale as a Blue Owl platform",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/2069692/000206969225000003/odit-form10.htm"
+        }
+      ],
+      "source_location": {
+        "city": "De Soto",
+        "counties": [
+          "Johnson"
+        ],
+        "state": "KS"
+      },
+      "source_record_id": "beale-de-soto-ks"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:borderplex-project-jupiter-nm",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Project Jupiter (Stargate NM)",
+        "operator": "BorderPlex Digital Assets / STACK Infrastructure"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=borderplex-project-jupiter-nm",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "El Paso Matters: the $165B IRB approved (Sep 19, 2025)",
+          "reported_type": "secondary",
+          "url": "https://elpasomatters.org/2025/09/19/project-jupiter-data-center-santa-teresa-approved-dona-ana-commissioners/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "SoftBank PR: five new Stargate sites (Sep 2025)",
+          "reported_type": "primary",
+          "url": "https://group.softbank/en/news/press/20250924"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "KVIA: revised energy proposals, permit pending (Jul 2, 2026)",
+          "reported_type": "secondary",
+          "url": "https://kvia.com/news/2026/07/02/oracle-releases-new-energy-specific-proposals-for-project-jupiter-in-santa-teresa/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Santa Fe New Mexican: power plan overhauled to Bloom fuel cells (Apr 2026)",
+          "reported_type": "secondary",
+          "url": "https://www.santafenewmexican.com/news/local_news/project-jupiter-developers-overhaul-data-centers-power-plan/article_d7bb0388-8382-4993-b1db-073d148379ac.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "STACK PR: $56.9M water and community commitments for Dona Ana County",
+          "reported_type": "primary",
+          "url": "https://www.stackinfra.com/about/news-press/press-releases/stack-infrastructure-and-borderplex-digital-announce-cumulative-56-9-million-in-water-and-community-commitments-for-dona-ana-county-through-project-jupiter/"
+        }
+      ],
+      "source_location": {
+        "city": "Santa Teresa",
+        "counties": [
+          "Dona Ana"
+        ],
+        "state": "NM"
+      },
+      "source_record_id": "borderplex-project-jupiter-nm"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:childress",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Childress",
+        "operator": "IREN"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=childress",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "IREN: $9.7B Microsoft AI cloud agreement",
+          "reported_type": "primary",
+          "url": "https://iren.com/resources/blog/iren-signs97-billion-agreement-with-microsoft-to-deploy-ai-cloud-infrastructure"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "IREN: Childress power capacity raised to 750 MW",
+          "reported_type": "primary",
+          "url": "https://irisenergy.gcs-web.com/news-releases/news-release-details/iren-increases-childress-power-capacity-600mw-750mw"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "IREN 8-K: $3.0B 1.00% convertible senior notes due 2033 (corporate-level)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126021285/ef20073507_8k.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "IREN 8-K: ~$3.6B Hardware 3 financing ($1.5B DDTL + $2.1B 5.96% notes) for the Microsoft contract at Childress",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000114036126023427/ef20075181_8k.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "IREN Q3 FY26 business update: $3.4B NVIDIA AI cloud contract at Childress (8-K EX-99.1)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000025/irenreportsq3fy26results.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "IREN Q3 FY26 results call transcript (8-K EX-99.1): 2027 Childress plan, 450 MW of the 730 MW in-build",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000028/irentranscript.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "IREN 8-K: ~$1.6B Dell GPU purchase for the NVIDIA contract at Childress",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000030/iren-20260519.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Childress",
+        "counties": [
+          "Childress"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "childress"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:cipher-black-pearl-wink",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Black Pearl",
+        "operator": "Cipher Digital (formerly Cipher Mining)"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=cipher-black-pearl-wink",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cipher Mining Q3 2025 Business Update: AWS 15-yr, 300 MW, $5.5B lease (Nov 2025, GlobeNewswire)",
+          "reported_type": "primary",
+          "url": "https://www.globenewswire.com/news-release/2025/11/03/3179121/0/en/Cipher-Mining-Provides-Third-Quarter-2025-Business-Update.html"
+        }
+      ],
+      "source_location": {
+        "city": "Wink",
+        "counties": [
+          "Winkler"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "cipher-black-pearl-wink"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:cipher-stingray-andrews-tx",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Stingray",
+        "operator": "Cipher Digital (formerly Cipher Mining)"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=cipher-stingray-andrews-tx",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cipher 8-K ex 99.1: Stingray Compute investor deck (AWS lease terms, guarantees, cost cap; Jun 2026)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008635/dp248110_ex9901.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cipher 8-K: $810M notes closing (Jun 15, 2026)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819989/000095010326008994/dp248453_8k.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cipher FY2025 10-K: Stingray site, conditional ERCOT approval up to 100 MW",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000009/cifr-20251231.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cipher Q1 2026 business update, 8-K ex 99.2 (construction status)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1819989/000181998926000025/exh992cipherdigital_busi.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Andrews",
+        "counties": [
+          "Andrews"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "cipher-stingray-andrews-tx"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:core-scientific-dalton-ga",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Core Scientific Dalton Campus",
+        "operator": "Core Scientific"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=core-scientific-dalton-ga",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "CORZ IR: merger agreement with CoreWeave terminated; CORZ remains independent (Oct 2025)",
+          "reported_type": "primary",
+          "url": "https://investors.corescientific.com/news-events/press-releases/detail/124/core-scientific-announces-termination-of-merger-agreement-with-coreweave"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "CORZ Q1 FY2026 results: 243 MW billing to CoreWeave portfolio-wide; Dalton Phase I handover",
+          "reported_type": "primary",
+          "url": "https://investors.corescientific.com/news-events/press-releases/detail/136/core-scientific-announces-first-quarter-fiscal-year-2026-results"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "CORZ IR: ~200 MW CoreWeave hosting, 12-year term, capex credit mechanics (Jun 2024)",
+          "reported_type": "primary",
+          "url": "https://investors.corescientific.com/news-events/press-releases/detail/74/core-scientific-to-provide-approximately-200-mw-of-infrastructure-to-host-coreweaves-high-performance-computing-services-capturing-significant-ai-compute-opportunity"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "CORZ 8-K, Q4 FY2025 earnings deck: the 590 MW CoreWeave portfolio by site (Dalton ~175 MW + ~120 MW uncommitted)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013214/q4fy25earningsdeckvfinal.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Dalton",
+        "counties": [
+          "Whitfield"
+        ],
+        "state": "GA"
+      },
+      "source_record_id": "core-scientific-dalton-ga"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:core-scientific-denton-tx",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Core Scientific Denton Campus",
+        "operator": "Core Scientific"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=core-scientific-denton-tx",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "WSJ via Yahoo Finance: summer weather delayed the CoreWeave Denton cluster, energizing 2026",
+          "reported_type": "secondary",
+          "url": "https://finance.yahoo.com/news/summer-weather-delayed-coreweave-denton-161453750.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Core Scientific IR: $1.2B Expansion at Denton, TX Site with CoreWeave (Feb 2025)",
+          "reported_type": "primary",
+          "url": "https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Core Scientific 8-K exhibit 99.1: Denton expansion press release (SEC, Feb 2025)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1839341/000162828025008312/ex991-coreweavepressrelease.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Denton",
+        "counties": [
+          "Denton"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "core-scientific-denton-tx"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:core-scientific-marble-nc",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Core Scientific Marble Campus",
+        "operator": "Core Scientific"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=core-scientific-marble-nc",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Grist: the American Thread history and conversion (May 2026)",
+          "reported_type": "secondary",
+          "url": "https://grist.org/politics/first-crypto-now-data-centers-how-tech-is-reshaping-this-north-carolina-community/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "CORZ IR: CoreWeave exercises the first option, ~70 MW additional HPC infrastructure (Jun 2024)",
+          "reported_type": "primary",
+          "url": "https://investors.corescientific.com/news-events/press-releases/detail/78/core-scientific-announces-new-contract-with-coreweave-for-delivery-of-approximately-70-mw-of-additional-infrastructure-to-host-high-performance-computing-operations"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "CORZ Q1 FY2026 earnings call: Marble full turnover, 65 MW billable",
+          "reported_type": "secondary",
+          "url": "https://www.fool.com/earnings/call-transcripts/2026/05/06/core-scientific-corz-q1-2026-earnings-transcript/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "CORZ 10-K FY2025: utility table (Murphy EPB 35 MW + Duke 82 MW at Marble); single-customer risk",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1839341/000162828026013305/core-20251231.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Marble",
+        "counties": [
+          "Cherokee"
+        ],
+        "state": "NC"
+      },
+      "source_record_id": "core-scientific-marble-nc"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:core-scientific-muskogee-ok",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Core Scientific Muskogee Campus",
+        "operator": "Core Scientific"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=core-scientific-muskogee-ok",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Core Scientific IR: Termination of Merger Agreement with CoreWeave (Oct 2025)",
+          "reported_type": "primary",
+          "url": "https://investors.corescientific.com/news-events/press-releases/detail/124/core-scientific-announces-termination-of-merger-agreement-with-coreweave"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Core Scientific IR: Plans Expansion to 1.5 GW at Muskogee (May 2026)",
+          "reported_type": "primary",
+          "url": "https://investors.corescientific.com/news-events/press-releases/detail/135/core-scientific-plans-expansion-to-1-5-gigawatts-of-gross-power-at-muskogee-oklahoma-campus"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Core Scientific IR: Break Ground on 100 MW HPC Data Center at Port Muskogee (Nov 2024)",
+          "reported_type": "primary",
+          "url": "https://investors.corescientific.com/news-events/press-releases/detail/99/core-scientific-and-port-muskogee-break-ground-on-100-mw-hpc-data-center"
+        }
+      ],
+      "source_location": {
+        "city": "Muskogee",
+        "counties": [
+          "Muskogee"
+        ],
+        "state": "OK"
+      },
+      "source_record_id": "core-scientific-muskogee-ok"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:coreweave-lancaster-pa",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "CoreWeave Lancaster (Chirisa Technology Parks)",
+        "operator": "Chirisa Technology Parks / Machine Investment Group"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=coreweave-lancaster-pa",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "CoreWeave IR: multi-billion dollar commitment to AI infrastructure in Pennsylvania (Jul 15, 2025)",
+          "reported_type": "primary",
+          "url": "https://investors.coreweave.com/news/news-details/2025/CoreWeave-Announces-Multi-Billion-Dollar-Commitment-to-AI-Infrastructure-in-Pennsylvania/default.aspx"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Construction Dive: Turner-Wohlsen JV wins the $6B Pennsylvania data center job (Jul 24, 2025)",
+          "reported_type": "secondary",
+          "url": "https://www.constructiondive.com/news/turner-wohlsen-pennsylvania-data-center-coreweave/753877/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: CoreWeave plans $6bn data center in Lancaster, Pennsylvania",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/coreweave-plans-6bn-data-center-in-lancaster-pennsylvania/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "PR Newswire: Blue Owl and Chirisa close $4B JV including Machine Investment Group for the Lancaster campus (Aug 25, 2025)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/blue-owl-and-chirisa-technology-parks-close-4-billion-joint-venture-partnership-including-machine-investment-group-for-lancaster-campus-302537279.html"
+        }
+      ],
+      "source_location": {
+        "city": "Lancaster",
+        "counties": [
+          "Lancaster"
+        ],
+        "state": "PA"
+      },
+      "source_record_id": "coreweave-lancaster-pa"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:corscale-gainesville-crossing-va",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Gainesville Crossing",
+        "operator": "Corscale Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=corscale-gainesville-crossing-va",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Affinius Capital: Gainesville Crossing project page",
+          "reported_type": "primary",
+          "url": "https://affiniuscapital.com/projects/gcdc/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Corscale PR: second building construction start (Jul 2024)",
+          "reported_type": "primary",
+          "url": "https://corscale.com/press-releases/corscale-begins-construction-on-its-second-building-at-gainesville-crossing-campus/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Corscale PR: third building under construction (Jan 2025)",
+          "reported_type": "primary",
+          "url": "https://corscale.com/press-releases/corscale-is-under-construction-on-its-third-building-at-gainesville-crossing/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Corscale behind the 300 MW Gainesville Crossing campus",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/new-hyperscale-developer-corscale-is-behind-300mw-gainesville-crossing-campus-in-prince-william-county/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Newmark PR: $975M financing for the mission-critical data center",
+          "reported_type": "primary",
+          "url": "https://www.nmrk.com/insights/press-releases/newmark-arranges-975-million-financing-for-mission-critical-data-center-in-northern-virginia"
+        }
+      ],
+      "source_location": {
+        "city": "Gainesville",
+        "counties": [
+          "Prince William"
+        ],
+        "state": "VA"
+      },
+      "source_record_id": "corscale-gainesville-crossing-va"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:crusoe-abilene-microsoft-campus",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Crusoe Abilene AI Factory Campus (Microsoft)",
+        "operator": "Crusoe"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=crusoe-abilene-microsoft-campus",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Crusoe newsroom: 900 MW AI Factory Campus in Abilene to Support Microsoft (Mar 2026)",
+          "reported_type": "primary",
+          "url": "https://www.crusoe.ai/resources/newsroom/crusoe-announces-new-900-mw-ai-factory-campus-in-abilene-texas-to-support-microsoft-ai-infrastructure"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Crusoe newsroom: Contracted AI Capacity Approaches 5 GW (Jun 2026)",
+          "reported_type": "primary",
+          "url": "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud"
+        }
+      ],
+      "source_location": {
+        "city": "Abilene",
+        "counties": [
+          "Taylor"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "crusoe-abilene-microsoft-campus"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:crusoe-warrenton-mo",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Crusoe Warrenton Campus",
+        "operator": "Crusoe"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=crusoe-warrenton-mo",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Crusoe newsroom: contracted capacity approaches 5 GW, names the Missouri campus (2026-06-09)",
+          "reported_type": "primary",
+          "url": "https://www.crusoe.ai/resources/newsroom/crusoes-contracted-ai-infrastructure-capacity-approaches-5-gigawatts-across-data-centers-and-cloud"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: aldermen approve the CUP and site plan (2026-02-16)",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/crusoe-data-center-could-be-built-west-of-st-louis-missouri/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Warren County Record: P&Z approves the CUP and site plan 8-2 (2026-01-15)",
+          "reported_type": "secondary",
+          "url": "https://www.warrencountyrecord.com/stories/warrenton-planning-and-zoning-approves-data-center-site-plan-conditional-use,180583"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Warren County Record: county EDC cites 600 MW and construction start (2026-05-07)",
+          "reported_type": "secondary",
+          "url": "https://www.warrencountyrecord.com/stories/wright-city-chamber-hears-from-local-leaders-at-annual-business-breakfast,194069"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "City of Warrenton: Chapter 100 plan and cost/benefit analysis, Warrenton DC Owner 1 LLC (2026-03)",
+          "reported_type": "primary",
+          "url": "https://www.warrenton-mo.org/wp-content/uploads/2026/03/Plan-Cost-Benefit-Analysis-Crusoe-Data-Center.pdf"
+        }
+      ],
+      "source_location": {
+        "city": "Warrenton",
+        "counties": [
+          "Warren"
+        ],
+        "state": "MO"
+      },
+      "source_record_id": "crusoe-warrenton-mo"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:ctp-chester-va-coreweave",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Chirisa Technology Park, Chester",
+        "operator": "Chirisa Technology Parks / PowerHouse Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=ctp-chester-va-coreweave",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Epoch AI: CoreWeave Chester VA (capacity, buildings, dates)",
+          "reported_type": "secondary",
+          "url": "https://epoch.ai/data/ai-data-centers/directory/coreweave-chester-va"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Blue Owl / Chirisa / PowerHouse next phase of $5B JV, $750M tranche (May 2025)",
+          "reported_type": "primary",
+          "url": "https://www.powerhousedata.com/news/blue-owl-chirisa-technology-parks-and-powerhouse-data-centers-announce-next-phase-of-5-billion-joint-venture-development-partnership"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Blue Owl / Chirisa / PowerHouse first phase of $5B JV (Aug 2024, PRNewswire)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/blue-owl-chirisa-technology-parks-and-powerhouse-data-centers-announce-first-phase-of-5-billion-joint-venture-development-partnership-302233967.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Newmark arranges $600M construction financing (SocGen-led), Dec 2024 (PRNewswire)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/newmark-arranges-600-million-construction-financing-for-50-mw-build-to-suit-data-center-for-blue-owl-chirisa-and-powerhouse-302330879.html"
+        }
+      ],
+      "source_location": {
+        "city": "Chester",
+        "counties": [
+          "Chesterfield"
+        ],
+        "state": "VA"
+      },
+      "source_record_id": "ctp-chester-va-coreweave"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:databank-red-oak-tx",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "DataBank Red Oak Campus",
+        "operator": "DataBank"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=databank-red-oak-tx",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Texas Comptroller qualifying data center registry: Oracle America Cloud Services LLC occupant of DFW9-12",
+          "reported_type": "primary",
+          "url": "https://comptroller.texas.gov/taxes/data-centers/data-center-lists.php"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DataBank: Red Oak campus page",
+          "reported_type": "primary",
+          "url": "https://www.databank.com/data-centers/dallas/red-oak-campus/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DataBank PR: 480 MW Red Oak campus announcement (Sep 2024)",
+          "reported_type": "primary",
+          "url": "https://www.databank.com/resources/press-releases/databank-announces-development-of-480mw-data-center-campus-in-south-dallas/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DataBank PR: $1.45B in new financing incl. the $650M Red Oak upsize (Jun 2026)",
+          "reported_type": "primary",
+          "url": "https://www.databank.com/resources/press-releases/databank-closes-1-45-billion-in-new-financing-across-two-transactions/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DataBank PR: $2.0B construction financing, DFW9-11 leased (Apr 2026)",
+          "reported_type": "primary",
+          "url": "https://www.databank.com/resources/press-releases/databank-secures-2-0b-of-construction-financing-for-first-three-data-centers-on-new-south-dallas-campus/"
+        }
+      ],
+      "source_location": {
+        "city": "Red Oak",
+        "counties": [
+          "Ellis"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "databank-red-oak-tx"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:dcblox-conyers-ga",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "DC BLOX Atlanta East (Conyers)",
+        "operator": "DC BLOX"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=dcblox-conyers-ga",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DC BLOX: Atlanta East campus page (154 MW critical, broke ground Sept 2024)",
+          "reported_type": "primary",
+          "url": "https://www.dcblox.com/data-centers/rockdale-county-ga-hyperscale-data-center-campus/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DC BLOX: green loan expanded to $850M; Conyers listed as development underway (May 2026)",
+          "reported_type": "primary",
+          "url": "https://www.dcblox.com/dc-blox-increases-green-loan-financing-to-850-million/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DC BLOX: $265M green loan + Post Road/Bain equity (Oct 2024; cites the contracted 216 MW project)",
+          "reported_type": "primary",
+          "url": "https://www.dcblox.com/dc-blox-secures-265-million-green-loan/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DC BLOX PR: hyperscale-ready campus in Rockdale County (Dec 2023)",
+          "reported_type": "primary",
+          "url": "https://www.dcblox.com/dc-blox-to-build-hyperscale-ready-data-center-campus-rockdale-county-ga/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Fox 5 Atlanta: GA EPD comment period and the permit timeline (Nov 2025)",
+          "reported_type": "secondary",
+          "url": "https://www.fox5atlanta.com/news/epd-launches-comment-period-proposed-rockdale-data-campus"
+        }
+      ],
+      "source_location": {
+        "city": "Conyers",
+        "counties": [
+          "Rockdale"
+        ],
+        "state": "GA"
+      },
+      "source_record_id": "dcblox-conyers-ga"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:ellendale",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Polaris Forge 1",
+        "operator": "Applied Digital"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=ellendale",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Applied Digital: 250MW CoreWeave lease",
+          "reported_type": "primary",
+          "url": "https://ir.applieddigital.com/news-events/press-releases/detail/123/applied-digital-announces-250mw-ai-data-center-lease-with"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Applied Digital: Building 1 at 100 MW",
+          "reported_type": "primary",
+          "url": "https://ir.applieddigital.com/news-events/press-releases/detail/137/applied-digital-completes-phase-ii-ready-for-service-at"
+        }
+      ],
+      "source_location": {
+        "city": "Ellendale",
+        "counties": [
+          "Dickey"
+        ],
+        "state": "ND"
+      },
+      "source_record_id": "ellendale"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:fleet-south-valley-storey-nv",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Fleet South Valley (TRIC)",
+        "operator": "Fleet Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=fleet-south-valley-storey-nv",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Fleet PR: $3.8B 5.875% senior secured notes closing (Feb 24, 2026)",
+          "reported_type": "primary",
+          "url": "https://natlawreview.com/press-releases/fleet-data-centers-closes-upsized-38-billion-5875-senior-secured-notes"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Bloomberg via Yahoo Finance: Nvidia reported as the tenant of this financing (anonymous sources)",
+          "reported_type": "secondary",
+          "url": "https://sg.finance.yahoo.com/news/nvidia-lease-data-centre-funded-195216702.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Nevada Independent: the 144 MW South Valley temporary plant near the Lyon County border",
+          "reported_type": "secondary",
+          "url": "https://thenevadaindependent.com/article/why-a-northern-nevada-data-center-wants-to-build-its-own-temporary-natural-gas-power-plant"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Fleet seeks $3.8B for the Nevada build-out (SV RNO, 252 acres)",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/tracts-fleet-data-centers-seeks-38bn-to-fuel-nevada-build-out/"
+        }
+      ],
+      "source_location": {
+        "city": "Tahoe Reno Industrial Center",
+        "counties": [
+          "Storey"
+        ],
+        "state": "NV"
+      },
+      "source_record_id": "fleet-south-valley-storey-nv"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:fleet-tric-storey-nv",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Fleet Peru Ridge (TRIC)",
+        "operator": "Fleet Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=fleet-tric-storey-nv",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Nevada Independent: PUCN filings for the temporary gas plants",
+          "reported_type": "secondary",
+          "url": "https://thenevadaindependent.com/article/why-a-northern-nevada-data-center-wants-to-build-its-own-temporary-natural-gas-power-plant"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Fleet/Tract PR: $4.6B 6.500% senior secured notes closing (May 1, 2026)",
+          "reported_type": "primary",
+          "url": "https://tractcapital.com/news/fleet-data-centers-announces-closing-of-upsized-4-6-billion-6-500-senior-secured-notes-offering-to-fund-hyperscale-facility-in-rapidly-growing-reno-hub/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Fleet breaks ground outside Reno (May 2026)",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/fleet-breaks-ground-on-data-center-outside-reno-nevada/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: $4.6B close for the 230 MW Storey County campus",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/fleet-data-centers-closes-46bn-in-senior-secured-notes-for-230mw-storey-county-campus/"
+        }
+      ],
+      "source_location": {
+        "city": "Tahoe Reno Industrial Center",
+        "counties": [
+          "Storey"
+        ],
+        "state": "NV"
+      },
+      "source_record_id": "fleet-tric-storey-nv"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:helios",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Helios",
+        "operator": "Galaxy Digital"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=helios",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Galaxy: $1.4B Helios project financing (PRNewswire)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/galaxy-closes-1-4-billion-project-financing-facility-to-accelerate-helios-ai-datacenter-development-302530804.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Galaxy: +830 MW ERCOT approval, >1.6 GW total",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/galaxy-completes-ercot-interconnection-studies-and-secures-approval-for-additional-830-megawatts-at-helios-data-center-campus-doubling-total-approved-power-capacity-to-over-1-6-gigawatts-302662509.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Galaxy: Phase I complete, 133 MW critical IT to CoreWeave (Jul 2026)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/galaxy-completes-phase-i-of-its-helios-data-center-campus-delivering-133-megawatts-of-critical-it-load-to-coreweave-302818664.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Galaxy 8-K: $500M ATM equity program for Data Centers expansion",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1859392/000162828026032991/glxy-20260508.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Galaxy 10-Q Q1 2026: Phase I scope, 526 MW IT / 800 MW gross CoreWeave commitment",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1859392/000185939226000054/glxy-20260331.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Afton",
+        "counties": [
+          "Dickens"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "helios"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:hut8-beacon-point-tx",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Beacon Point",
+        "operator": "Hut 8"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=hut8-beacon-point-tx",
+      "reported_stage": "planned",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Hut 8: Beacon Point campus page",
+          "reported_type": "primary",
+          "url": "https://www.hut8.com/data-centers/beacon-point"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Hut 8 PR: $4.25B notes closing (2026-06-09)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/hut-8-closes-4-25-billion-of-investment-grade-senior-secured-notes-for-beacon-point-data-center-project-302795866.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Hut 8 PR: phase 1 commercialization, 352 MW / $9.8B lease (2026-05-06)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/hut-8-commercializes-first-phase-of-1-gw-beacon-point-ai-data-center-campus-with-15-year-352-mw-it-lease-with-base-term-contract-value-of-9-8-billion-302763484.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Hut 8 8-K Item 1.01: indenture, six data halls, ~521 acres, AA- tenant (2026-06-10)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926071952/tm2617190d1_8k.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Robstown (Calallen area)",
+        "counties": [
+          "Nueces"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "hut8-beacon-point-tx"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:hut8-river-bend-la",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "River Bend",
+        "operator": "Hut 8"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=hut8-river-bend-la",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Entergy: Hut 8 selects Entergy, Southeast Louisiana",
+          "reported_type": "primary",
+          "url": "https://www.entergy.com/news/hut-8-selects-entergy-southeast-louisiana-for-10-billion-artificial-intelligence-data-center"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Hut 8 PR: AI infrastructure partnership with Anthropic and Fluidstack",
+          "reported_type": "primary",
+          "url": "https://www.hut8.com/news-insights/press-releases/hut-8-announces-ai-infrastructure-partnership-with-anthropic-and-fluidstack"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Hut 8 PR: $3.25B investment-grade senior secured notes closed",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/hut-8-closes-3-25-billion-of-investment-grade-senior-secured-notes-in-landmark-financing-for-river-bend-data-center-project-302759566.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Hut 8 PR: 15-year 245 MW Fluidstack lease, $7.0B contract value",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/hut-8-signs-15-year-245-mw-ai-data-center-lease-at-river-bend-campus-with-total-contract-value-of-7-0-billion-302644600.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Hut 8 8-K, Dec 17 2025: the Fluidstack lease + the Google backstop",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465925122052/hut-20251217x8k.htm"
+        }
+      ],
+      "source_location": {
+        "city": "St. Francisville",
+        "counties": [
+          "West Feliciana Parish"
+        ],
+        "state": "LA"
+      },
+      "source_record_id": "hut8-river-bend-la"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:lake-mariner",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Lake Mariner",
+        "operator": "TeraWulf"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=lake-mariner",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "TeraWulf: CB-5 160 MW Fluidstack lease",
+          "reported_type": "primary",
+          "url": "https://www.globenewswire.com/news-release/2025/08/18/3134910/0/en/TeraWulf-Announces-Fluidstack-Expansion-with-160-MW-CB-5-Lease-at-Lake-Mariner.html"
+        }
+      ],
+      "source_location": {
+        "city": "Barker",
+        "counties": [
+          "Niagara"
+        ],
+        "state": "NY"
+      },
+      "source_record_id": "lake-mariner"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:lambda-kansas-city-mo",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Lambda Kansas City AI Factory",
+        "operator": "Lambda"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=lambda-kansas-city-mo",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Missouri DED: Lambda to establish the AI factory in Kansas City (state primary)",
+          "reported_type": "primary",
+          "url": "https://ded.mo.gov/press-room/lambda-establish-ai-factory-facility-kansas-city"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Lambda: 100 MW AI factory announcement (Oct 2025)",
+          "reported_type": "primary",
+          "url": "https://lambda.ai/blog/lambda-to-build-a-100mw-ai-factory-in-kansas-city-mo"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: address, square footage, ownership chain",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/ai-cloud-firm-lambda-targets-data-center-deployment-in-kansas-city-missouri/"
+        }
+      ],
+      "source_location": {
+        "city": "Kansas City (Northland)",
+        "counties": [
+          "Platte"
+        ],
+        "state": "MO"
+      },
+      "source_record_id": "lambda-kansas-city-mo"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:next-frontier-new-lebanon-in",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Next Frontier Indiana (New Lebanon)",
+        "operator": "Fluidstack"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=next-frontier-new-lebanon-in",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "New Project Media: JV split, Google lease backstop, Heartland Industrial Park context",
+          "reported_type": "secondary",
+          "url": "https://newprojectmedia.com/financingorigination-data-center-start-up-potentia-behind-2-1-gw-indiana-project-now-backed-by-fluidstack-and-google/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Bloomberg: Google backstops the $35B Anthropic chip deal across five sites (reported)",
+          "reported_type": "secondary",
+          "url": "https://www.bloomberg.com/news/articles/2026-06-09/google-s-backstops-underpin-35-billion-chip-deal-for-anthropic"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cooley (Fluidstack counsel): the $5.7B senior secured notes, JV, Sullivan County",
+          "reported_type": "primary",
+          "url": "https://www.cooley.com/news/coverage/2026/2026-04-16-fluidstack-joint-venture-to-issue-5-7-billion-in-senior-secured-notes"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Coatue partners with Fluidstack for the 430 MW Indiana campus",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/coatue-sets-up-data-center-venture-partners-with-fluidstack-for-430mw-campus-in-indiana/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Latham (Next Frontier counsel): 6.25% notes due 2031; 245 MW + 185 MW turnkey buildings on 140 acres",
+          "reported_type": "primary",
+          "url": "https://www.lw.com/en/news/latham-advises-on-meridian-arc-holdco-senior-secured-notes-offering-to-finance-ai-data-center"
+        }
+      ],
+      "source_location": {
+        "city": "New Lebanon",
+        "counties": [
+          "Sullivan"
+        ],
+        "state": "IN"
+      },
+      "source_record_id": "next-frontier-new-lebanon-in"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:novva-west-jordan-ut",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Novva West Jordan Flagship",
+        "operator": "Novva Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=novva-west-jordan-ut",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Novva secures the $2B loan to expand West Jordan",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/novva-secures-2bn-loan-to-expand-west-jordan-campus-in-utah/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Novva: Utah facility page (substation, cooling, solar, PUE)",
+          "reported_type": "primary",
+          "url": "https://www.novva.com/data-center-facilities/utah/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "CIM Group + Novva: $2B financing release (Mar 2025; campus fully leased in 2023)",
+          "reported_type": "primary",
+          "url": "https://www.novva.com/media-center/cim-group-novva-data-centers-secure-2b-to-expand-sustainable-data-centers-in-the-western-u-s/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "American Public Power Association: the $2B commitment (utility unnamed by the companies)",
+          "reported_type": "secondary",
+          "url": "https://www.publicpower.org/periodical/article/companies-get-2-billion-financing-commitment-complete-utah-data-center"
+        }
+      ],
+      "source_location": {
+        "city": "West Jordan",
+        "counties": [
+          "Salt Lake"
+        ],
+        "state": "UT"
+      },
+      "source_record_id": "novva-west-jordan-ut"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:nscale-barstow-tx",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Cedarvale (Barstow)",
+        "operator": "Nscale"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=nscale-barstow-tx",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Ionic Digital PR: Cedarvale lease with Nscale (10-yr triple-net, ~$2B)",
+          "reported_type": "primary",
+          "url": "https://ionicdigital.com/press-releases/ionic-digital-secures-transformational-lease-agreement-of-cedarvale-facility-with-nscale/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Nscale-Microsoft expansion, Barstow site leased from Ionic Digital",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/nscale-to-supply-microsoft-with-additional-100000-nvidia-gpus-in-us-and-europe/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Nscale PR: ~200k GB300s for Microsoft including the ~240 MW Texas campus",
+          "reported_type": "primary",
+          "url": "https://www.nscale.com/press-releases/nscale-microsoft-2025"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Ionic Digital SEC Form DRS/A (lease terms, 234 MW, 700 MW plan, Microsoft option)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/2007691/000118518526001694/filename1.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Barstow",
+        "counties": [
+          "Ward"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "nscale-barstow-tx"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:nscale-monarch-wv",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Monarch Compute Campus",
+        "operator": "Nscale"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=nscale-monarch-wv",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Nscale acquires the 8 GW Monarch campus, Microsoft signs for 1.35 GW",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/nscale-acquires-8gw-monarch-compute-campus-microsoft-signs-on-for-135gw-of-compute/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Nscale PR: AIPCorp acquisition",
+          "reported_type": "primary",
+          "url": "https://www.nscale.com/press-releases/nscale-acquires-american-intelligence-power-corporation"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Nscale PR: West Virginia AI factory, Microsoft LOI, NVIDIA, Caterpillar (2026-03-16)",
+          "reported_type": "primary",
+          "url": "https://www.nscale.com/press-releases/nscale-west-virginia-ai-factory"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "PR Newswire: Fidelis + 8090 launch AIPCorp with LuminArx backing (2026-01-28)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/fidelis-new-energy-and-8090-industries-launch-american-intelligence--power-corporation-a-premier-ai-infrastructure-platform-with-strategic-support-from-luminarx-capital-management-302672131.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "WV Gazette-Mail: DEP air permit filing, 3 buildings, ~984 engines, 2.16 GW (2026-05)",
+          "reported_type": "secondary",
+          "url": "https://www.wvgazettemail.com/news/point-pleasant-data-center-3-buildings-nearly-1-000-natural-gas-diesel-engines/article_47d6212b-2bcb-44f1-9238-f3b05a4ab717.html"
+        }
+      ],
+      "source_location": {
+        "city": "Point Pleasant",
+        "counties": [
+          "Mason"
+        ],
+        "state": "WV"
+      },
+      "source_record_id": "nscale-monarch-wv"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:polaris-forge-2-harwood-nd",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Polaris Forge 2",
+        "operator": "Applied Digital"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=polaris-forge-2-harwood-nd",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Applied Digital IR: Break Ground on $3B Polaris Forge 2 (Aug 2025)",
+          "reported_type": "primary",
+          "url": "https://ir.applieddigital.com/news-events/press-releases/detail/127/applied-digital-to-break-ground-on-3-billion-polaris-forge"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Applied Digital IR: $5B AI Factory Lease with Investment-Grade Hyperscaler (Oct 2025)",
+          "reported_type": "primary",
+          "url": "https://ir.applieddigital.com/news-events/press-releases/detail/132/applied-digital-announces-5-billion-ai-factory-lease-with"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Applied Digital IR: $2.15B Senior Secured Notes to fund Polaris Forge 2 (Mar 2026)",
+          "reported_type": "primary",
+          "url": "https://ir.applieddigital.com/news-events/press-releases/detail/146/applied-digital-announces-pricing-of-2-15-billion-of"
+        }
+      ],
+      "source_location": {
+        "city": "Harwood",
+        "counties": [
+          "Cass"
+        ],
+        "state": "ND"
+      },
+      "source_record_id": "polaris-forge-2-harwood-nd"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:powerhouse-arcola-va",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "PowerHouse Arcola",
+        "operator": "PowerHouse Data Centers / Harrison Street"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=powerhouse-arcola-va",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Harrison Street PR: two hyperscale pre-leases executed at Arcola (Feb 12, 2026)",
+          "reported_type": "primary",
+          "url": "https://harrisonst.com/harrison-street-asset-management-achieves-leasing-milestone-with-hyperscale-pre-leasing-at-powerhouse-arcola/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "PowerHouse: Arcola property page (specs and delivery timeline)",
+          "reported_type": "primary",
+          "url": "https://www.powerhousedata.com/data-center/powerhouse-arcola"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "AREP-Harrison Street $1B JV announcement naming Arcola (Jan 2022)",
+          "reported_type": "primary",
+          "url": "https://www.powerhousedata.com/news/arep-and-harrison-street-joint-venture-commits-1-billion-to-develop-2-1-million-square-feet-of-powered-shell-data-centers-across-northern-virginias-data-center-alley"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "PowerHouse PR: hyperscale lease executed at Arcola (Jan 15, 2026)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/powerhouse-data-centers-executes-hyperscale-lease-at-powerhouse-arcola-advancing-northern-virginia-expansion-302661927.html"
+        }
+      ],
+      "source_location": {
+        "city": "Arcola",
+        "counties": [
+          "Loudoun"
+        ],
+        "state": "VA"
+      },
+      "source_record_id": "powerhouse-arcola-va"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:prime-lax01-vernon-ca",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Prime LAX01 (Vernon)",
+        "operator": "Prime Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=prime-lax01-vernon-ca",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "CEC review of Vernon Public Utilities' 2023 IRP (CAISO market participation)",
+          "reported_type": "primary",
+          "url": "https://efiling.energy.ca.gov/GetDocument.aspx?tn=261069&DocumentContentId=97438"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Prime launches the 33 MW Vernon data center (tenant mix, 12 MW anchor)",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/prime-launches-33mw-data-center-in-vernon-california/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Supermicro leases 21 MW and sublets to Lambda in a ~$600M 10-year deal (from the Supermicro 8-K)",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/supermicro-leases-21mw-at-prime-data-centers-facility-sublets-to-lambda-cloud-in-600m-deal/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Prime + Lambda partnership PR (Nov 2025)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/prime-data-centers-and-lambda-partner-to-power-the-next-era-of-superintelligence-with-ai-optimized-infrastructure-in-southern-california-302613971.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Prime PR: Vernon hyperscale data center opening (Nov 2024)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/prime-data-centers-announces-the-opening-of-its-hyperscale-data-center-in-vernon-california-302305195.html"
+        }
+      ],
+      "source_location": {
+        "city": "Vernon",
+        "counties": [
+          "Los Angeles"
+        ],
+        "state": "CA"
+      },
+      "source_record_id": "prime-lax01-vernon-ca"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:related-digital-cheyenne-wy",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Related Digital Cheyenne",
+        "operator": "Related Digital"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=related-digital-cheyenne-wy",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Clayco: project page (construction manager primary)",
+          "reported_type": "primary",
+          "url": "https://claycorp.com/project/related-digital-cheyenne-data-center-campus"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cowboy State Daily: site tour, construction status (2026-06-14)",
+          "reported_type": "secondary",
+          "url": "https://cowboystatedaily.com/2026/06/14/inside-a-1-2-billion-data-center-campus-being-built-in-cheyenne/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Related Digital news: the Cheyenne groundbreaking",
+          "reported_type": "primary",
+          "url": "https://www.related-digital.com/news/related-digital-breaks-ground-on-302-mw-data-center-campus-in-cheyenne-wyoming"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Related PR: groundbreaking on the 302 MW Cheyenne campus (2025-10-07)",
+          "reported_type": "primary",
+          "url": "https://www.related.com/press-releases/2025-10-07/related-digital-breaks-ground-302-mw-data-center-campus-cheyenne-wyoming"
+        }
+      ],
+      "source_location": {
+        "city": "Cheyenne",
+        "counties": [
+          "Laramie"
+        ],
+        "state": "WY"
+      },
+      "source_record_id": "related-digital-cheyenne-wy"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:riot-rockdale-tx",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Rockdale AI Campus",
+        "operator": "Riot Platforms"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=riot-rockdale-tx",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Riot 8-K ex 99.1, Jan 16 2026: land acquisition + first AMD lease",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926004551/riot-20260116xex99d1.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Riot 8-K ex 99.1, Apr 30 2026: Q1 results, AMD exercises 25 MW option",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926052943/riot-20260430xex99d1.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Riot Q1 2026 presentation ex 99.2: delivery phases, capex, Building G",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926052943/riot-20260430xex99d2.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Riot 10-Q Q1 2026: AMD lease amendment, Rockdale PPA, Data Center segment",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/1167419/000110465926053120/riot-20260331x10q.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Rockdale",
+        "counties": [
+          "Milam"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "riot-rockdale-tx"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:sb-energy-stargate-milam-tx",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Stargate Milam County (Freebird)",
+        "operator": "SB Energy"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=sb-energy-stargate-milam-tx",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "SoftBank Group: five new Stargate sites (2025-09-24)",
+          "reported_type": "primary",
+          "url": "https://group.softbank/en/news/press/20250924"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "SB Energy: OpenAI and SoftBank Group partner with SB Energy (2026-01-09)",
+          "reported_type": "primary",
+          "url": "https://sbenergy.com/openai-and-softbank-group-partner-with-sb-energy/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "PR Newswire: joint release, $1B into SB Energy, 1.2 GW lease",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/openai-and-softbank-group-partner-with-sb-energy-to-build-and-operate-next-generation-ai-data-centers-to-advance-stargate-302657541.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "TDLR TABS2026017746: Freebird Data Center phase 1 (548,950 sq ft, OpenAI tenant of record)",
+          "reported_type": "primary",
+          "url": "https://www.tdlr.texas.gov/TABS/Search/Project/TABS2026017746"
+        }
+      ],
+      "source_location": {
+        "city": "Burlington",
+        "counties": [
+          "Milam"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "sb-energy-stargate-milam-tx"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:scale-okc-cerebras",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Scale Datacenter Oklahoma City",
+        "operator": "Scale Datacenters"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=scale-okc-cerebras",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Free Press OKC: council data center exemptions (May 2026)",
+          "reported_type": "secondary",
+          "url": "https://freepressokc.com/city-councils-data-center-exemptions-raise-questions-of-favoritism/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Data Center View: Scale acquires the Oklahoma City data center (Jun 17, 2025)",
+          "reported_type": "secondary",
+          "url": "https://news.datacenterview.com/p/june-17-2025-scale-acquires-oklahoma-city-data-center"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cerebras blog: the OKC datacenter (Sep 23, 2025)",
+          "reported_type": "primary",
+          "url": "https://www.cerebras.ai/blog/okc"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Cerebras PR: six new AI datacenters across North America and Europe (Mar 2025)",
+          "reported_type": "primary",
+          "url": "https://www.cerebras.ai/press-release/cerebras-announces-six-new-ai-datacenters-across-north-america-and-europe-to-deliver-industry-s"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Cerebras opens the 10 MW data center in Oklahoma City",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/cerebras-opens-10mw-data-center-in-oklahoma-city/"
+        }
+      ],
+      "source_location": {
+        "city": "Oklahoma City",
+        "counties": [
+          "Oklahoma"
+        ],
+        "state": "OK"
+      },
+      "source_record_id": "scale-okc-cerebras"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:stack-caddo-bossier-la",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "STACK Caddo-Bossier Campuses",
+        "operator": "STACK Infrastructure"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=stack-caddo-bossier-la",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": false,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Amazon: Louisiana data center announcement (names STACK as developer and owner)",
+          "reported_type": "primary",
+          "url": "https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Louisiana LED: Amazon selects Louisiana for $12B data center campuses",
+          "reported_type": "primary",
+          "url": "https://www.opportunitylouisiana.gov/news/amazon-selects-louisiana-for-12-billion-data-center-campuses-in-major-u-s-expansion"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "STACK PR: Louisiana data center developments (2026-02-23)",
+          "reported_type": "primary",
+          "url": "https://www.stackinfra.com/about/news-press/press-releases/stack-infrastructure-announces-data-center-developments-supporting-economic-growth-in-louisiana/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "STACK PR: community investment, construction underway (2026-06-10)",
+          "reported_type": "primary",
+          "url": "https://www.stackinfra.com/about/news-press/press-releases/stack-infrastructure-partners-with-amazon-to-invest-in-northwest-louisiana-communities/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "SWEPCO: zero rate impact release (2026-02-23)",
+          "reported_type": "primary",
+          "url": "https://www.swepco.com/company/news/view?releaseID=10769"
+        }
+      ],
+      "source_location": {
+        "city": "Shreveport-Bossier",
+        "counties": [
+          "Bossier Parish",
+          "Caddo"
+        ],
+        "state": "LA"
+      },
+      "source_record_id": "stack-caddo-bossier-la"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:stargate-saline-township-mi",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Stargate Saline Township",
+        "operator": "Related Digital"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=stargate-saline-township-mi",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Fortune: the rezoning fight, lawsuit and consent judgment; construction from Nov 2025 (2026-05-06)",
+          "reported_type": "secondary",
+          "url": "https://fortune.com/2026/05/06/ai-data-center-michigan-saline-politics-farmland/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Construction Dive: Walbridge groundbreaking, first building nearing completion (2026-06)",
+          "reported_type": "secondary",
+          "url": "https://www.constructiondive.com/news/walbridge-breaks-ground-stargate-data-center-openai-oracle/821972/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Michigan PSC issue brief U-21990: contract structure, 1,383 MW, storage agreement",
+          "reported_type": "primary",
+          "url": "https://www.michigan.gov/mpsc/-/media/Project/Websites/mpsc/consumer/info/briefs/Issue_Brief_U_21990_DTE_12_18_25-(002).pdf"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Michigan PSC news release: Case U-21990 approval (2025-12-18)",
+          "reported_type": "primary",
+          "url": "https://www.michigan.gov/mpsc/commission/news-releases/2025/12/18/mpsc-approves-dte-electric-energy-contracts-for-data-center"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Related Digital PR: OpenAI, Oracle and Related Digital announce the Stargate site (2025-10-30)",
+          "reported_type": "primary",
+          "url": "https://www.related.com/press-releases/2025-10-30/openai-oracle-and-related-digital-announce-stargate-data-center-site"
+        }
+      ],
+      "source_location": {
+        "city": "Saline Township",
+        "counties": [
+          "Washtenaw"
+        ],
+        "state": "MI"
+      },
+      "source_record_id": "stargate-saline-township-mi"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:terawulf-justified-hawesville",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Justified Data Campus",
+        "operator": "TeraWulf"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=terawulf-justified-hawesville",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "TeraWulf IR: Anthropic lease at Justified Data Campus (Jul 2026)",
+          "reported_type": "primary",
+          "url": "https://investors.terawulf.com/news-events/press-releases/detail/142/terawulf-announces-anthropic-lease-at-justified-data-campus-and-sale-of-majority-interest-in-abernathy-joint-venture-to-fluidstack"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "KY PSC Case 2026-00115: Big Rivers Electric filing (482 MW interconnect)",
+          "reported_type": "primary",
+          "url": "https://psc.ky.gov/Case/ViewCaseFilings/2026-00115"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Century Aluminum 8-K: sale of the Hawesville site to TeraWulf/Raylan ($200M + 6.8% equity), Feb 2026",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/949157/000110465926009212/tm264772d1_8k.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Hawesville",
+        "counties": [
+          "Hancock"
+        ],
+        "state": "KY"
+      },
+      "source_record_id": "terawulf-justified-hawesville"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:vantage-frontier-shackelford-tx",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Frontier",
+        "operator": "Vantage Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=vantage-frontier-shackelford-tx",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "OpenAI, Oracle and SoftBank joint release: five new Stargate sites (SoftBank copy, Sep 24, 2025)",
+          "reported_type": "primary",
+          "url": "https://group.softbank/en/news/press/20250924"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Vantage: Shackelford County (Frontier) campus page (1.4 GW critical IT)",
+          "reported_type": "primary",
+          "url": "https://vantage-dc.com/data-center-locations/north-america/shackelford-county-tx"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Vantage joint release with OpenAI and Oracle: names Frontier, $40B+ combined (Oct 22, 2025)",
+          "reported_type": "primary",
+          "url": "https://vantage-dc.com/news/openai-oracle-and-vantage-data-centers-announce-stargate-data-center-site-in-wisconsin/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Vantage PR: Frontier, a $25B mega-campus in Texas (Aug 19, 2025)",
+          "reported_type": "primary",
+          "url": "https://vantage-dc.com/news/vantage-data-centers-unveils-plans-for-frontier-a-25b-mega-campus-in-texas-to-meet-unprecedented-ai-demand/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: Vantage breaks ground on the Texas gigawatt campus (Dec 2025)",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/vantage-breaks-ground-on-texas-gigawatt-data-center-campus-for-openai/"
+        }
+      ],
+      "source_location": {
+        "city": "near Abilene",
+        "counties": [
+          "Shackelford"
+        ],
+        "state": "TX"
+      },
+      "source_record_id": "vantage-frontier-shackelford-tx"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:vantage-goodyear-az",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Vantage AZ1 (Goodyear)",
+        "operator": "Vantage Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=vantage-goodyear-az",
+      "reported_stage": "live",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Vantage: AZ1 campus page (176 MW, five buildings, APS substation)",
+          "reported_type": "primary",
+          "url": "https://vantage-dc.com/data-center-locations/north-america/phoenix-arizona/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Bisnow: the $735M WF/Citi/Goldman CMBS, Fitch presale details",
+          "reported_type": "secondary",
+          "url": "https://www.bisnow.com/national/news/data-center/vantage-lands-735m-mortgage-for-phoenix-data-centers-129898"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "DCD: AZ14 topped out, completion summer 2026; campus expanded 3 to 5 buildings",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterdynamics.com/en/news/vantage-tops-out-az14-facility-outside-of-phoenix-arizona/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "GlobalCapital: the $735M data center CMBS priced June 24, 2025",
+          "reported_type": "secondary",
+          "url": "https://www.globalcapital.com/securitization/article/2ez68k2tr9hc5na19zklc/securitization/cmbs-us/vantage-tightens-735m-data-center-cmbs-but-some-question-value"
+        }
+      ],
+      "source_location": {
+        "city": "Goodyear",
+        "counties": [
+          "Maricopa"
+        ],
+        "state": "AZ"
+      },
+      "source_record_id": "vantage-goodyear-az"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:vantage-lighthouse-port-washington-wi",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Lighthouse (Stargate Wisconsin)",
+        "operator": "Vantage Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=vantage-lighthouse-port-washington-wi",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Daily Reporter: Port Washington annexes land for the ~1,900-acre Cloverleaf site (May 2025)",
+          "reported_type": "secondary",
+          "url": "https://dailyreporter.com/2025/05/23/port-washington-cloverleaf-data-center/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Vantage: Port Washington (Lighthouse) campus page (902 MW, 4 buildings, 672 acres)",
+          "reported_type": "primary",
+          "url": "https://vantage-dc.com/data-center-locations/north-america/port-washington-wisconsin"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Vantage joint release with OpenAI and Oracle: Stargate Wisconsin (Oct 22, 2025)",
+          "reported_type": "primary",
+          "url": "https://vantage-dc.com/news/openai-oracle-and-vantage-data-centers-announce-stargate-data-center-site-in-wisconsin/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "PR Newswire: Cloverleaf raises $300M from NGP and Sandbrook (Jul 2024)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-raises-300-million-from-ngp-and-sandbrook-capital-302198634.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "WisPolitics: developers seek Oracle exemption from PSC collateral requirements (Jun 2026)",
+          "reported_type": "secondary",
+          "url": "https://www.wispolitics.com/2026/utility-data-center-developers-want-tech-giant-exempted-from-billion-dollar-collateral-requirements/"
+        }
+      ],
+      "source_location": {
+        "city": "Port Washington",
+        "counties": [
+          "Ozaukee"
+        ],
+        "state": "WI"
+      },
+      "source_record_id": "vantage-lighthouse-port-washington-wi"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:vantage-nv1-storey-nv",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Vantage NV1",
+        "operator": "Vantage Data Centers"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=vantage-nv1-storey-nv",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Vantage: NV1 campus page (1121 USA Parkway; 500 MW substation)",
+          "reported_type": "primary",
+          "url": "https://vantage-dc.com/data-center-locations/north-america/reno-nevada/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Vantage PR: $3B AI campus in Nevada, first two buildings fully leased (Jul 2025)",
+          "reported_type": "primary",
+          "url": "https://vantage-dc.com/news/vantage-data-centers-invests-3-billion-to-deliver-ai-campus-in-growing-nevada-market/"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Data Center Frontier: NV1 and the Nevada hyperscale boom",
+          "reported_type": "secondary",
+          "url": "https://www.datacenterfrontier.com/site-selection/article/55305086/nv1-and-the-nevada-hyperscale-boom-vantage-data-centers-bets-3b-on-the-ai-future"
+        }
+      ],
+      "source_location": {
+        "city": "Storey County (Reno)",
+        "counties": [
+          "Storey"
+        ],
+        "state": "NV"
+      },
+      "source_record_id": "vantage-nv1-storey-nv"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:vineland",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "Vineland",
+        "operator": "Nebius"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=vineland",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Nebius 8-K / Microsoft agreement (SEC)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/0001513845/000110465925088312/tm2525580d1_ex99-1.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Vineland",
+        "counties": [
+          "Cumberland"
+        ],
+        "state": "NJ"
+      },
+      "source_record_id": "vineland"
+    },
+    {
+      "benchmark_id": "neocloud-buildout-registry:whitefiber-nc1-madison-nc",
+      "classification": "benchmark_only",
+      "identity": {
+        "name": "WhiteFiber NC-1",
+        "operator": "WhiteFiber"
+      },
+      "public_url": "https://neocloudgroup.com/buildout-registry?site=whitefiber-nc1-madison-nc",
+      "reported_stage": "building",
+      "source_field_presence": {
+        "building_counts": true,
+        "capacity_disclosed": true,
+        "coordinates": true,
+        "dates": true,
+        "participants": true,
+        "source_leads": true
+      },
+      "source_leads": [
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "WhiteFiber x Nscale: $865M / 40 MW colocation agreement (Dec 2025; filed as 8-K EX-99.1)",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/whitefiber-and-nscale-announce-10-year-40-mw-colocation-agreement-representing-approximately-865-million-in-total-contract-value-at-nc-1-ai-data-center-campus-302646399.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "WhiteFiber Q1 2026 results: 54 MW gross delivered, switchgear delay, Q2 delivery / Q3 revenue guidance",
+          "reported_type": "primary",
+          "url": "https://www.prnewswire.com/news-releases/whitefiber-inc-reports-first-quarter-2026-results-302771681.html"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "Duke Energy Carolinas letter agreement, the 99 MW ladder (SEC EX-10.22 to the WYFI S-1)",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/2042022/000121390025063338/ea024838201ex10-22_white.htm"
+        },
+        {
+          "classification": "benchmark_discovery_lead",
+          "label": "WYFI 8-K (May 2026): the $100M Bit Digital bridge facility for NC-1 phase 1",
+          "reported_type": "primary",
+          "url": "https://www.sec.gov/Archives/edgar/data/2042022/000121390026061575/ea0292280-8k_white.htm"
+        }
+      ],
+      "source_location": {
+        "city": "Madison",
+        "counties": [
+          "Rockingham"
+        ],
+        "state": "NC"
+      },
+      "source_record_id": "whitefiber-nc1-madison-nc"
+    }
+  ]
+}

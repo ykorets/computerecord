@@ -1,0 +1,1133 @@
+{
+  "algorithm_version": "m3-entity-resolution-v1",
+  "btw_mirror_commit": "d5ccb766ad6630784b9de38837948f87e692d94e",
+  "by_missing_field": [
+    {
+      "field": "campus_phase",
+      "target_count": 50
+    },
+    {
+      "field": "capacity",
+      "target_count": 49
+    },
+    {
+      "field": "compute_relationships",
+      "target_count": 50
+    },
+    {
+      "field": "identity",
+      "target_count": 49
+    },
+    {
+      "field": "location",
+      "target_count": 49
+    },
+    {
+      "field": "milestones",
+      "target_count": 49
+    },
+    {
+      "field": "operator",
+      "target_count": 49
+    },
+    {
+      "field": "source_evidence",
+      "target_count": 49
+    },
+    {
+      "field": "status",
+      "target_count": 49
+    }
+  ],
+  "by_source_class": [
+    {
+      "lead_count": 147,
+      "source_class": "primary",
+      "target_count": 50
+    },
+    {
+      "lead_count": 50,
+      "source_class": "secondary",
+      "target_count": 28
+    }
+  ],
+  "by_state": [
+    {
+      "state": "AZ",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "CA",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "GA",
+      "targets": 2,
+      "unresolved": 2
+    },
+    {
+      "state": "IN",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "KS",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "KY",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "LA",
+      "targets": 3,
+      "unresolved": 3
+    },
+    {
+      "state": "MI",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "MO",
+      "targets": 2,
+      "unresolved": 2
+    },
+    {
+      "state": "NC",
+      "targets": 2,
+      "unresolved": 2
+    },
+    {
+      "state": "ND",
+      "targets": 3,
+      "unresolved": 3
+    },
+    {
+      "state": "NJ",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "NM",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "NV",
+      "targets": 3,
+      "unresolved": 3
+    },
+    {
+      "state": "NY",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "OH",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "OK",
+      "targets": 2,
+      "unresolved": 2
+    },
+    {
+      "state": "PA",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "resolved_btw_facility": 1,
+      "state": "TX",
+      "targets": 15,
+      "unresolved": 14
+    },
+    {
+      "state": "UT",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "VA",
+      "targets": 3,
+      "unresolved": 3
+    },
+    {
+      "state": "WI",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "WV",
+      "targets": 1,
+      "unresolved": 1
+    },
+    {
+      "state": "WY",
+      "targets": 1,
+      "unresolved": 1
+    }
+  ],
+  "campuses": [
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:abernathy",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Abernathy",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:abilene",
+      "missing_fields": [
+        "campus_phase",
+        "compute_relationships"
+      ],
+      "name": "Stargate Abilene",
+      "resolution_state": "resolved_btw_facility",
+      "resolved_entity": {
+        "entity_type": "btw_facility",
+        "slug": "crusoe-stargate-abilene"
+      },
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:aligned-conesville-oh",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Aligned Conesville AI Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "OH"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:apld-delta-forge-1-alexandria-la",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Delta Forge 1",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "LA"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:apld-polaris-forge-3-oliver-nd",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Polaris Forge 3",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "ND"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:barber-lake",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Barber Lake",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:beale-de-soto-ks",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Beale De Soto Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "KS"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:borderplex-project-jupiter-nm",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Project Jupiter (Stargate NM)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "NM"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:childress",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Childress",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:cipher-black-pearl-wink",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Black Pearl",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:cipher-stingray-andrews-tx",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Stingray",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:core-scientific-dalton-ga",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Core Scientific Dalton Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "GA"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:core-scientific-denton-tx",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Core Scientific Denton Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:core-scientific-marble-nc",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Core Scientific Marble Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "NC"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:core-scientific-muskogee-ok",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Core Scientific Muskogee Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "OK"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:coreweave-lancaster-pa",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "CoreWeave Lancaster (Chirisa Technology Parks)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "PA"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:corscale-gainesville-crossing-va",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Gainesville Crossing",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "VA"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:crusoe-abilene-microsoft-campus",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Crusoe Abilene AI Factory Campus (Microsoft)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:crusoe-warrenton-mo",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Crusoe Warrenton Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "MO"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:ctp-chester-va-coreweave",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Chirisa Technology Park, Chester",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "VA"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:databank-red-oak-tx",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "DataBank Red Oak Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:dcblox-conyers-ga",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "DC BLOX Atlanta East (Conyers)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "GA"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:ellendale",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Polaris Forge 1",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "ND"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:fleet-south-valley-storey-nv",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Fleet South Valley (TRIC)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "NV"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:fleet-tric-storey-nv",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Fleet Peru Ridge (TRIC)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "NV"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:helios",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Helios",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:hut8-beacon-point-tx",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Beacon Point",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:hut8-river-bend-la",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "River Bend",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "LA"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:lake-mariner",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Lake Mariner",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "NY"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:lambda-kansas-city-mo",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Lambda Kansas City AI Factory",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "MO"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:next-frontier-new-lebanon-in",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Next Frontier Indiana (New Lebanon)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "IN"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:novva-west-jordan-ut",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Novva West Jordan Flagship",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "UT"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:nscale-barstow-tx",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Cedarvale (Barstow)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 1,
+      "benchmark_id": "neocloud-buildout-registry:nscale-monarch-wv",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Monarch Compute Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "WV"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:polaris-forge-2-harwood-nd",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Polaris Forge 2",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "ND"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:powerhouse-arcola-va",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "PowerHouse Arcola",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "VA"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:prime-lax01-vernon-ca",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Prime LAX01 (Vernon)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "CA"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:related-digital-cheyenne-wy",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Related Digital Cheyenne",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "WY"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:riot-rockdale-tx",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Rockdale AI Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:sb-energy-stargate-milam-tx",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Stargate Milam County (Freebird)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:scale-okc-cerebras",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Scale Datacenter Oklahoma City",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "OK"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:stack-caddo-bossier-la",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "STACK Caddo-Bossier Campuses",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "LA"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:stargate-saline-township-mi",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Stargate Saline Township",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "MI"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:terawulf-justified-hawesville",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Justified Data Campus",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "KY"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:vantage-frontier-shackelford-tx",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Frontier",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "TX"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:vantage-goodyear-az",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Vantage AZ1 (Goodyear)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "AZ"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:vantage-lighthouse-port-washington-wi",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Lighthouse (Stargate Wisconsin)",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "WI"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:vantage-nv1-storey-nv",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Vantage NV1",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "NV"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:vineland",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "Vineland",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "NJ"
+    },
+    {
+      "announcement_lead_count": 0,
+      "benchmark_id": "neocloud-buildout-registry:whitefiber-nc1-madison-nc",
+      "missing_fields": [
+        "campus_phase",
+        "capacity",
+        "compute_relationships",
+        "identity",
+        "location",
+        "milestones",
+        "operator",
+        "source_evidence",
+        "status"
+      ],
+      "name": "WhiteFiber NC-1",
+      "resolution_state": "unresolved",
+      "resolved_entity": null,
+      "state": "NC"
+    }
+  ],
+  "classification": "benchmark_only",
+  "schema": "computerecord.coverage-gap-report.v1",
+  "summary": {
+    "out_of_scope": 0,
+    "resolved_btw_facility": 1,
+    "targets": 50,
+    "unresolved": 49
+  }
+}

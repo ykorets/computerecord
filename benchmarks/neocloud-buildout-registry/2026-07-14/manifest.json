@@ -1,0 +1,27 @@
+{
+  "captured_at": "2026-07-14T18:16:23Z",
+  "classification": "benchmark_only",
+  "landing_page": {
+    "canonical_url": "https://neocloudgroup.com/buildout-registry.html",
+    "http_date": "Tue, 14 Jul 2026 18:15:09 GMT",
+    "requested_url": "https://neocloudgroup.com/buildout-registry",
+    "sha256": "650c527b7755cb7448c22ad6538f271d8aa76bc179fba946c76ecefba4aa9b85"
+  },
+  "normalized_targets": {
+    "path": "targets.json",
+    "row_count": 50,
+    "sha256": "df8247a481bd1d3ef9e4fc047eae0d4b9d965fe766bb852400aff5d4aa425ced"
+  },
+  "registry_response": {
+    "content_range": "0-49/*",
+    "http_date": "Tue, 14 Jul 2026 18:16:23 GMT",
+    "request_url": "https://ciisllgkhfhcfublnlpw.supabase.co/rest/v1/sites?select=id%2Cname%2Coperator%2Ccity%2Ccounty%2Cstate%2Cregion%2Clat%2Clng%2Ccoords_approximate%2Cgross_current_mw%2Cgross_planned_mw%2Ccritical_current_mw%2Ccritical_planned_mw%2Csite_total_mw%2Ccapacity_note%2Cstage%2Cbuildings_energized%2Cbuildings_building%2Cbuildings_planned%2Cparticipants%28layer%2Cname%2Crole%2Cconfidence%29%2Csite_dates%28key%2Cvalue%2Cconfidence%29%2Csources%28id%2Clabel%2Curl%2Ctype%29&order=name.asc",
+    "row_count": 50,
+    "sha256": "b8ed89d07638b00f6c87da1971aa242c132dd248c6ba04a4e6a0c77a94b77288"
+  },
+  "rights": {
+    "raw_payloads_preserved_in_repository": false,
+    "repository_copy": "Normalized factual target identities, field presence, and discovery leads only."
+  },
+  "schema": "computerecord.coverage-benchmark-capture.v1"
+}
