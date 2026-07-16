@@ -46,9 +46,11 @@ Definition of done:
 
 ## M2 — Compute domain schema
 
-**Status: IN PROGRESS.** The first migration is implemented against the pinned
-BTW baseline and is required to pass ephemeral PostgreSQL regression scenarios
-before it can be considered for production application.
+**Status: IMPLEMENTED; PRODUCTION DEPLOYMENT PENDING.** The migration and its
+regression scenarios are merged. A manual, checksum-bound GitHub deployment
+workflow is also merged and restricted to `main`. Production application
+waits for the Supabase access token and database password in the protected
+GitHub environment.
 
 Deliverables:
 
@@ -68,6 +70,11 @@ Definition of done:
 - every published fact version can enumerate its evidence.
 
 ## M3 — Coverage benchmark and entity seeds
+
+**Status: IN PROGRESS.** The 2026-07-14 capture contains 50 explicit
+`benchmark_only` targets, hashes of both source responses, one deterministic
+BTW identity match, 49 unresolved targets, and reproducible gap reports. The
+next step is independent primary-source capture for the unresolved queue.
 
 Deliverables:
 

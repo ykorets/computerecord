@@ -4,6 +4,9 @@ on:
   push:
   pull_request:
 
+permissions:
+  contents: read
+
 jobs:
   database:
     runs-on: ubuntu-latest
@@ -109,3 +112,41 @@ jobs:
             and .migration.version == "20260714180000"
             and (.external_baseline | length) == 9
           ' deploy/manifests/001_compute_domain.json >/dev/null
+
+  benchmark:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+      - name: Checkout the pinned BTW public mirror
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
+        with:
+          repository: ykorets/btw
+          ref: d5ccb766ad6630784b9de38837948f87e692d94e
+          path: _deps/btw-mirror
+      - name: Run benchmark unit tests
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: python3 -m unittest discover -s engine/tests -v
+      - name: Verify the sealed 50-target benchmark
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.benchmarks.neocloud verify
+          --artifact-dir benchmarks/neocloud-buildout-registry/2026-07-14
+          --expected-count 50
+      - name: Rebuild resolution from the pinned BTW mirror
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.benchmarks.neocloud resolve
+          --targets benchmarks/neocloud-buildout-registry/2026-07-14/targets.json
+          --facilities _deps/btw-mirror/data/facilities.json
+          --announcements _deps/btw-mirror/data/announcements.json
+          --btw-mirror-commit d5ccb766ad6630784b9de38837948f87e692d94e
+          --output-dir /tmp/rebuilt-benchmark
+      - name: Prove deterministic resolution and gap reporting
+        run: |
+          cmp benchmarks/neocloud-buildout-registry/2026-07-14/resolution.json \
+            /tmp/rebuilt-benchmark/resolution.json
+          cmp benchmarks/neocloud-buildout-registry/2026-07-14/gap-report.json \
+            /tmp/rebuilt-benchmark/gap-report.json

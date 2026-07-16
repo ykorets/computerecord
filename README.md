@@ -35,13 +35,15 @@ engine, immutable source archive, review discipline, and publication model.
 - [ADR-001: shared evidence platform](docs/adr/ADR-001-shared-evidence-platform.md)
 - [Data Foundation roadmap](docs/roadmap.md)
 - [Production database deployment](docs/runbooks/database-deployment.md)
+- [M3 coverage benchmark](benchmarks/neocloud-buildout-registry/2026-07-14/README.md)
 
 ## Current phase
 
-`Data Foundation · M2` — the shared BTW truth baseline is closed; the Compute
-entity graph, typed temporal facts, evidence constraints, and capacity/status
-vocabularies are being built next. The public site comes after the data path
-works end to end.
+`Data Foundation · M3` — the Compute domain schema is implemented and
+regression-tested; production application awaits the protected GitHub
+credentials. The first 50-campus coverage benchmark is sealed and compared
+against the pinned BTW public mirror. Independent primary-source capture comes
+next. The public site still waits for an end-to-end published data path.
 
 Database migrations live in `supabase/migrations/`. Production schema
 deployment is manual and runs only through the protected GitHub workflow.
