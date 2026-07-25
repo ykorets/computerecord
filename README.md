@@ -61,6 +61,8 @@ The independently rediscovered Applied Digital Delta Forge 1 complete SEC
 submission is also preserved. Six anchored assertions and three entity seeds
 passed GitHub review; its 430 MW and construction-status normalizations remain
 blocked.
+The independently discovered Hut 8 Beacon Point complete SEC submission is
+also preserved and awaits anchored claim review.
 No database row or canonical fact has been created. The public site still
 waits for an end-to-end published data path.
 

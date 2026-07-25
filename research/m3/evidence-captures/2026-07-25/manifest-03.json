@@ -1,0 +1,29 @@
+{
+  "classification": "private_evidence_manifest",
+  "inputs": {
+    "intake_queue_path": "research/m3/primary-source-intake/queue.json",
+    "intake_queue_sha256": "da54cc9e3f93b794c1956e397d7762eff5f56ec0b828fc7cd186d309471b4bb3"
+  },
+  "policy": {
+    "claims_created": false,
+    "entity_seeds_created": false,
+    "private_archive_only": true,
+    "publication_allowed": false
+  },
+  "receipts": [
+    {
+      "archive_key": "docs/f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed.txt",
+      "benchmark_target_id": "neocloud-buildout-registry:hut8-beacon-point-tx",
+      "intake_task_id": "m3-primary-source-intake:hut8-beacon-point-tx",
+      "path": "research/m3/evidence-captures/2026-07-25/beacon-point-sec-8k/receipt.json",
+      "receipt_sha256": "6371c8b5b2ec6600f826f8dc0e5a506539c87b83e23b14646cee14557570cbf4",
+      "source_sha256": "f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed"
+    }
+  ],
+  "schema": "computerecord.evidence-capture-batch.v1",
+  "summary": {
+    "captured_documents": 1,
+    "claims_created": 0,
+    "entity_seeds_created": 0
+  }
+}
