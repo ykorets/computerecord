@@ -36,14 +36,17 @@ engine, immutable source archive, review discipline, and publication model.
 - [Data Foundation roadmap](docs/roadmap.md)
 - [Production database deployment](docs/runbooks/database-deployment.md)
 - [M3 coverage benchmark](benchmarks/neocloud-buildout-registry/2026-07-14/README.md)
+- [M3 primary-source intake](research/m3/primary-source-intake/README.md)
 
 ## Current phase
 
 `Data Foundation · M3` — the Compute domain schema is implemented and
 regression-tested; production application awaits the protected GitHub
 credentials. The first 50-campus coverage benchmark is sealed and compared
-against the pinned BTW public mirror. Independent primary-source capture comes
-next. The public site still waits for an end-to-end published data path.
+against the pinned BTW public mirror. Its 49 unresolved campuses now have a
+sealed, reproducible primary-source intake queue; every entity seed remains
+blocked until independent evidence is captured. The public site still waits
+for an end-to-end published data path.
 
 Database migrations live in `supabase/migrations/`. Production schema
 deployment is manual and runs only through the protected GitHub workflow.

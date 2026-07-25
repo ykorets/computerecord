@@ -73,8 +73,10 @@ Definition of done:
 
 **Status: IN PROGRESS.** The 2026-07-14 capture contains 50 explicit
 `benchmark_only` targets, hashes of both source responses, one deterministic
-BTW identity match, 49 unresolved targets, and reproducible gap reports. The
-next step is independent primary-source capture for the unresolved queue.
+BTW identity match, 49 unresolved targets, and reproducible gap reports. A
+sealed intake queue now schedules all 49 unresolved targets while keeping 195
+competitor-provided links explicitly unverified. The next step is immutable
+capture of independently rediscovered official documents for the P0 queue.
 
 Deliverables:
 

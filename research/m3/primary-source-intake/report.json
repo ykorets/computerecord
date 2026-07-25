@@ -1,0 +1,146 @@
+{
+  "by_priority": [
+    {
+      "priority": "p0",
+      "task_count": 15
+    },
+    {
+      "priority": "p1",
+      "task_count": 6
+    },
+    {
+      "priority": "p2",
+      "task_count": 28
+    }
+  ],
+  "by_research_kind": [
+    {
+      "lead_count": 28,
+      "research_kind": "federal_filing",
+      "task_count": 15
+    },
+    {
+      "lead_count": 11,
+      "research_kind": "government_record",
+      "task_count": 9
+    },
+    {
+      "lead_count": 156,
+      "research_kind": "organization_publication",
+      "task_count": 46
+    }
+  ],
+  "by_state": [
+    {
+      "state": "AZ",
+      "task_count": 1
+    },
+    {
+      "state": "CA",
+      "task_count": 1
+    },
+    {
+      "state": "GA",
+      "task_count": 2
+    },
+    {
+      "state": "IN",
+      "task_count": 1
+    },
+    {
+      "state": "KS",
+      "task_count": 1
+    },
+    {
+      "state": "KY",
+      "task_count": 1
+    },
+    {
+      "state": "LA",
+      "task_count": 3
+    },
+    {
+      "state": "MI",
+      "task_count": 1
+    },
+    {
+      "state": "MO",
+      "task_count": 2
+    },
+    {
+      "state": "NC",
+      "task_count": 2
+    },
+    {
+      "state": "ND",
+      "task_count": 3
+    },
+    {
+      "state": "NJ",
+      "task_count": 1
+    },
+    {
+      "state": "NM",
+      "task_count": 1
+    },
+    {
+      "state": "NV",
+      "task_count": 3
+    },
+    {
+      "state": "NY",
+      "task_count": 1
+    },
+    {
+      "state": "OH",
+      "task_count": 1
+    },
+    {
+      "state": "OK",
+      "task_count": 2
+    },
+    {
+      "state": "PA",
+      "task_count": 1
+    },
+    {
+      "state": "TX",
+      "task_count": 14
+    },
+    {
+      "state": "UT",
+      "task_count": 1
+    },
+    {
+      "state": "VA",
+      "task_count": 3
+    },
+    {
+      "state": "WI",
+      "task_count": 1
+    },
+    {
+      "state": "WV",
+      "task_count": 1
+    },
+    {
+      "state": "WY",
+      "task_count": 1
+    }
+  ],
+  "classification": "research_queue",
+  "inputs": {
+    "benchmark_classification": "benchmark_only",
+    "benchmark_schema": "computerecord.coverage-benchmark-targets.v1",
+    "resolution_algorithm_version": "m3-entity-resolution-v1",
+    "resolution_sha256": "d0a05e95e0cb013b28375dc6d640eb88d788392a0ae2b051980f871146c94e2b",
+    "targets_sha256": "df8247a481bd1d3ef9e4fc047eae0d4b9d965fe766bb852400aff5d4aa425ced"
+  },
+  "schema": "computerecord.primary-source-intake-report.v1",
+  "summary": {
+    "blocked_entity_seeds": 49,
+    "captured_documents": 0,
+    "tasks": 49,
+    "unverified_discovery_leads": 195
+  }
+}
