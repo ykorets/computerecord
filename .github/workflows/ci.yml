@@ -263,6 +263,29 @@ jobs:
         run: >-
           cmp research/m3/evidence-captures/2026-07-25/manifest.json
           /tmp/rebuilt-capture-manifest.json
+      - name: Verify the Delta Forge private evidence capture
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.archive.capture verify-batch
+          --root .
+          --manifest
+          research/m3/evidence-captures/2026-07-25/manifest-02.json
+          --expected-receipts 1
+      - name: Rebuild the Delta Forge capture manifest
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.archive.capture build-batch
+          --root .
+          --queue research/m3/primary-source-intake/queue.json
+          --receipt
+          research/m3/evidence-captures/2026-07-25/delta-forge-1-sec-8k/receipt.json
+          --output /tmp/rebuilt-delta-forge-capture-manifest.json
+      - name: Prove deterministic Delta Forge capture lineage
+        run: >-
+          cmp research/m3/evidence-captures/2026-07-25/manifest-02.json
+          /tmp/rebuilt-delta-forge-capture-manifest.json
       - name: Verify the Childress anchored-claim review packet
         env:
           PYTHONDONTWRITEBYTECODE: "1"
@@ -294,9 +317,11 @@ jobs:
           --queue research/m3/primary-source-intake/queue.json
           --capture-manifest
           research/m3/evidence-captures/2026-07-25/manifest.json
+          --capture-manifest
+          research/m3/evidence-captures/2026-07-25/manifest-02.json
           --review-packet
           research/m3/claim-reviews/childress-sec-10q
-          --as-of 2026-07-25T21:26:44Z
+          --as-of 2026-07-25T23:01:37Z
           --progress research/m3/progress.json
       - name: Rebuild M3 research progress
         env:
@@ -307,9 +332,11 @@ jobs:
           --queue research/m3/primary-source-intake/queue.json
           --capture-manifest
           research/m3/evidence-captures/2026-07-25/manifest.json
+          --capture-manifest
+          research/m3/evidence-captures/2026-07-25/manifest-02.json
           --review-packet
           research/m3/claim-reviews/childress-sec-10q
-          --as-of 2026-07-25T21:26:44Z
+          --as-of 2026-07-25T23:01:37Z
           --output /tmp/rebuilt-research-progress.json
       - name: Prove deterministic M3 progress
         run: cmp research/m3/progress.json /tmp/rebuilt-research-progress.json

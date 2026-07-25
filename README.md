@@ -56,6 +56,8 @@ discovered Childress SEC filing is now preserved in the shared private archive
 with a byte-verified receipt. Six anchored source assertions and three entity
 seeds passed GitHub review; an immutable decision approves the seeds only for
 future staging. The ambiguous 750 MW capacity normalization remains blocked.
+The independently rediscovered Applied Digital Delta Forge 1 complete SEC
+submission is also preserved and awaits anchored claim review.
 No database row or canonical fact has been created. The public site still
 waits for an end-to-end published data path.
 
