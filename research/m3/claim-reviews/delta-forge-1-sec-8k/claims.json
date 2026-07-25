@@ -1,0 +1,138 @@
+{
+  "anchors": [
+    {
+      "anchor_id": "registrant_name",
+      "concept": "dei:EntityRegistrantName",
+      "kind": "xbrl_fact",
+      "value": "APPLIED DIGITAL CORPORATION"
+    },
+    {
+      "anchor_id": "campus_construction",
+      "kind": "quote",
+      "normalized_text_end": 3602,
+      "normalized_text_start": 3553,
+      "quote": "Delta Forge 1 Campus currently under construction",
+      "quote_sha256": "5e8ab7ae649d43b661f19094bf9e24b6c10d91295c396b309c66a44dbc245a2c"
+    },
+    {
+      "anchor_id": "campus_location",
+      "kind": "quote",
+      "normalized_text_end": 30830,
+      "normalized_text_start": 30754,
+      "quote": "DF1- Delta Forge 1 – High Investment Grade Hyperscaler Alexandria, Louisiana",
+      "quote_sha256": "06ffe00c2f83fffc74b5ffead3758382a9122dfa827f1f87abb8e6f71a7b12df"
+    },
+    {
+      "anchor_id": "campus_reported_capacity",
+      "kind": "quote",
+      "normalized_text_end": 5334,
+      "normalized_text_start": 5308,
+      "quote": "a 430 MW AI Factory Campus",
+      "quote_sha256": "04698caf8bcd992cc1bb4c90a51b9609be1ab787eb25c56ed5067cda24bfd2ee"
+    }
+  ],
+  "claims": [
+    {
+      "anchor_ids": [
+        "registrant_name"
+      ],
+      "claim_id": "9300a802-402c-54c4-9df4-6b6fdb89fdd7",
+      "claim_key": "applied_digital_legal_name",
+      "predicate": "legal_name",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Applied Digital",
+      "value": {
+        "text": "APPLIED DIGITAL CORPORATION",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "registrant_name",
+        "campus_construction"
+      ],
+      "claim_id": "ef8f8442-5068-54f0-8b55-d5093ffe3f14",
+      "claim_key": "applied_digital_reports_delta_forge",
+      "predicate": "registrant_reports_data_center_campus",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Applied Digital Corporation",
+      "value": {
+        "text": "Delta Forge 1",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "campus_location"
+      ],
+      "claim_id": "a6c5540b-3e00-5827-a53c-eff4eebc8ccb",
+      "claim_key": "delta_forge_city",
+      "predicate": "place_city",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Delta Forge 1",
+      "value": {
+        "text": "Alexandria",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "campus_location"
+      ],
+      "claim_id": "b0ad5d36-817d-5b2d-870f-320f35e95ad1",
+      "claim_key": "delta_forge_state",
+      "predicate": "place_state",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Delta Forge 1",
+      "value": {
+        "code": "LA",
+        "text": "Louisiana",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "campus_construction"
+      ],
+      "claim_id": "4fdd7ccb-c4f6-553f-b9dc-6161e194abf9",
+      "claim_key": "delta_forge_construction_status",
+      "predicate": "reported_construction_status",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Delta Forge 1",
+      "value": {
+        "text": "currently under construction",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "campus_reported_capacity"
+      ],
+      "claim_id": "b69ed42d-74ec-5ca6-ba70-783e54ca1900",
+      "claim_key": "delta_forge_reported_capacity",
+      "predicate": "reported_power_capacity_mw",
+      "qualifier": "exact",
+      "status": "validated",
+      "subject_hint": "Delta Forge 1",
+      "value": {
+        "number": 430,
+        "type": "number",
+        "unit": "MW"
+      }
+    }
+  ],
+  "classification": "validated_source_assertions",
+  "document": {
+    "normalized_text_sha256": "44ed99bd3bbf652f2d98d5b3a4880e5d75b906e0c48873100fa0dfeacb509b21",
+    "receipt_sha256": "7724f756e163d1eec14a4225dd1c699b04f32088c498f0dc36d44195d18b39ee",
+    "source_sha256": "5e6628dd2c0a151eb5b321585449843bb355ea576759fe6739de4b40c23aacb3"
+  },
+  "extractor_version": "m3-anchored-claims-v1",
+  "schema": "computerecord.anchored-source-assertions.v1",
+  "validation_scope": "Anchors and source values only. Validation does not make a source assertion a canonical fact."
+}

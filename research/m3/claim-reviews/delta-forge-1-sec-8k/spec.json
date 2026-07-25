@@ -1,0 +1,165 @@
+{
+  "anchors": [
+    {
+      "anchor_key": "registrant_name",
+      "concept": "dei:EntityRegistrantName",
+      "kind": "xbrl_fact",
+      "value": "APPLIED DIGITAL CORPORATION"
+    },
+    {
+      "anchor_key": "campus_construction",
+      "kind": "quote",
+      "quote": "Delta Forge 1 Campus currently under construction"
+    },
+    {
+      "anchor_key": "campus_location",
+      "kind": "quote",
+      "quote": "DF1- Delta Forge 1 – High Investment Grade Hyperscaler Alexandria, Louisiana"
+    },
+    {
+      "anchor_key": "campus_reported_capacity",
+      "kind": "quote",
+      "quote": "a 430 MW AI Factory Campus"
+    }
+  ],
+  "blocked_normalizations": [
+    {
+      "claim_key": "delta_forge_construction_status",
+      "proposed_fact_kind": "status",
+      "reason": "The filing says the campus is currently under construction, but does not assign the assertion to a specific phase or building scope for a typed construction-status fact."
+    },
+    {
+      "claim_key": "delta_forge_reported_capacity",
+      "proposed_fact_kind": "capacity",
+      "reason": "The headline describes a 430 MW AI Factory Campus but does not establish whether this is utility-service, critical IT, contracted IT, energized IT, or another Compute Record capacity type and scope."
+    }
+  ],
+  "claims": [
+    {
+      "anchor_keys": [
+        "registrant_name"
+      ],
+      "claim_key": "applied_digital_legal_name",
+      "predicate": "legal_name",
+      "subject_hint": "Applied Digital",
+      "value": {
+        "text": "APPLIED DIGITAL CORPORATION",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "registrant_name",
+        "campus_construction"
+      ],
+      "claim_key": "applied_digital_reports_delta_forge",
+      "predicate": "registrant_reports_data_center_campus",
+      "subject_hint": "Applied Digital Corporation",
+      "value": {
+        "text": "Delta Forge 1",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "campus_location"
+      ],
+      "claim_key": "delta_forge_city",
+      "predicate": "place_city",
+      "subject_hint": "Delta Forge 1",
+      "value": {
+        "text": "Alexandria",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "campus_location"
+      ],
+      "claim_key": "delta_forge_state",
+      "predicate": "place_state",
+      "subject_hint": "Delta Forge 1",
+      "value": {
+        "code": "LA",
+        "text": "Louisiana",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "campus_construction"
+      ],
+      "claim_key": "delta_forge_construction_status",
+      "predicate": "reported_construction_status",
+      "subject_hint": "Delta Forge 1",
+      "value": {
+        "text": "currently under construction",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "campus_reported_capacity"
+      ],
+      "claim_key": "delta_forge_reported_capacity",
+      "predicate": "reported_power_capacity_mw",
+      "qualifier": "exact",
+      "subject_hint": "Delta Forge 1",
+      "value": {
+        "number": 430,
+        "type": "number",
+        "unit": "MW"
+      }
+    }
+  ],
+  "document_sha256": "5e6628dd2c0a151eb5b321585449843bb355ea576759fe6739de4b40c23aacb3",
+  "entity_candidates": [
+    {
+      "aliases": [
+        "Applied Digital",
+        "APLD"
+      ],
+      "candidate_key": "organization-applied-digital-corporation",
+      "canonical_name": "Applied Digital Corporation",
+      "entity_type": "organization",
+      "support_claim_keys": [
+        "applied_digital_legal_name",
+        "applied_digital_reports_delta_forge"
+      ]
+    },
+    {
+      "candidate_key": "place-alexandria-louisiana",
+      "canonical_name": "Alexandria, Louisiana",
+      "entity_type": "place",
+      "proposed_attributes": {
+        "city": "Alexandria",
+        "geo_precision": "city",
+        "state": "LA"
+      },
+      "support_claim_keys": [
+        "delta_forge_city",
+        "delta_forge_state"
+      ]
+    },
+    {
+      "aliases": [
+        "Delta Forge 1",
+        "DF1"
+      ],
+      "candidate_key": "campus-applied-digital-delta-forge-1",
+      "canonical_name": "Applied Digital Delta Forge 1",
+      "entity_type": "campus",
+      "place_candidate_key": "place-alexandria-louisiana",
+      "proposed_attributes": {
+        "canonical_slug": "applied-digital-delta-forge-1"
+      },
+      "support_claim_keys": [
+        "applied_digital_reports_delta_forge",
+        "delta_forge_city",
+        "delta_forge_state"
+      ]
+    }
+  ],
+  "packet_key": "delta-forge-1-sec-8k-2026-04-23",
+  "schema": "computerecord.anchored-claim-spec.v1"
+}
