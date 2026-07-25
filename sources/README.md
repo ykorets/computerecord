@@ -22,10 +22,19 @@ reviewed, and promoted through the ordinary truth path.
 Runtime timestamps and failures do not belong in this sealed file. Watcher
 observations and health are a separate append-only operational artifact.
 
+`schedule.json` is generated from the registry. It evenly phases sources in
+each interval cohort, pins the registry hash, prevents concurrent runs for one
+source, and preserves the 15-minute freshness deadline. CI rebuilds it
+byte-for-byte.
+
 Verify:
 
 ```bash
 python3 -m engine.sources.registry verify \
   --registry sources/registry.json \
   --expected-sources 10
+
+python3 -m engine.sources.schedule verify \
+  --registry sources/registry.json \
+  --schedule sources/schedule.json
 ```

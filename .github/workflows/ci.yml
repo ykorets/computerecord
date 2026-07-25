@@ -134,6 +134,22 @@ jobs:
           python3 -m engine.sources.registry verify
           --registry sources/registry.json
           --expected-sources 10
+      - name: Verify the deterministic watcher schedule
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.sources.schedule verify
+          --registry sources/registry.json
+          --schedule sources/schedule.json
+      - name: Rebuild the watcher schedule
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.sources.schedule build
+          --registry sources/registry.json
+          --output /tmp/rebuilt-watcher-schedule.json
+      - name: Prove deterministic watcher scheduling
+        run: cmp sources/schedule.json /tmp/rebuilt-watcher-schedule.json
       - name: Verify the sealed 50-target benchmark
         env:
           PYTHONDONTWRITEBYTECODE: "1"

@@ -106,7 +106,9 @@ Definition of done:
 **Status: IN PROGRESS.** The first sealed cohort defines ten Tier-1 SEC
 submissions watchers for public operators in the P0 queue. It pins official
 CIK identity, schedule, adapter, coverage, and a 15-minute staleness SLO while
-remaining discovery-only. Runtime health and non-SEC sources are next.
+remaining discovery-only. A generated scheduler plan spreads the ten watchers
+across their polling window with no phase collisions and pins the registry
+hash. Runtime health and non-SEC sources are next.
 
 Deliverables:
 
