@@ -62,6 +62,27 @@ release, and other filing exhibits. Exact bytes were uploaded to private R2,
 downloaded again, and hash-matched before the receipt was sealed. No claim,
 entity, capacity fact, or public evidence copy is created by this capture.
 
+## Beacon Point complete SEC submission
+
+The third immutable batch independently rediscovered Hut 8's 2026-06-10 8-K
+through the official SEC submissions endpoint. It captures the complete
+submission text rather than the primary-document URL present in the benchmark
+hints.
+
+- Target: `neocloud-buildout-registry:hut8-beacon-point-tx`
+- Intake task: `m3-primary-source-intake:hut8-beacon-point-tx`
+- Captured: `2026-07-25T23:11:16Z`
+- Size: 1,761,948 bytes
+- Source SHA-256:
+  `f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed`
+- Private archive:
+  `r2://btw-docs/docs/f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed.txt`
+
+The complete submission contains Hut 8's 8-K and the project financing
+documents for Beacon Point. Exact bytes were uploaded, downloaded, and
+hash-matched before sealing. No claim, entity, capacity fact, or public source
+copy is created by the capture.
+
 ## Verify
 
 ```bash
@@ -73,5 +94,10 @@ python3 -m engine.archive.capture verify-batch \
 python3 -m engine.archive.capture verify-batch \
   --root . \
   --manifest research/m3/evidence-captures/2026-07-25/manifest-02.json \
+  --expected-receipts 1
+
+python3 -m engine.archive.capture verify-batch \
+  --root . \
+  --manifest research/m3/evidence-captures/2026-07-25/manifest-03.json \
   --expected-receipts 1
 ```

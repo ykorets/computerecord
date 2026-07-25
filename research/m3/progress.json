@@ -1,11 +1,15 @@
 {
-  "as_of": "2026-07-25T23:07:40Z",
+  "as_of": "2026-07-25T23:11:45Z",
   "classification": "generated_research_progress",
   "inputs": {
     "capture_manifests": [
       {
         "path": "research/m3/evidence-captures/2026-07-25/manifest-02.json",
         "sha256": "d913a6f0ce2c5b8c41e4cb9464454b8837ce6a48ffdd641a904fc89653756755"
+      },
+      {
+        "path": "research/m3/evidence-captures/2026-07-25/manifest-03.json",
+        "sha256": "c9d2f0ac5741d6e2fe2002ed21c9a0ee64e5bfbb48264b0711b324520ff2dd03"
       },
       {
         "path": "research/m3/evidence-captures/2026-07-25/manifest.json",
@@ -39,7 +43,7 @@
     "approved_entity_candidates": 6,
     "blocked_normalizations": 3,
     "canonical_facts_created": 0,
-    "captured_documents": 2,
+    "captured_documents": 3,
     "database_rows_written": 0,
     "reviewed_tasks": 2,
     "tasks": 49
@@ -350,11 +354,11 @@
       "benchmark_target_id": "neocloud-buildout-registry:hut8-beacon-point-tx",
       "blocked_normalizations": 0,
       "claim_review_state": "not_reviewed",
-      "document_state": "not_captured",
+      "document_state": "captured_private",
       "entity_seed_state": "blocked_pending_independent_evidence",
       "priority": "p0",
       "review_decision_id": null,
-      "source_sha256": null,
+      "source_sha256": "f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed",
       "task_id": "m3-primary-source-intake:hut8-beacon-point-tx"
     },
     {

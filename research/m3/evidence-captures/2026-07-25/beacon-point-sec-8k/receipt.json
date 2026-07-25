@@ -1,0 +1,48 @@
+{
+  "archive": {
+    "backend": "cloudflare_r2",
+    "bucket": "btw-docs",
+    "key": "docs/f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed.txt",
+    "private": true,
+    "remote_sha256": "f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed",
+    "verification": "downloaded_and_sha256_matched",
+    "verified_at": "2026-07-25T23:11:45Z"
+  },
+  "classification": "private_evidence_receipt",
+  "pipeline_state": {
+    "claim_extracted": false,
+    "document_captured": true,
+    "entity_seed_created": false,
+    "publication_allowed": false
+  },
+  "research_link": {
+    "benchmark_target_id": "neocloud-buildout-registry:hut8-beacon-point-tx",
+    "intake_task_id": "m3-primary-source-intake:hut8-beacon-point-tx"
+  },
+  "retrieval": {
+    "allowed_host": "sec.gov",
+    "archive_key": "docs/f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed.txt",
+    "captured_at": "2026-07-25T23:11:16Z",
+    "content_type": "text/plain",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926071952/0001104659-26-071952.txt",
+    "http_date": "Sat, 25 Jul 2026 23:11:23 GMT",
+    "http_status": 200,
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1964789/000110465926071952/0001104659-26-071952.txt",
+    "schema": "computerecord.source-retrieval.v1",
+    "sha256": "f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed",
+    "size_bytes": 1761948
+  },
+  "rights": {
+    "public_copy_allowed": false,
+    "redistribution_status": "private_only_pending_review",
+    "rights_basis": "public_record"
+  },
+  "schema": "computerecord.evidence-capture-receipt.v1",
+  "source": {
+    "benchmark_lead_reused": false,
+    "discovery_method": "sec_submissions_api_then_complete_submission",
+    "independently_discovered": true,
+    "publisher": "U.S. Securities and Exchange Commission",
+    "source_class": "federal_filing"
+  }
+}
