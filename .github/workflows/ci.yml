@@ -353,6 +353,15 @@ jobs:
           research/m3/claim-reviews/delta-forge-1-sec-8k/entity-seeds.json
           --decision
           research/m3/claim-reviews/delta-forge-1-sec-8k/review-decision.json
+      - name: Verify the Beacon Point anchored-claim review packet
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.research.claims verify
+          --packet-dir research/m3/claim-reviews/beacon-point-sec-8k
+          --spec research/m3/claim-reviews/beacon-point-sec-8k/spec.json
+          --receipt
+          research/m3/evidence-captures/2026-07-25/beacon-point-sec-8k/receipt.json
       - name: Verify the generated M3 research progress
         env:
           PYTHONDONTWRITEBYTECODE: "1"

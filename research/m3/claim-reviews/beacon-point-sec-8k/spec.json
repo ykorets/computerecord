@@ -1,0 +1,202 @@
+{
+  "anchors": [
+    {
+      "anchor_key": "registrant_name",
+      "concept": "dei:EntityRegistrantName",
+      "kind": "xbrl_fact",
+      "value": "HUT 8 CORPORATION"
+    },
+    {
+      "anchor_key": "project_issuer",
+      "kind": "quote",
+      "quote": "Beacon Point DC LLC (“Issuer”)"
+    },
+    {
+      "anchor_key": "hut8_relationship",
+      "kind": "quote",
+      "quote": "an indirect wholly-owned subsidiary of Hut 8 Corp."
+    },
+    {
+      "anchor_key": "project_type",
+      "kind": "quote",
+      "quote": "turnkey data center, comprising six data halls"
+    },
+    {
+      "anchor_key": "critical_it_capacity",
+      "kind": "quote",
+      "quote": "352 megawatts (“MW”) of critical IT capacity"
+    },
+    {
+      "anchor_key": "project_location",
+      "kind": "quote",
+      "quote": "521-acre property in Nueces County, Texas"
+    }
+  ],
+  "blocked_normalizations": [],
+  "claims": [
+    {
+      "anchor_keys": [
+        "registrant_name"
+      ],
+      "claim_key": "hut8_legal_name",
+      "predicate": "legal_name",
+      "subject_hint": "Hut 8",
+      "value": {
+        "text": "HUT 8 CORPORATION",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "project_issuer"
+      ],
+      "claim_key": "beacon_point_issuer_name",
+      "predicate": "legal_name",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "text": "Beacon Point DC LLC",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "project_issuer",
+        "hut8_relationship"
+      ],
+      "claim_key": "beacon_point_hut8_subsidiary",
+      "predicate": "reported_subsidiary_of",
+      "subject_hint": "Beacon Point DC LLC",
+      "value": {
+        "text": "Hut 8 Corp.",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "project_type"
+      ],
+      "claim_key": "beacon_point_data_center_project",
+      "predicate": "reported_project_type",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "text": "data center",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "project_type"
+      ],
+      "claim_key": "beacon_point_data_halls",
+      "predicate": "reported_data_hall_count",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "text": "six data halls",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "critical_it_capacity"
+      ],
+      "claim_key": "beacon_point_critical_it_capacity",
+      "predicate": "reported_critical_it_capacity_mw",
+      "qualifier": "exact",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "number": 352,
+        "type": "number",
+        "unit": "MW"
+      }
+    },
+    {
+      "anchor_keys": [
+        "project_location"
+      ],
+      "claim_key": "beacon_point_county",
+      "predicate": "place_county",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "text": "Nueces County",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "project_location"
+      ],
+      "claim_key": "beacon_point_state",
+      "predicate": "place_state",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "code": "TX",
+        "text": "Texas",
+        "type": "text"
+      }
+    }
+  ],
+  "document_sha256": "f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed",
+  "entity_candidates": [
+    {
+      "aliases": [
+        "Hut 8",
+        "HUT"
+      ],
+      "candidate_key": "organization-hut-8-corporation",
+      "canonical_name": "Hut 8 Corporation",
+      "entity_type": "organization",
+      "support_claim_keys": [
+        "hut8_legal_name",
+        "beacon_point_hut8_subsidiary"
+      ]
+    },
+    {
+      "candidate_key": "organization-beacon-point-dc-llc",
+      "canonical_name": "Beacon Point DC LLC",
+      "entity_type": "organization",
+      "proposed_attributes": {
+        "organization_type": "project_company"
+      },
+      "support_claim_keys": [
+        "beacon_point_issuer_name",
+        "beacon_point_hut8_subsidiary"
+      ]
+    },
+    {
+      "candidate_key": "place-nueces-county-texas",
+      "canonical_name": "Nueces County, Texas",
+      "entity_type": "place",
+      "proposed_attributes": {
+        "county": "Nueces",
+        "geo_precision": "county",
+        "state": "TX"
+      },
+      "support_claim_keys": [
+        "beacon_point_county",
+        "beacon_point_state"
+      ]
+    },
+    {
+      "aliases": [
+        "Beacon Point Data Center Project"
+      ],
+      "candidate_key": "campus-beacon-point",
+      "canonical_name": "Beacon Point",
+      "entity_type": "campus",
+      "place_candidate_key": "place-nueces-county-texas",
+      "proposed_attributes": {
+        "canonical_slug": "beacon-point"
+      },
+      "support_claim_keys": [
+        "beacon_point_issuer_name",
+        "beacon_point_data_center_project",
+        "beacon_point_data_halls",
+        "beacon_point_critical_it_capacity",
+        "beacon_point_county",
+        "beacon_point_state"
+      ]
+    }
+  ],
+  "packet_key": "beacon-point-sec-8k-2026-06-10",
+  "schema": "computerecord.anchored-claim-spec.v1"
+}

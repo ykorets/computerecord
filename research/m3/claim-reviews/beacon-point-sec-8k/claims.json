@@ -1,0 +1,184 @@
+{
+  "anchors": [
+    {
+      "anchor_id": "registrant_name",
+      "concept": "dei:EntityRegistrantName",
+      "kind": "xbrl_fact",
+      "value": "HUT 8 CORPORATION"
+    },
+    {
+      "anchor_id": "project_issuer",
+      "kind": "quote",
+      "normalized_text_end": 3265,
+      "normalized_text_start": 3235,
+      "quote": "Beacon Point DC LLC (“Issuer”)",
+      "quote_sha256": "222ef5911b8d9b79819a65c72e219a944197ac5b6f6a1bb41eb08246d71e2d5a"
+    },
+    {
+      "anchor_id": "hut8_relationship",
+      "kind": "quote",
+      "normalized_text_end": 3317,
+      "normalized_text_start": 3267,
+      "quote": "an indirect wholly-owned subsidiary of Hut 8 Corp.",
+      "quote_sha256": "aab9e756a742ee18f79a7676d7eb516a70955fb761b9b9f01fd3e2a8212b7845"
+    },
+    {
+      "anchor_id": "project_type",
+      "kind": "quote",
+      "normalized_text_end": 4339,
+      "normalized_text_start": 4293,
+      "quote": "turnkey data center, comprising six data halls",
+      "quote_sha256": "16788a0db59aa71b4c26314d81510d9ffeee7f3aa69c547df20e699eca03072b"
+    },
+    {
+      "anchor_id": "critical_it_capacity",
+      "kind": "quote",
+      "normalized_text_end": 4409,
+      "normalized_text_start": 4365,
+      "quote": "352 megawatts (“MW”) of critical IT capacity",
+      "quote_sha256": "b29865223ae6d7a2314a8ac3b4c5287e503fa4576a856fd21217037518d45493"
+    },
+    {
+      "anchor_id": "project_location",
+      "kind": "quote",
+      "normalized_text_end": 4484,
+      "normalized_text_start": 4443,
+      "quote": "521-acre property in Nueces County, Texas",
+      "quote_sha256": "b9c9be426cbddd56dc267be2c82be6f4591bd507170318030ea86f385975d68a"
+    }
+  ],
+  "claims": [
+    {
+      "anchor_ids": [
+        "registrant_name"
+      ],
+      "claim_id": "44cecdea-b8a0-59e2-a81b-47ccaf61c547",
+      "claim_key": "hut8_legal_name",
+      "predicate": "legal_name",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Hut 8",
+      "value": {
+        "text": "HUT 8 CORPORATION",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "project_issuer"
+      ],
+      "claim_id": "3a820f35-20fd-53ca-8575-ec199b4f0105",
+      "claim_key": "beacon_point_issuer_name",
+      "predicate": "legal_name",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "text": "Beacon Point DC LLC",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "project_issuer",
+        "hut8_relationship"
+      ],
+      "claim_id": "c0d7e2b4-20f0-5ff1-b73b-e52c7e63e34b",
+      "claim_key": "beacon_point_hut8_subsidiary",
+      "predicate": "reported_subsidiary_of",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Beacon Point DC LLC",
+      "value": {
+        "text": "Hut 8 Corp.",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "project_type"
+      ],
+      "claim_id": "f86ea41d-12d8-5c92-aade-24608f36d007",
+      "claim_key": "beacon_point_data_center_project",
+      "predicate": "reported_project_type",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "text": "data center",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "project_type"
+      ],
+      "claim_id": "d7589b50-1cb5-5783-b3aa-b01204a21d39",
+      "claim_key": "beacon_point_data_halls",
+      "predicate": "reported_data_hall_count",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "text": "six data halls",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "critical_it_capacity"
+      ],
+      "claim_id": "06071593-0d7b-5e54-a542-9962871080d2",
+      "claim_key": "beacon_point_critical_it_capacity",
+      "predicate": "reported_critical_it_capacity_mw",
+      "qualifier": "exact",
+      "status": "validated",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "number": 352,
+        "type": "number",
+        "unit": "MW"
+      }
+    },
+    {
+      "anchor_ids": [
+        "project_location"
+      ],
+      "claim_id": "87ddb2b0-b09f-5ddd-b06a-ad982eb17bfb",
+      "claim_key": "beacon_point_county",
+      "predicate": "place_county",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "text": "Nueces County",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "project_location"
+      ],
+      "claim_id": "22f4ee94-3e9c-5901-a580-a8e083f8dd40",
+      "claim_key": "beacon_point_state",
+      "predicate": "place_state",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Beacon Point",
+      "value": {
+        "code": "TX",
+        "text": "Texas",
+        "type": "text"
+      }
+    }
+  ],
+  "classification": "validated_source_assertions",
+  "document": {
+    "normalized_text_sha256": "18f26a1c6e462f02c2701b53c6640663f5feaaf9c3a824d8f3ca9999608a0674",
+    "receipt_sha256": "6371c8b5b2ec6600f826f8dc0e5a506539c87b83e23b14646cee14557570cbf4",
+    "source_sha256": "f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed"
+  },
+  "extractor_version": "m3-anchored-claims-v1",
+  "schema": "computerecord.anchored-source-assertions.v1",
+  "validation_scope": "Anchors and source values only. Validation does not make a source assertion a canonical fact."
+}
