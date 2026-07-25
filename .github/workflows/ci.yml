@@ -150,3 +150,26 @@ jobs:
             /tmp/rebuilt-benchmark/resolution.json
           cmp benchmarks/neocloud-buildout-registry/2026-07-14/gap-report.json \
             /tmp/rebuilt-benchmark/gap-report.json
+      - name: Verify the sealed primary-source intake queue
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.research.intake verify
+          --artifact-dir research/m3/primary-source-intake
+          --targets benchmarks/neocloud-buildout-registry/2026-07-14/targets.json
+          --resolution benchmarks/neocloud-buildout-registry/2026-07-14/resolution.json
+          --expected-tasks 49
+      - name: Rebuild the primary-source intake queue
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.research.intake build
+          --targets benchmarks/neocloud-buildout-registry/2026-07-14/targets.json
+          --resolution benchmarks/neocloud-buildout-registry/2026-07-14/resolution.json
+          --output-dir /tmp/rebuilt-intake
+      - name: Prove deterministic primary-source intake
+        run: |
+          cmp research/m3/primary-source-intake/queue.json \
+            /tmp/rebuilt-intake/queue.json
+          cmp research/m3/primary-source-intake/report.json \
+            /tmp/rebuilt-intake/report.json
