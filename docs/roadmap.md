@@ -103,6 +103,11 @@ Definition of done:
 
 ## M4 — Primary-source registry
 
+**Status: IN PROGRESS.** The first sealed cohort defines ten Tier-1 SEC
+submissions watchers for public operators in the P0 queue. It pins official
+CIK identity, schedule, adapter, coverage, and a 15-minute staleness SLO while
+remaining discovery-only. Runtime health and non-SEC sources are next.
+
 Deliverables:
 
 - source inventory for SEC, company IR, permits, utility commissions,

@@ -1,0 +1,250 @@
+{
+  "authority": {
+    "company_index_retrieved_at": "2026-07-25T22:45:33Z",
+    "company_index_sha256": "e6fbad74d63540e73239f257809cf217b9d6b4fed2410691f0c8c576c9a6cf3c",
+    "company_index_url": "https://www.sec.gov/files/company_tickers_exchange.json",
+    "documentation_url": "https://www.sec.gov/search-filings/edgar-application-programming-interfaces",
+    "publisher": "U.S. Securities and Exchange Commission"
+  },
+  "classification": "operational_primary_source_registry",
+  "policy": {
+    "competitor_sources_allowed": false,
+    "discovery_creates_facts": false,
+    "filing_document_capture_required": true,
+    "registry_is_public": true
+  },
+  "schema": "computerecord.source-registry.v1",
+  "sealed_at": "2026-07-25T22:45:33Z",
+  "sources": [
+    {
+      "adapter": "sec_submissions_v1",
+      "coverage_scope": {
+        "candidate_type": "filing",
+        "forms": ["8-K", "10-Q", "10-K"]
+      },
+      "expected_change_interval_seconds": 2592000,
+      "jurisdiction": "US-federal",
+      "maximum_staleness_seconds": 900,
+      "publisher": {
+        "cik": "0001083301",
+        "name": "TERAWULF INC.",
+        "tickers": ["WULF"]
+      },
+      "schedule": {
+        "interval_seconds": 600,
+        "jitter_seconds": 60
+      },
+      "source_id": "sec-submissions:cik-0001083301",
+      "source_type": "sec_company_submissions",
+      "tier": 1,
+      "url": "https://data.sec.gov/submissions/CIK0001083301.json"
+    },
+    {
+      "adapter": "sec_submissions_v1",
+      "coverage_scope": {
+        "candidate_type": "filing",
+        "forms": ["8-K", "10-Q", "10-K"]
+      },
+      "expected_change_interval_seconds": 2592000,
+      "jurisdiction": "US-federal",
+      "maximum_staleness_seconds": 900,
+      "publisher": {
+        "cik": "0001144879",
+        "name": "Applied Digital Corp.",
+        "tickers": ["APLD"]
+      },
+      "schedule": {
+        "interval_seconds": 600,
+        "jitter_seconds": 60
+      },
+      "source_id": "sec-submissions:cik-0001144879",
+      "source_type": "sec_company_submissions",
+      "tier": 1,
+      "url": "https://data.sec.gov/submissions/CIK0001144879.json"
+    },
+    {
+      "adapter": "sec_submissions_v1",
+      "coverage_scope": {
+        "candidate_type": "filing",
+        "forms": ["8-K", "10-Q", "10-K"]
+      },
+      "expected_change_interval_seconds": 2592000,
+      "jurisdiction": "US-federal",
+      "maximum_staleness_seconds": 900,
+      "publisher": {
+        "cik": "0001167419",
+        "name": "Riot Platforms, Inc.",
+        "tickers": ["RIOT"]
+      },
+      "schedule": {
+        "interval_seconds": 600,
+        "jitter_seconds": 60
+      },
+      "source_id": "sec-submissions:cik-0001167419",
+      "source_type": "sec_company_submissions",
+      "tier": 1,
+      "url": "https://data.sec.gov/submissions/CIK0001167419.json"
+    },
+    {
+      "adapter": "sec_submissions_v1",
+      "coverage_scope": {
+        "candidate_type": "filing",
+        "forms": ["6-K", "20-F"]
+      },
+      "expected_change_interval_seconds": 2592000,
+      "jurisdiction": "US-federal",
+      "maximum_staleness_seconds": 900,
+      "publisher": {
+        "cik": "0001513845",
+        "name": "Nebius Group N.V.",
+        "tickers": ["NBIS"]
+      },
+      "schedule": {
+        "interval_seconds": 600,
+        "jitter_seconds": 60
+      },
+      "source_id": "sec-submissions:cik-0001513845",
+      "source_type": "sec_company_submissions",
+      "tier": 1,
+      "url": "https://data.sec.gov/submissions/CIK0001513845.json"
+    },
+    {
+      "adapter": "sec_submissions_v1",
+      "coverage_scope": {
+        "candidate_type": "filing",
+        "forms": ["8-K", "10-Q", "10-K"]
+      },
+      "expected_change_interval_seconds": 2592000,
+      "jurisdiction": "US-federal",
+      "maximum_staleness_seconds": 900,
+      "publisher": {
+        "cik": "0001819989",
+        "name": "Cipher Digital Inc.",
+        "tickers": ["CIFR"]
+      },
+      "schedule": {
+        "interval_seconds": 600,
+        "jitter_seconds": 60
+      },
+      "source_id": "sec-submissions:cik-0001819989",
+      "source_type": "sec_company_submissions",
+      "tier": 1,
+      "url": "https://data.sec.gov/submissions/CIK0001819989.json"
+    },
+    {
+      "adapter": "sec_submissions_v1",
+      "coverage_scope": {
+        "candidate_type": "filing",
+        "forms": ["8-K", "10-Q", "10-K"]
+      },
+      "expected_change_interval_seconds": 2592000,
+      "jurisdiction": "US-federal",
+      "maximum_staleness_seconds": 900,
+      "publisher": {
+        "cik": "0001839341",
+        "name": "Core Scientific, Inc./tx",
+        "tickers": ["CORZ", "CORZR", "CORZW", "CORZZ"]
+      },
+      "schedule": {
+        "interval_seconds": 600,
+        "jitter_seconds": 60
+      },
+      "source_id": "sec-submissions:cik-0001839341",
+      "source_type": "sec_company_submissions",
+      "tier": 1,
+      "url": "https://data.sec.gov/submissions/CIK0001839341.json"
+    },
+    {
+      "adapter": "sec_submissions_v1",
+      "coverage_scope": {
+        "candidate_type": "filing",
+        "forms": ["8-K", "10-Q", "10-K"]
+      },
+      "expected_change_interval_seconds": 2592000,
+      "jurisdiction": "US-federal",
+      "maximum_staleness_seconds": 900,
+      "publisher": {
+        "cik": "0001859392",
+        "name": "Galaxy Digital Inc.",
+        "tickers": ["GLXY"]
+      },
+      "schedule": {
+        "interval_seconds": 600,
+        "jitter_seconds": 60
+      },
+      "source_id": "sec-submissions:cik-0001859392",
+      "source_type": "sec_company_submissions",
+      "tier": 1,
+      "url": "https://data.sec.gov/submissions/CIK0001859392.json"
+    },
+    {
+      "adapter": "sec_submissions_v1",
+      "coverage_scope": {
+        "candidate_type": "filing",
+        "forms": ["6-K", "20-F"]
+      },
+      "expected_change_interval_seconds": 2592000,
+      "jurisdiction": "US-federal",
+      "maximum_staleness_seconds": 900,
+      "publisher": {
+        "cik": "0001878848",
+        "name": "IREN Ltd",
+        "tickers": ["IREN"]
+      },
+      "schedule": {
+        "interval_seconds": 600,
+        "jitter_seconds": 60
+      },
+      "source_id": "sec-submissions:cik-0001878848",
+      "source_type": "sec_company_submissions",
+      "tier": 1,
+      "url": "https://data.sec.gov/submissions/CIK0001878848.json"
+    },
+    {
+      "adapter": "sec_submissions_v1",
+      "coverage_scope": {
+        "candidate_type": "filing",
+        "forms": ["8-K", "10-Q", "10-K"]
+      },
+      "expected_change_interval_seconds": 2592000,
+      "jurisdiction": "US-federal",
+      "maximum_staleness_seconds": 900,
+      "publisher": {
+        "cik": "0001964789",
+        "name": "Hut 8 Corp.",
+        "tickers": ["HUT"]
+      },
+      "schedule": {
+        "interval_seconds": 600,
+        "jitter_seconds": 60
+      },
+      "source_id": "sec-submissions:cik-0001964789",
+      "source_type": "sec_company_submissions",
+      "tier": 1,
+      "url": "https://data.sec.gov/submissions/CIK0001964789.json"
+    },
+    {
+      "adapter": "sec_submissions_v1",
+      "coverage_scope": {
+        "candidate_type": "filing",
+        "forms": ["8-K", "10-Q", "10-K"]
+      },
+      "expected_change_interval_seconds": 2592000,
+      "jurisdiction": "US-federal",
+      "maximum_staleness_seconds": 900,
+      "publisher": {
+        "cik": "0002042022",
+        "name": "WhiteFiber, Inc.",
+        "tickers": ["WYFI"]
+      },
+      "schedule": {
+        "interval_seconds": 600,
+        "jitter_seconds": 60
+      },
+      "source_id": "sec-submissions:cik-0002042022",
+      "source_type": "sec_company_submissions",
+      "tier": 1,
+      "url": "https://data.sec.gov/submissions/CIK0002042022.json"
+    }
+  ]
+}

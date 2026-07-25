@@ -127,6 +127,13 @@ jobs:
         env:
           PYTHONDONTWRITEBYTECODE: "1"
         run: python3 -m unittest discover -s engine/tests -v
+      - name: Verify the sealed primary-source registry
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.sources.registry verify
+          --registry sources/registry.json
+          --expected-sources 10
       - name: Verify the sealed 50-target benchmark
         env:
           PYTHONDONTWRITEBYTECODE: "1"
