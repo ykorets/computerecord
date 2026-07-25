@@ -41,6 +41,7 @@ engine, immutable source archive, review discipline, and publication model.
 - [M3 primary-source intake](research/m3/primary-source-intake/README.md)
 - [First M3 evidence capture](research/m3/evidence-captures/2026-07-25/README.md)
 - [Childress claim review](research/m3/claim-reviews/childress-sec-10q/README.md)
+- [Primary-source registry](sources/README.md)
 
 ## Current phase
 
