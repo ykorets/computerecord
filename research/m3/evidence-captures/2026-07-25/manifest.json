@@ -1,0 +1,29 @@
+{
+  "classification": "private_evidence_manifest",
+  "inputs": {
+    "intake_queue_path": "research/m3/primary-source-intake/queue.json",
+    "intake_queue_sha256": "da54cc9e3f93b794c1956e397d7762eff5f56ec0b828fc7cd186d309471b4bb3"
+  },
+  "policy": {
+    "claims_created": false,
+    "entity_seeds_created": false,
+    "private_archive_only": true,
+    "publication_allowed": false
+  },
+  "receipts": [
+    {
+      "archive_key": "docs/3d59f51f926263a28997dc3647d97dd9312febcb7a4611e809bcfc498dcafd27.html",
+      "benchmark_target_id": "neocloud-buildout-registry:childress",
+      "intake_task_id": "m3-primary-source-intake:childress",
+      "path": "research/m3/evidence-captures/2026-07-25/childress-sec-10q/receipt.json",
+      "receipt_sha256": "8649dc3d08a189cd045f07bbcf69a06b3dad02323399735a16d76be4fe1e3b23",
+      "source_sha256": "3d59f51f926263a28997dc3647d97dd9312febcb7a4611e809bcfc498dcafd27"
+    }
+  ],
+  "schema": "computerecord.evidence-capture-batch.v1",
+  "summary": {
+    "captured_documents": 1,
+    "claims_created": 0,
+    "entity_seeds_created": 0
+  }
+}

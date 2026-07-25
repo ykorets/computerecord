@@ -1,0 +1,48 @@
+{
+  "archive": {
+    "backend": "cloudflare_r2",
+    "bucket": "btw-docs",
+    "key": "docs/3d59f51f926263a28997dc3647d97dd9312febcb7a4611e809bcfc498dcafd27.html",
+    "private": true,
+    "remote_sha256": "3d59f51f926263a28997dc3647d97dd9312febcb7a4611e809bcfc498dcafd27",
+    "verification": "downloaded_and_sha256_matched",
+    "verified_at": "2026-07-25T00:54:50Z"
+  },
+  "classification": "private_evidence_receipt",
+  "pipeline_state": {
+    "claim_extracted": false,
+    "document_captured": true,
+    "entity_seed_created": false,
+    "publication_allowed": false
+  },
+  "research_link": {
+    "benchmark_target_id": "neocloud-buildout-registry:childress",
+    "intake_task_id": "m3-primary-source-intake:childress"
+  },
+  "retrieval": {
+    "allowed_host": "sec.gov",
+    "archive_key": "docs/3d59f51f926263a28997dc3647d97dd9312febcb7a4611e809bcfc498dcafd27.html",
+    "captured_at": "2026-07-25T00:54:07Z",
+    "content_type": "text/html",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/iren-20260331.htm",
+    "http_date": "Sat, 25 Jul 2026 00:54:07 GMT",
+    "http_status": 200,
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1878848/000187884826000026/iren-20260331.htm",
+    "schema": "computerecord.source-retrieval.v1",
+    "sha256": "3d59f51f926263a28997dc3647d97dd9312febcb7a4611e809bcfc498dcafd27",
+    "size_bytes": 1959789
+  },
+  "rights": {
+    "public_copy_allowed": false,
+    "redistribution_status": "private_only_pending_review",
+    "rights_basis": "public_record"
+  },
+  "schema": "computerecord.evidence-capture-receipt.v1",
+  "source": {
+    "benchmark_lead_reused": false,
+    "discovery_method": "independent_sec_edgar_search",
+    "independently_discovered": true,
+    "publisher": "U.S. Securities and Exchange Commission",
+    "source_class": "federal_filing"
+  }
+}

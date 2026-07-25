@@ -173,3 +173,25 @@ jobs:
             /tmp/rebuilt-intake/queue.json
           cmp research/m3/primary-source-intake/report.json \
             /tmp/rebuilt-intake/report.json
+      - name: Verify the first private evidence capture batch
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.archive.capture verify-batch
+          --root .
+          --manifest research/m3/evidence-captures/2026-07-25/manifest.json
+          --expected-receipts 1
+      - name: Rebuild the evidence capture batch manifest
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.archive.capture build-batch
+          --root .
+          --queue research/m3/primary-source-intake/queue.json
+          --receipt
+          research/m3/evidence-captures/2026-07-25/childress-sec-10q/receipt.json
+          --output /tmp/rebuilt-capture-manifest.json
+      - name: Prove deterministic evidence capture lineage
+        run: >-
+          cmp research/m3/evidence-captures/2026-07-25/manifest.json
+          /tmp/rebuilt-capture-manifest.json

@@ -24,17 +24,20 @@ The queue is pinned to the exact SHA-256 hashes of `targets.json` and
 `resolution.json`. CI rebuilds `queue.json` and `report.json` and requires
 byte-identical output.
 
-## Current workload
+## Queue baseline
 
 - 49 unresolved campus tasks;
 - 195 unverified discovery leads;
 - 15 P0 tasks with an SEC filing lead;
 - 6 P1 tasks with a government-record lead but no SEC filing lead;
 - 28 P2 tasks whose available hints are organization publications;
-- 0 captured documents and 0 entity seeds.
+- at queue seal time: 0 captured documents and 0 entity seeds.
 
 Priority describes research order, not truth quality. The reported source type
-is retained only as a hint from the benchmark.
+is retained only as a hint from the benchmark. Capture progress is recorded in
+separate, immutable
+[`evidence-captures`](../evidence-captures/2026-07-25/README.md) batches so this
+input queue remains reproducible.
 
 ## Required next transition
 

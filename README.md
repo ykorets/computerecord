@@ -35,8 +35,10 @@ engine, immutable source archive, review discipline, and publication model.
 - [ADR-001: shared evidence platform](docs/adr/ADR-001-shared-evidence-platform.md)
 - [Data Foundation roadmap](docs/roadmap.md)
 - [Production database deployment](docs/runbooks/database-deployment.md)
+- [Evidence capture runbook](docs/runbooks/evidence-capture.md)
 - [M3 coverage benchmark](benchmarks/neocloud-buildout-registry/2026-07-14/README.md)
 - [M3 primary-source intake](research/m3/primary-source-intake/README.md)
+- [First M3 evidence capture](research/m3/evidence-captures/2026-07-25/README.md)
 
 ## Current phase
 
@@ -45,8 +47,10 @@ regression-tested; production application awaits the protected GitHub
 credentials. The first 50-campus coverage benchmark is sealed and compared
 against the pinned BTW public mirror. Its 49 unresolved campuses now have a
 sealed, reproducible primary-source intake queue; every entity seed remains
-blocked until independent evidence is captured. The public site still waits
-for an end-to-end published data path.
+blocked until independent evidence is captured. The first independently
+discovered Childress SEC filing is now preserved in the shared private archive
+with a byte-verified receipt; it has not created a claim or entity seed. The
+public site still waits for an end-to-end published data path.
 
 Database migrations live in `supabase/migrations/`. Production schema
 deployment is manual and runs only through the protected GitHub workflow.
