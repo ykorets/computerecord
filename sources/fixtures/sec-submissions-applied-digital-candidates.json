@@ -1,0 +1,40 @@
+{
+  "adapter_version": "sec-submissions-v1",
+  "candidates": [
+    {
+      "candidate_id": "5c6f2476-94c6-5838-809f-89f7856b90cc",
+      "discovered_at": "2026-07-25T23:00:00Z",
+      "external_id": "0001493152-26-030333",
+      "filing_date": "2026-06-26",
+      "filing_index_url": "https://www.sec.gov/Archives/edgar/data/1144879/000149315226030333/0001493152-26-030333-index.html",
+      "form": "8-K",
+      "items": [
+        "1.01",
+        "2.03",
+        "3.02",
+        "9.01"
+      ],
+      "primary_document": "form8-k.htm",
+      "primary_document_url": "https://www.sec.gov/Archives/edgar/data/1144879/000149315226030333/form8-k.htm",
+      "report_date": "2026-06-26",
+      "source_id": "sec-submissions:cik-0001144879",
+      "source_published_at": "2026-06-26T21:03:38.000Z",
+      "state": "discovered"
+    }
+  ],
+  "classification": "discovered_filing_candidates",
+  "discovered_at": "2026-07-25T23:00:00Z",
+  "input": {
+    "after_accession": "0001493152-26-028993",
+    "next_accession": "0001493152-26-032572",
+    "response_sha256": "33e12bd100521fed4e83319fcf49d226a5b84a5c6c28c9062fde85d790b7047f"
+  },
+  "policy": {
+    "document_capture_required": true,
+    "facts_created": false,
+    "raw_response_committed": false,
+    "source_assertions_created": false
+  },
+  "schema": "computerecord.filing-candidate-batch.v1",
+  "source_id": "sec-submissions:cik-0001144879"
+}
