@@ -195,3 +195,12 @@ jobs:
         run: >-
           cmp research/m3/evidence-captures/2026-07-25/manifest.json
           /tmp/rebuilt-capture-manifest.json
+      - name: Verify the Childress anchored-claim review packet
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.research.claims verify
+          --packet-dir research/m3/claim-reviews/childress-sec-10q
+          --spec research/m3/claim-reviews/childress-sec-10q/spec.json
+          --receipt
+          research/m3/evidence-captures/2026-07-25/childress-sec-10q/receipt.json

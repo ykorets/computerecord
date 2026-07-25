@@ -37,8 +37,9 @@ The receipt is fail-closed as
 The private archive object must not be exposed merely because the source is a
 public filing.
 
-Next, extract and validate anchored identity/location assertions from the
-archived object, then submit the entity-resolution decision through review.
+Anchored identity and location assertions are now proposed in the
+[Childress claim-review packet](../../claim-reviews/childress-sec-10q/README.md).
+They remain unpromoted until the review decision is recorded.
 
 ## Verify
 

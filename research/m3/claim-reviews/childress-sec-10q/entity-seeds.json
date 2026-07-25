@@ -1,0 +1,71 @@
+{
+  "blocked_normalizations": [
+    {
+      "claim_id": "0625854c-52e2-5051-a77f-3d6c5717e44f",
+      "proposed_fact_kind": "capacity",
+      "reason": "The filing says total power capacity and references executed grid connection agreements, letters of agreement, or equivalents. It does not establish one unambiguous Compute Record capacity type or service scope.",
+      "state": "blocked_pending_review"
+    }
+  ],
+  "candidates": [
+    {
+      "candidate_id": "4d856c85-aeab-5169-b374-2f40f2602a6e",
+      "candidate_key": "organization-iren-limited",
+      "canonical_name": "IREN Limited",
+      "entity_type": "organization",
+      "proposed_attributes": {
+        "organization_type": "operator"
+      },
+      "review_state": "proposed",
+      "support_claim_ids": [
+        "2fabb117-8d7a-501b-8dd8-b4b16af93985",
+        "b2e269b8-6059-5d11-ab15-f9014263023b"
+      ]
+    },
+    {
+      "candidate_id": "162c5443-42e7-5fb3-ac7f-3b39cfb64663",
+      "candidate_key": "place-childress-texas",
+      "canonical_name": "Childress, Texas, United States",
+      "entity_type": "place",
+      "proposed_attributes": {
+        "city": "Childress",
+        "country_code": "US",
+        "geo_precision": "city",
+        "state": "TX"
+      },
+      "review_state": "proposed",
+      "support_claim_ids": [
+        "8517178c-5ca3-5d91-a25c-f93f938e7baa",
+        "2008738f-6861-503d-b71a-1e619269b5cc",
+        "5d6a651b-253a-5467-b0cf-99f48a7f0ea8"
+      ]
+    },
+    {
+      "aliases": [
+        "Childress"
+      ],
+      "candidate_id": "353995af-a86b-5fc7-bb37-15c06827ee54",
+      "candidate_key": "campus-iren-childress",
+      "canonical_name": "IREN Childress",
+      "entity_type": "campus",
+      "place_candidate_id": "162c5443-42e7-5fb3-ac7f-3b39cfb64663",
+      "proposed_attributes": {
+        "canonical_slug": "iren-childress"
+      },
+      "review_state": "proposed",
+      "support_claim_ids": [
+        "b2e269b8-6059-5d11-ab15-f9014263023b",
+        "8517178c-5ca3-5d91-a25c-f93f938e7baa",
+        "2008738f-6861-503d-b71a-1e619269b5cc",
+        "5d6a651b-253a-5467-b0cf-99f48a7f0ea8"
+      ]
+    }
+  ],
+  "classification": "staging_entity_seed_candidates",
+  "policy": {
+    "database_writes_allowed": false,
+    "fact_creation_allowed": false,
+    "promotion_allowed": false
+  },
+  "schema": "computerecord.entity-seed-candidates.v1"
+}
