@@ -1,0 +1,77 @@
+{
+  "blocked_normalizations": [
+    {
+      "claim_id": "4fdd7ccb-c4f6-553f-b9dc-6161e194abf9",
+      "proposed_fact_kind": "status",
+      "reason": "The filing says the campus is currently under construction, but does not assign the assertion to a specific phase or building scope for a typed construction-status fact.",
+      "state": "blocked_pending_review"
+    },
+    {
+      "claim_id": "b69ed42d-74ec-5ca6-ba70-783e54ca1900",
+      "proposed_fact_kind": "capacity",
+      "reason": "The headline describes a 430 MW AI Factory Campus but does not establish whether this is utility-service, critical IT, contracted IT, energized IT, or another Compute Record capacity type and scope.",
+      "state": "blocked_pending_review"
+    }
+  ],
+  "candidates": [
+    {
+      "aliases": [
+        "Applied Digital",
+        "APLD"
+      ],
+      "candidate_id": "77bfdbce-c1de-5af0-abea-c08cee7572c5",
+      "candidate_key": "organization-applied-digital-corporation",
+      "canonical_name": "Applied Digital Corporation",
+      "entity_type": "organization",
+      "proposed_attributes": {},
+      "review_state": "proposed",
+      "support_claim_ids": [
+        "9300a802-402c-54c4-9df4-6b6fdb89fdd7",
+        "ef8f8442-5068-54f0-8b55-d5093ffe3f14"
+      ]
+    },
+    {
+      "candidate_id": "b171ccc4-476a-5f67-b17f-c612d9c9cfec",
+      "candidate_key": "place-alexandria-louisiana",
+      "canonical_name": "Alexandria, Louisiana",
+      "entity_type": "place",
+      "proposed_attributes": {
+        "city": "Alexandria",
+        "geo_precision": "city",
+        "state": "LA"
+      },
+      "review_state": "proposed",
+      "support_claim_ids": [
+        "a6c5540b-3e00-5827-a53c-eff4eebc8ccb",
+        "b0ad5d36-817d-5b2d-870f-320f35e95ad1"
+      ]
+    },
+    {
+      "aliases": [
+        "Delta Forge 1",
+        "DF1"
+      ],
+      "candidate_id": "f898b314-b8d6-54c8-9a75-6f3bf1dd1bd7",
+      "candidate_key": "campus-applied-digital-delta-forge-1",
+      "canonical_name": "Applied Digital Delta Forge 1",
+      "entity_type": "campus",
+      "place_candidate_id": "b171ccc4-476a-5f67-b17f-c612d9c9cfec",
+      "proposed_attributes": {
+        "canonical_slug": "applied-digital-delta-forge-1"
+      },
+      "review_state": "proposed",
+      "support_claim_ids": [
+        "ef8f8442-5068-54f0-8b55-d5093ffe3f14",
+        "a6c5540b-3e00-5827-a53c-eff4eebc8ccb",
+        "b0ad5d36-817d-5b2d-870f-320f35e95ad1"
+      ]
+    }
+  ],
+  "classification": "staging_entity_seed_candidates",
+  "policy": {
+    "database_writes_allowed": false,
+    "fact_creation_allowed": false,
+    "promotion_allowed": false
+  },
+  "schema": "computerecord.entity-seed-candidates.v1"
+}

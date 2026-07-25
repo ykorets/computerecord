@@ -88,7 +88,9 @@ A generated progress ledger now overlays immutable receipts and decisions on
 the sealed 49-task queue. A second independently rediscovered SEC document now
 preserves the complete Delta Forge 1 submission in private R2. Current progress
 is two captured tasks, one reviewed task, three entity candidates approved for
-staging, and one blocked normalization. Delta Forge anchored claims are next.
+staging, and one blocked normalization. Six Delta Forge source assertions and
+three entity seeds are now proposed; its capacity and construction-status
+normalizations remain blocked pending typed scope evidence.
 
 Deliverables:
 

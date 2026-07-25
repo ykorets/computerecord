@@ -41,6 +41,7 @@ engine, immutable source archive, review discipline, and publication model.
 - [M3 primary-source intake](research/m3/primary-source-intake/README.md)
 - [First M3 evidence capture](research/m3/evidence-captures/2026-07-25/README.md)
 - [Childress claim review](research/m3/claim-reviews/childress-sec-10q/README.md)
+- [Delta Forge 1 claim review](research/m3/claim-reviews/delta-forge-1-sec-8k/README.md)
 - [Primary-source registry](sources/README.md)
 - [Current M3 research progress](research/m3/progress.json)
 
@@ -57,7 +58,8 @@ with a byte-verified receipt. Six anchored source assertions and three entity
 seeds passed GitHub review; an immutable decision approves the seeds only for
 future staging. The ambiguous 750 MW capacity normalization remains blocked.
 The independently rediscovered Applied Digital Delta Forge 1 complete SEC
-submission is also preserved and awaits anchored claim review.
+submission is also preserved. Six anchored assertions and three entity seeds
+are proposed; its 430 MW and construction-status normalizations remain blocked.
 No database row or canonical fact has been created. The public site still
 waits for an end-to-end published data path.
 
