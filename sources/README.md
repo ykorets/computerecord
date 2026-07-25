@@ -27,6 +27,12 @@ each interval cohort, pins the registry hash, prevents concurrent runs for one
 source, and preserves the 15-minute freshness deadline. CI rebuilds it
 byte-for-byte.
 
+The first append-only observation batch performs real reads of all registered
+SEC endpoints. It commits response hashes, sizes, status, and validated CIKs,
+but never raw API responses. `health/` is a deterministic projection that
+distinguishes a successful unchanged source (`source_silent_healthy`) from a
+failed watcher (`watcher_failed`) and an overdue watcher (`stale`).
+
 Verify:
 
 ```bash
