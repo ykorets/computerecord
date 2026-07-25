@@ -75,8 +75,12 @@ Definition of done:
 `benchmark_only` targets, hashes of both source responses, one deterministic
 BTW identity match, 49 unresolved targets, and reproducible gap reports. A
 sealed intake queue now schedules all 49 unresolved targets while keeping 195
-competitor-provided links explicitly unverified. The next step is immutable
-capture of independently rediscovered official documents for the P0 queue.
+competitor-provided links explicitly unverified. The first independently
+discovered Childress SEC filing is now content-addressed in the shared private
+archive and sealed by a remote-byte-verified receipt. It remains document-only:
+no claim, entity seed, database write, or publication occurred. The next step
+is anchored identity extraction and review, followed by the remaining P0
+captures.
 
 Deliverables:
 
