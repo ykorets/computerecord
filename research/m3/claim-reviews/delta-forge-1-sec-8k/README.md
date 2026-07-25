@@ -22,13 +22,17 @@ Validation means only that the exact archived source contains the assertion.
 - city-level place: `Alexandria, Louisiana`;
 - campus: `Applied Digital Delta Forge 1`, aliases `Delta Forge 1` and `DF1`.
 
-All three remain proposed and no Postgres row is written.
+PR #14 reviewed the packet. The separate immutable decision approves all three
+identity candidates only for a future staging transaction. No Postgres row is
+written.
 
 ## Blocked normalizations
 
 The 430 MW headline does not identify one unambiguous capacity type or scope,
 so no capacity fact is created. The construction assertion does not identify a
 specific phase or building scope, so no typed status fact is created.
+
+Both normalizations remain blocked in the review decision.
 
 ## Verify
 
@@ -43,3 +47,13 @@ python3 -m engine.research.claims verify \
 
 Archive-byte verification additionally supplies `--object-file` with the
 downloaded private R2 object.
+
+Decision verification:
+
+```bash
+python3 -m engine.research.decision verify \
+  --spec research/m3/claim-reviews/delta-forge-1-sec-8k/decision-spec.json \
+  --review-manifest research/m3/claim-reviews/delta-forge-1-sec-8k/review-manifest.json \
+  --entity-seeds research/m3/claim-reviews/delta-forge-1-sec-8k/entity-seeds.json \
+  --decision research/m3/claim-reviews/delta-forge-1-sec-8k/review-decision.json
+```

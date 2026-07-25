@@ -59,7 +59,8 @@ seeds passed GitHub review; an immutable decision approves the seeds only for
 future staging. The ambiguous 750 MW capacity normalization remains blocked.
 The independently rediscovered Applied Digital Delta Forge 1 complete SEC
 submission is also preserved. Six anchored assertions and three entity seeds
-are proposed; its 430 MW and construction-status normalizations remain blocked.
+passed GitHub review; its 430 MW and construction-status normalizations remain
+blocked.
 No database row or canonical fact has been created. The public site still
 waits for an end-to-end published data path.
 
