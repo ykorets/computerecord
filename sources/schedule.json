@@ -1,0 +1,97 @@
+{
+  "classification": "operational_watcher_schedule",
+  "input": {
+    "registry_schema": "computerecord.source-registry.v1",
+    "registry_sha256": "72c82844518bd5f1e9e1250eedd8cd4b3ffd541a8beac46eb84512f86114bff3"
+  },
+  "policy": {
+    "catch_up_after_missed_slot": true,
+    "concurrent_runs_per_source": 1,
+    "discovery_only": true,
+    "schedule_uses_wall_clock_utc": true
+  },
+  "scheduler_version": "tiered-phase-v1",
+  "schema": "computerecord.watcher-schedule.v1",
+  "watchers": [
+    {
+      "freshness_deadline_seconds": 900,
+      "interval_seconds": 600,
+      "jitter_seconds": 60,
+      "phase_offset_seconds": 0,
+      "source_id": "sec-submissions:cik-0001083301",
+      "tier": 1
+    },
+    {
+      "freshness_deadline_seconds": 900,
+      "interval_seconds": 600,
+      "jitter_seconds": 60,
+      "phase_offset_seconds": 60,
+      "source_id": "sec-submissions:cik-0001144879",
+      "tier": 1
+    },
+    {
+      "freshness_deadline_seconds": 900,
+      "interval_seconds": 600,
+      "jitter_seconds": 60,
+      "phase_offset_seconds": 120,
+      "source_id": "sec-submissions:cik-0001167419",
+      "tier": 1
+    },
+    {
+      "freshness_deadline_seconds": 900,
+      "interval_seconds": 600,
+      "jitter_seconds": 60,
+      "phase_offset_seconds": 180,
+      "source_id": "sec-submissions:cik-0001513845",
+      "tier": 1
+    },
+    {
+      "freshness_deadline_seconds": 900,
+      "interval_seconds": 600,
+      "jitter_seconds": 60,
+      "phase_offset_seconds": 240,
+      "source_id": "sec-submissions:cik-0001819989",
+      "tier": 1
+    },
+    {
+      "freshness_deadline_seconds": 900,
+      "interval_seconds": 600,
+      "jitter_seconds": 60,
+      "phase_offset_seconds": 300,
+      "source_id": "sec-submissions:cik-0001839341",
+      "tier": 1
+    },
+    {
+      "freshness_deadline_seconds": 900,
+      "interval_seconds": 600,
+      "jitter_seconds": 60,
+      "phase_offset_seconds": 360,
+      "source_id": "sec-submissions:cik-0001859392",
+      "tier": 1
+    },
+    {
+      "freshness_deadline_seconds": 900,
+      "interval_seconds": 600,
+      "jitter_seconds": 60,
+      "phase_offset_seconds": 420,
+      "source_id": "sec-submissions:cik-0001878848",
+      "tier": 1
+    },
+    {
+      "freshness_deadline_seconds": 900,
+      "interval_seconds": 600,
+      "jitter_seconds": 60,
+      "phase_offset_seconds": 480,
+      "source_id": "sec-submissions:cik-0001964789",
+      "tier": 1
+    },
+    {
+      "freshness_deadline_seconds": 900,
+      "interval_seconds": 600,
+      "jitter_seconds": 60,
+      "phase_offset_seconds": 540,
+      "source_id": "sec-submissions:cik-0002042022",
+      "tier": 1
+    }
+  ]
+}
