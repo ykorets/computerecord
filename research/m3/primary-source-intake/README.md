@@ -39,6 +39,11 @@ separate, immutable
 [`evidence-captures`](../evidence-captures/2026-07-25/README.md) batches so this
 input queue remains reproducible.
 
+Current state is not written back into this sealed baseline. The generated
+[`progress.json`](../progress.json) overlays immutable capture receipts and
+review decisions, so historical queue counts remain reproducible while current
+coverage is accurate.
+
 ## Required next transition
 
 For each task:

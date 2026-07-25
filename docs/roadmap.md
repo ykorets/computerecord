@@ -84,7 +84,10 @@ PR #6 approved those candidates only for a future staging transaction, and an
 immutable decision pins the reviewed head, merge commit, reviewer, and packet.
 The filing's reported 750 MW is retained as a source assertion but blocked from
 fact normalization because its capacity type and service scope are ambiguous.
-The next step is the remaining P0 captures.
+A generated progress ledger now overlays immutable receipts and decisions on
+the sealed 49-task queue: one document is captured, one task is reviewed, three
+entity candidates are approved for staging, and one normalization remains
+blocked. The next step is the remaining P0 captures.
 
 Deliverables:
 

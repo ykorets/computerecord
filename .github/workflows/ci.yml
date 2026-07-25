@@ -285,3 +285,31 @@ jobs:
           research/m3/claim-reviews/childress-sec-10q/entity-seeds.json
           --decision
           research/m3/claim-reviews/childress-sec-10q/review-decision.json
+      - name: Verify the generated M3 research progress
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.research.progress verify
+          --root .
+          --queue research/m3/primary-source-intake/queue.json
+          --capture-manifest
+          research/m3/evidence-captures/2026-07-25/manifest.json
+          --review-packet
+          research/m3/claim-reviews/childress-sec-10q
+          --as-of 2026-07-25T21:26:44Z
+          --progress research/m3/progress.json
+      - name: Rebuild M3 research progress
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.research.progress build
+          --root .
+          --queue research/m3/primary-source-intake/queue.json
+          --capture-manifest
+          research/m3/evidence-captures/2026-07-25/manifest.json
+          --review-packet
+          research/m3/claim-reviews/childress-sec-10q
+          --as-of 2026-07-25T21:26:44Z
+          --output /tmp/rebuilt-research-progress.json
+      - name: Prove deterministic M3 progress
+        run: cmp research/m3/progress.json /tmp/rebuilt-research-progress.json
