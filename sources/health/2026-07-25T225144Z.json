@@ -1,0 +1,109 @@
+{
+  "as_of": "2026-07-25T22:51:44Z",
+  "classification": "operational_source_health",
+  "input": {
+    "observation_batch_sha256": "acbf0324371aaa6d62e3188c93696ca0f09a99cec70793aaf774f8bf1a02617c",
+    "registry_sha256": "72c82844518bd5f1e9e1250eedd8cd4b3ffd541a8beac46eb84512f86114bff3",
+    "schedule_sha256": "0aeaf4423ebbb841d08b94ad097eb4ce33e67ae00f45b5335fea49bf923ad24b"
+  },
+  "schema": "computerecord.source-health-report.v1",
+  "sources": [
+    {
+      "change_state": "baseline",
+      "freshness_deadline_seconds": 900,
+      "last_checked_at": "2026-07-25T22:51:44Z",
+      "last_success_at": "2026-07-25T22:51:44Z",
+      "seconds_since_check": 0,
+      "source_id": "sec-submissions:cik-0001083301",
+      "status": "healthy"
+    },
+    {
+      "change_state": "baseline",
+      "freshness_deadline_seconds": 900,
+      "last_checked_at": "2026-07-25T22:51:44Z",
+      "last_success_at": "2026-07-25T22:51:44Z",
+      "seconds_since_check": 0,
+      "source_id": "sec-submissions:cik-0001144879",
+      "status": "healthy"
+    },
+    {
+      "change_state": "baseline",
+      "freshness_deadline_seconds": 900,
+      "last_checked_at": "2026-07-25T22:51:44Z",
+      "last_success_at": "2026-07-25T22:51:44Z",
+      "seconds_since_check": 0,
+      "source_id": "sec-submissions:cik-0001167419",
+      "status": "healthy"
+    },
+    {
+      "change_state": "baseline",
+      "freshness_deadline_seconds": 900,
+      "last_checked_at": "2026-07-25T22:51:44Z",
+      "last_success_at": "2026-07-25T22:51:44Z",
+      "seconds_since_check": 0,
+      "source_id": "sec-submissions:cik-0001513845",
+      "status": "healthy"
+    },
+    {
+      "change_state": "baseline",
+      "freshness_deadline_seconds": 900,
+      "last_checked_at": "2026-07-25T22:51:44Z",
+      "last_success_at": "2026-07-25T22:51:44Z",
+      "seconds_since_check": 0,
+      "source_id": "sec-submissions:cik-0001819989",
+      "status": "healthy"
+    },
+    {
+      "change_state": "baseline",
+      "freshness_deadline_seconds": 900,
+      "last_checked_at": "2026-07-25T22:51:44Z",
+      "last_success_at": "2026-07-25T22:51:44Z",
+      "seconds_since_check": 0,
+      "source_id": "sec-submissions:cik-0001839341",
+      "status": "healthy"
+    },
+    {
+      "change_state": "baseline",
+      "freshness_deadline_seconds": 900,
+      "last_checked_at": "2026-07-25T22:51:44Z",
+      "last_success_at": "2026-07-25T22:51:44Z",
+      "seconds_since_check": 0,
+      "source_id": "sec-submissions:cik-0001859392",
+      "status": "healthy"
+    },
+    {
+      "change_state": "baseline",
+      "freshness_deadline_seconds": 900,
+      "last_checked_at": "2026-07-25T22:51:44Z",
+      "last_success_at": "2026-07-25T22:51:44Z",
+      "seconds_since_check": 0,
+      "source_id": "sec-submissions:cik-0001878848",
+      "status": "healthy"
+    },
+    {
+      "change_state": "baseline",
+      "freshness_deadline_seconds": 900,
+      "last_checked_at": "2026-07-25T22:51:44Z",
+      "last_success_at": "2026-07-25T22:51:44Z",
+      "seconds_since_check": 0,
+      "source_id": "sec-submissions:cik-0001964789",
+      "status": "healthy"
+    },
+    {
+      "change_state": "baseline",
+      "freshness_deadline_seconds": 900,
+      "last_checked_at": "2026-07-25T22:51:44Z",
+      "last_success_at": "2026-07-25T22:51:44Z",
+      "seconds_since_check": 0,
+      "source_id": "sec-submissions:cik-0002042022",
+      "status": "healthy"
+    }
+  ],
+  "summary": {
+    "healthy": 10,
+    "source_silent_healthy": 0,
+    "sources": 10,
+    "stale": 0,
+    "watcher_failed": 0
+  }
+}

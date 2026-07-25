@@ -108,7 +108,9 @@ submissions watchers for public operators in the P0 queue. It pins official
 CIK identity, schedule, adapter, coverage, and a 15-minute staleness SLO while
 remaining discovery-only. A generated scheduler plan spreads the ten watchers
 across their polling window with no phase collisions and pins the registry
-hash. Runtime health and non-SEC sources are next.
+hash. Append-only observation batches now retain response hashes rather than
+raw API payloads, and a generated health projection distinguishes source
+silence, watcher failure, and staleness. Non-SEC sources are next.
 
 Deliverables:
 

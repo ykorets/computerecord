@@ -150,6 +150,24 @@ jobs:
           --output /tmp/rebuilt-watcher-schedule.json
       - name: Prove deterministic watcher scheduling
         run: cmp sources/schedule.json /tmp/rebuilt-watcher-schedule.json
+      - name: Verify the bootstrap source observations
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.sources.health verify-observations
+          --registry sources/registry.json
+          --observations sources/observations/2026-07-25T225144Z.json
+          --require-all-successful
+      - name: Verify the bootstrap source health report
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.sources.health verify-health
+          --registry sources/registry.json
+          --schedule sources/schedule.json
+          --observations sources/observations/2026-07-25T225144Z.json
+          --health sources/health/2026-07-25T225144Z.json
+          --as-of 2026-07-25T22:51:44Z
       - name: Verify the sealed 50-target benchmark
         env:
           PYTHONDONTWRITEBYTECODE: "1"

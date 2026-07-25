@@ -1,0 +1,156 @@
+{
+  "classification": "operational_source_observations",
+  "input": {
+    "registry_schema": "computerecord.source-registry.v1",
+    "registry_sha256": "72c82844518bd5f1e9e1250eedd8cd4b3ffd541a8beac46eb84512f86114bff3"
+  },
+  "observations": [
+    {
+      "change_state": "baseline",
+      "checked_at": "2026-07-25T22:51:44Z",
+      "observation_id": "c90a8ffa-efe9-5a53-817a-97b2cce699c5",
+      "outcome": "success",
+      "response": {
+        "content_type": "application/json",
+        "http_status": 200,
+        "response_sha256": "84aa967a5efbde7c83f2b930dd4221a956d537a86b90df4d9dc928245a405f4b",
+        "size_bytes": 165139,
+        "validated_cik": "0001083301"
+      },
+      "source_id": "sec-submissions:cik-0001083301"
+    },
+    {
+      "change_state": "baseline",
+      "checked_at": "2026-07-25T22:51:44Z",
+      "observation_id": "2c25ab74-a327-55a1-8b26-972d6dbbd689",
+      "outcome": "success",
+      "response": {
+        "content_type": "application/json",
+        "http_status": 200,
+        "response_sha256": "ba9cd057b77bc2ca648a59365bc565b5cc7f3a7c19742f575b109ecba6532bec",
+        "size_bytes": 136727,
+        "validated_cik": "0001144879"
+      },
+      "source_id": "sec-submissions:cik-0001144879"
+    },
+    {
+      "change_state": "baseline",
+      "checked_at": "2026-07-25T22:51:44Z",
+      "observation_id": "15ac5bc2-5a7c-5c34-af2d-21383278a841",
+      "outcome": "success",
+      "response": {
+        "content_type": "application/json",
+        "http_status": 200,
+        "response_sha256": "563eba47bcb4d3d8e547d34fa1567080fcc9bfd9cd6105458fd43661694d2afc",
+        "size_bytes": 162754,
+        "validated_cik": "0001167419"
+      },
+      "source_id": "sec-submissions:cik-0001167419"
+    },
+    {
+      "change_state": "baseline",
+      "checked_at": "2026-07-25T22:51:44Z",
+      "observation_id": "d78b025c-5f1f-5481-b3c8-a198edd7f257",
+      "outcome": "success",
+      "response": {
+        "content_type": "application/json",
+        "http_status": 200,
+        "response_sha256": "b0652dc70d8c3cf95912af98aac2a0c4695468861ecb47c45faecc8364b23a1f",
+        "size_bytes": 76166,
+        "validated_cik": "0001513845"
+      },
+      "source_id": "sec-submissions:cik-0001513845"
+    },
+    {
+      "change_state": "baseline",
+      "checked_at": "2026-07-25T22:51:44Z",
+      "observation_id": "47ffad9e-b4b3-579c-af45-e830fdf45293",
+      "outcome": "success",
+      "response": {
+        "content_type": "application/json",
+        "http_status": 200,
+        "response_sha256": "1badc07d56df1ad5c162dcae9a51cc3b5ad4344d36ffac221a67a0b80594dcf8",
+        "size_bytes": 99875,
+        "validated_cik": "0001819989"
+      },
+      "source_id": "sec-submissions:cik-0001819989"
+    },
+    {
+      "change_state": "baseline",
+      "checked_at": "2026-07-25T22:51:44Z",
+      "observation_id": "1062c1cd-4fa5-54be-bd0b-ec93d1ac87f0",
+      "outcome": "success",
+      "response": {
+        "content_type": "application/json",
+        "http_status": 200,
+        "response_sha256": "fa6799583fe210f945807e731ab8c9917dee557f49441f610c32f08fd91f5f6a",
+        "size_bytes": 103826,
+        "validated_cik": "0001839341"
+      },
+      "source_id": "sec-submissions:cik-0001839341"
+    },
+    {
+      "change_state": "baseline",
+      "checked_at": "2026-07-25T22:51:44Z",
+      "observation_id": "6a95978c-ddb7-5e76-acac-8ae272761b16",
+      "outcome": "success",
+      "response": {
+        "content_type": "application/json",
+        "http_status": 200,
+        "response_sha256": "f13b5746eda002376e7b59317be9ec8ff329b7e6932b6f659f2f58112ad4dd52",
+        "size_bytes": 41341,
+        "validated_cik": "0001859392"
+      },
+      "source_id": "sec-submissions:cik-0001859392"
+    },
+    {
+      "change_state": "baseline",
+      "checked_at": "2026-07-25T22:51:44Z",
+      "observation_id": "0bb34f33-7a6f-5778-ba0d-2390109c0b46",
+      "outcome": "success",
+      "response": {
+        "content_type": "application/json",
+        "http_status": 200,
+        "response_sha256": "a7a8f8a9a3a6be0574e50e442c388a2042c328ec1f8bd63ba60f9b1a4c0afdc3",
+        "size_bytes": 52021,
+        "validated_cik": "0001878848"
+      },
+      "source_id": "sec-submissions:cik-0001878848"
+    },
+    {
+      "change_state": "baseline",
+      "checked_at": "2026-07-25T22:51:44Z",
+      "observation_id": "0830e02d-a2fa-5b38-9646-52844e12f24d",
+      "outcome": "success",
+      "response": {
+        "content_type": "application/json",
+        "http_status": 200,
+        "response_sha256": "6e69a1f52f377b5221741227b779e6f28e4ed33d0a771b5124203eb904412a6a",
+        "size_bytes": 40484,
+        "validated_cik": "0001964789"
+      },
+      "source_id": "sec-submissions:cik-0001964789"
+    },
+    {
+      "change_state": "baseline",
+      "checked_at": "2026-07-25T22:51:44Z",
+      "observation_id": "2c14f93b-c185-5cc6-a0f3-0c80e0980936",
+      "outcome": "success",
+      "response": {
+        "content_type": "application/json",
+        "http_status": 200,
+        "response_sha256": "e456f70fb951f9dbbba377942b9bfde03b0dcf0818e615c25ffb213c484b6ff4",
+        "size_bytes": 12114,
+        "validated_cik": "0002042022"
+      },
+      "source_id": "sec-submissions:cik-0002042022"
+    }
+  ],
+  "observed_at": "2026-07-25T22:51:44Z",
+  "policy": {
+    "facts_created": false,
+    "raw_responses_committed": false,
+    "response_hashes_only": true
+  },
+  "schema": "computerecord.source-observation-batch.v1"
+}
