@@ -1,0 +1,29 @@
+{
+  "classification": "private_evidence_manifest",
+  "inputs": {
+    "intake_queue_path": "research/m3/primary-source-intake/queue.json",
+    "intake_queue_sha256": "da54cc9e3f93b794c1956e397d7762eff5f56ec0b828fc7cd186d309471b4bb3"
+  },
+  "policy": {
+    "claims_created": false,
+    "entity_seeds_created": false,
+    "private_archive_only": true,
+    "publication_allowed": false
+  },
+  "receipts": [
+    {
+      "archive_key": "docs/5e6628dd2c0a151eb5b321585449843bb355ea576759fe6739de4b40c23aacb3.txt",
+      "benchmark_target_id": "neocloud-buildout-registry:apld-delta-forge-1-alexandria-la",
+      "intake_task_id": "m3-primary-source-intake:apld-delta-forge-1-alexandria-la",
+      "path": "research/m3/evidence-captures/2026-07-25/delta-forge-1-sec-8k/receipt.json",
+      "receipt_sha256": "7724f756e163d1eec14a4225dd1c699b04f32088c498f0dc36d44195d18b39ee",
+      "source_sha256": "5e6628dd2c0a151eb5b321585449843bb355ea576759fe6739de4b40c23aacb3"
+    }
+  ],
+  "schema": "computerecord.evidence-capture-batch.v1",
+  "summary": {
+    "captured_documents": 1,
+    "claims_created": 0,
+    "entity_seeds_created": 0
+  }
+}

@@ -85,9 +85,10 @@ immutable decision pins the reviewed head, merge commit, reviewer, and packet.
 The filing's reported 750 MW is retained as a source assertion but blocked from
 fact normalization because its capacity type and service scope are ambiguous.
 A generated progress ledger now overlays immutable receipts and decisions on
-the sealed 49-task queue: one document is captured, one task is reviewed, three
-entity candidates are approved for staging, and one normalization remains
-blocked. The next step is the remaining P0 captures.
+the sealed 49-task queue. A second independently rediscovered SEC document now
+preserves the complete Delta Forge 1 submission in private R2. Current progress
+is two captured tasks, one reviewed task, three entity candidates approved for
+staging, and one blocked normalization. Delta Forge anchored claims are next.
 
 Deliverables:
 

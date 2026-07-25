@@ -41,11 +41,37 @@ Anchored identity and location assertions are now proposed in the
 [Childress claim-review packet](../../claim-reviews/childress-sec-10q/README.md).
 They remain unpromoted until the review decision is recorded.
 
+## Delta Forge 1 complete SEC submission
+
+The second immutable batch independently rediscovered Applied Digital's
+2026-04-23 8-K through its official SEC submissions endpoint and filing index.
+It captures the SEC complete-submission text, not the exhibit URL present in
+the benchmark hints.
+
+- Target: `neocloud-buildout-registry:apld-delta-forge-1-alexandria-la`
+- Intake task: `m3-primary-source-intake:apld-delta-forge-1-alexandria-la`
+- Captured: `2026-07-25T23:00:49Z`
+- Size: 8,382,819 bytes
+- Source SHA-256:
+  `5e6628dd2c0a151eb5b321585449843bb355ea576759fe6739de4b40c23aacb3`
+- Private archive:
+  `r2://btw-docs/docs/5e6628dd2c0a151eb5b321585449843bb355ea576759fe6739de4b40c23aacb3.txt`
+
+The complete submission contains the 8-K, the furnished Delta Forge 1 press
+release, and other filing exhibits. Exact bytes were uploaded to private R2,
+downloaded again, and hash-matched before the receipt was sealed. No claim,
+entity, capacity fact, or public evidence copy is created by this capture.
+
 ## Verify
 
 ```bash
 python3 -m engine.archive.capture verify-batch \
   --root . \
   --manifest research/m3/evidence-captures/2026-07-25/manifest.json \
+  --expected-receipts 1
+
+python3 -m engine.archive.capture verify-batch \
+  --root . \
+  --manifest research/m3/evidence-captures/2026-07-25/manifest-02.json \
   --expected-receipts 1
 ```

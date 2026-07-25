@@ -1,0 +1,48 @@
+{
+  "archive": {
+    "backend": "cloudflare_r2",
+    "bucket": "btw-docs",
+    "key": "docs/5e6628dd2c0a151eb5b321585449843bb355ea576759fe6739de4b40c23aacb3.txt",
+    "private": true,
+    "remote_sha256": "5e6628dd2c0a151eb5b321585449843bb355ea576759fe6739de4b40c23aacb3",
+    "verification": "downloaded_and_sha256_matched",
+    "verified_at": "2026-07-25T23:01:37Z"
+  },
+  "classification": "private_evidence_receipt",
+  "pipeline_state": {
+    "claim_extracted": false,
+    "document_captured": true,
+    "entity_seed_created": false,
+    "publication_allowed": false
+  },
+  "research_link": {
+    "benchmark_target_id": "neocloud-buildout-registry:apld-delta-forge-1-alexandria-la",
+    "intake_task_id": "m3-primary-source-intake:apld-delta-forge-1-alexandria-la"
+  },
+  "retrieval": {
+    "allowed_host": "sec.gov",
+    "archive_key": "docs/5e6628dd2c0a151eb5b321585449843bb355ea576759fe6739de4b40c23aacb3.txt",
+    "captured_at": "2026-07-25T23:00:49Z",
+    "content_type": "text/plain",
+    "final_url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000036/0001144879-26-000036.txt",
+    "http_date": "Sat, 25 Jul 2026 23:01:07 GMT",
+    "http_status": 200,
+    "requested_url": "https://www.sec.gov/Archives/edgar/data/1144879/000114487926000036/0001144879-26-000036.txt",
+    "schema": "computerecord.source-retrieval.v1",
+    "sha256": "5e6628dd2c0a151eb5b321585449843bb355ea576759fe6739de4b40c23aacb3",
+    "size_bytes": 8382819
+  },
+  "rights": {
+    "public_copy_allowed": false,
+    "redistribution_status": "private_only_pending_review",
+    "rights_basis": "public_record"
+  },
+  "schema": "computerecord.evidence-capture-receipt.v1",
+  "source": {
+    "benchmark_lead_reused": false,
+    "discovery_method": "sec_submissions_api_then_filing_index_complete_submission",
+    "independently_discovered": true,
+    "publisher": "U.S. Securities and Exchange Commission",
+    "source_class": "federal_filing"
+  }
+}
