@@ -168,6 +168,33 @@ jobs:
           --observations sources/observations/2026-07-25T225144Z.json
           --health sources/health/2026-07-25T225144Z.json
           --as-of 2026-07-25T22:51:44Z
+      - name: Verify the SEC submissions adapter fixture
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.sources.sec_submissions verify
+          --registry sources/registry.json
+          --source-id sec-submissions:cik-0001144879
+          --response sources/fixtures/sec-submissions-applied-digital.json
+          --discovered-at 2026-07-25T23:00:00Z
+          --after-accession 0001493152-26-028993
+          --candidates
+          sources/fixtures/sec-submissions-applied-digital-candidates.json
+      - name: Rebuild the SEC filing candidate fixture
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.sources.sec_submissions build
+          --registry sources/registry.json
+          --source-id sec-submissions:cik-0001144879
+          --response sources/fixtures/sec-submissions-applied-digital.json
+          --discovered-at 2026-07-25T23:00:00Z
+          --after-accession 0001493152-26-028993
+          --output /tmp/rebuilt-sec-candidates.json
+      - name: Prove deterministic SEC candidate discovery
+        run: >-
+          cmp sources/fixtures/sec-submissions-applied-digital-candidates.json
+          /tmp/rebuilt-sec-candidates.json
       - name: Verify the sealed 50-target benchmark
         env:
           PYTHONDONTWRITEBYTECODE: "1"

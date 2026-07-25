@@ -1,0 +1,38 @@
+{
+  "cik": "0001144879",
+  "exchanges": ["Nasdaq"],
+  "filings": {
+    "recent": {
+      "acceptanceDateTime": [
+        "2026-07-09T01:41:01.000Z",
+        "2026-07-07T20:30:43.000Z",
+        "2026-06-26T21:03:38.000Z",
+        "2026-06-17T12:01:01.000Z"
+      ],
+      "accessionNumber": [
+        "0001493152-26-032572",
+        "0001628280-26-047508",
+        "0001493152-26-030333",
+        "0001493152-26-028993"
+      ],
+      "filingDate": [
+        "2026-07-08",
+        "2026-07-07",
+        "2026-06-26",
+        "2026-06-17"
+      ],
+      "form": ["SCHEDULE 13D/A", "4", "8-K", "8-K/A"],
+      "items": ["", "", "1.01,2.03,3.02,9.01", "1.01"],
+      "primaryDocDescription": ["", "FORM 4", "8-K", "8-K/A"],
+      "primaryDocument": [
+        "xslSCHEDULE_13D_X02/primary_doc.xml",
+        "xslF345X06/wk-form4_1783456241.xml",
+        "form8-k.htm",
+        "form8-ka.htm"
+      ],
+      "reportDate": ["", "2026-07-06", "2026-06-26", "2026-03-10"]
+    }
+  },
+  "name": "Applied Digital Corp.",
+  "tickers": ["APLD"]
+}

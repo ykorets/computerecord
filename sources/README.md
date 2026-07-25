@@ -33,6 +33,13 @@ but never raw API responses. `health/` is a deterministic projection that
 distinguishes a successful unchanged source (`source_silent_healthy`) from a
 failed watcher (`watcher_failed`) and an overdue watcher (`stale`).
 
+The `sec_submissions_v1` adapter converts the SEC's columnar recent-filings
+response into stable accession-based candidates. Recorded fixtures cover
+irrelevant-form filtering, amendments, cursor advancement, official archive
+URL construction, and fail-closed behavior when a cursor disappears. A
+candidate remains `detected`; its filing document must still pass capture and
+review.
+
 Verify:
 
 ```bash

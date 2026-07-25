@@ -110,7 +110,9 @@ remaining discovery-only. A generated scheduler plan spreads the ten watchers
 across their polling window with no phase collisions and pins the registry
 hash. Append-only observation batches now retain response hashes rather than
 raw API payloads, and a generated health projection distinguishes source
-silence, watcher failure, and staleness. Non-SEC sources are next.
+silence, watcher failure, and staleness. A recorded SEC adapter now produces
+stable accession-based filing candidates while filtering irrelevant forms and
+requiring document capture. Non-SEC sources are next.
 
 Deliverables:
 
