@@ -55,3 +55,22 @@ not fetch the publisher URL; the immutable archive is the downstream source.
 - merging the proposal requests a review decision.
 - a separate decision artifact records the merge commit.
 - promotion remains a later idempotent database transaction.
+
+## Record the merge decision
+
+After GitHub merges the proposed packet, author a decision specification with
+the exact approved head commit, merge commit, merge timestamp, reviewer
+identity, approved candidate IDs, and blocked claim IDs. Build the immutable
+decision:
+
+```bash
+python3 -m engine.research.decision build \
+  --spec "$PACKET_DIR/decision-spec.json" \
+  --review-manifest "$PACKET_DIR/review-manifest.json" \
+  --entity-seeds "$PACKET_DIR/entity-seeds.json" \
+  --output "$PACKET_DIR/review-decision.json"
+```
+
+The verifier requires the complete entity-candidate set and preserves every
+blocked normalization. The decision permits only a future staging
+transaction: it cannot create facts, promote data, or write to the database.

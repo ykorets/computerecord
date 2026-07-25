@@ -52,9 +52,10 @@ sealed, reproducible primary-source intake queue; every entity seed remains
 blocked until independent evidence is captured. The first independently
 discovered Childress SEC filing is now preserved in the shared private archive
 with a byte-verified receipt. Six anchored source assertions and three entity
-seeds are proposed for review; the ambiguous 750 MW capacity normalization is
-blocked. No database row or canonical fact has been created. The public site
-still waits for an end-to-end published data path.
+seeds passed GitHub review; an immutable decision approves the seeds only for
+future staging. The ambiguous 750 MW capacity normalization remains blocked.
+No database row or canonical fact has been created. The public site still
+waits for an end-to-end published data path.
 
 Database migrations live in `supabase/migrations/`. Production schema
 deployment is manual and runs only through the protected GitHub workflow.
