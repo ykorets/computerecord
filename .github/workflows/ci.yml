@@ -317,6 +317,19 @@ jobs:
           --spec research/m3/claim-reviews/delta-forge-1-sec-8k/spec.json
           --receipt
           research/m3/evidence-captures/2026-07-25/delta-forge-1-sec-8k/receipt.json
+      - name: Verify the Delta Forge immutable review decision
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.research.decision verify
+          --spec
+          research/m3/claim-reviews/delta-forge-1-sec-8k/decision-spec.json
+          --review-manifest
+          research/m3/claim-reviews/delta-forge-1-sec-8k/review-manifest.json
+          --entity-seeds
+          research/m3/claim-reviews/delta-forge-1-sec-8k/entity-seeds.json
+          --decision
+          research/m3/claim-reviews/delta-forge-1-sec-8k/review-decision.json
       - name: Verify the generated M3 research progress
         env:
           PYTHONDONTWRITEBYTECODE: "1"
@@ -330,7 +343,9 @@ jobs:
           research/m3/evidence-captures/2026-07-25/manifest-02.json
           --review-packet
           research/m3/claim-reviews/childress-sec-10q
-          --as-of 2026-07-25T23:01:37Z
+          --review-packet
+          research/m3/claim-reviews/delta-forge-1-sec-8k
+          --as-of 2026-07-25T23:07:40Z
           --progress research/m3/progress.json
       - name: Rebuild M3 research progress
         env:
@@ -345,7 +360,9 @@ jobs:
           research/m3/evidence-captures/2026-07-25/manifest-02.json
           --review-packet
           research/m3/claim-reviews/childress-sec-10q
-          --as-of 2026-07-25T23:01:37Z
+          --review-packet
+          research/m3/claim-reviews/delta-forge-1-sec-8k
+          --as-of 2026-07-25T23:07:40Z
           --output /tmp/rebuilt-research-progress.json
       - name: Prove deterministic M3 progress
         run: cmp research/m3/progress.json /tmp/rebuilt-research-progress.json

@@ -86,11 +86,12 @@ The filing's reported 750 MW is retained as a source assertion but blocked from
 fact normalization because its capacity type and service scope are ambiguous.
 A generated progress ledger now overlays immutable receipts and decisions on
 the sealed 49-task queue. A second independently rediscovered SEC document now
-preserves the complete Delta Forge 1 submission in private R2. Current progress
-is two captured tasks, one reviewed task, three entity candidates approved for
-staging, and one blocked normalization. Six Delta Forge source assertions and
-three entity seeds are now proposed; its capacity and construction-status
-normalizations remain blocked pending typed scope evidence.
+preserves the complete Delta Forge 1 submission in private R2. Its six source
+assertions and three entity seeds passed GitHub review. An immutable decision
+approves only the identity seeds for future staging; capacity and
+construction-status normalizations remain blocked pending typed scope
+evidence. Current progress: two captured and reviewed tasks, six approved
+identity candidates, three blocked normalizations, and zero facts.
 
 Deliverables:
 

@@ -1,0 +1,42 @@
+{
+  "approved_entity_candidate_ids": [
+    "77bfdbce-c1de-5af0-abea-c08cee7572c5",
+    "b171ccc4-476a-5f67-b17f-c612d9c9cfec",
+    "f898b314-b8d6-54c8-9a75-6f3bf1dd1bd7"
+  ],
+  "blocked_normalization_claim_ids": [
+    "4fdd7ccb-c4f6-553f-b9dc-6161e194abf9",
+    "b69ed42d-74ec-5ca6-ba70-783e54ca1900"
+  ],
+  "classification": "immutable_review_decision",
+  "decided_at": "2026-07-25T23:07:40Z",
+  "decision": "approved_for_entity_seed_staging",
+  "decision_id": "06aeb18d-e80f-5062-91b5-ff7668c2977f",
+  "github_review": {
+    "approved_head_commit": "c6db3deec9441b7e9a7b161cfc084c44cd94ab65",
+    "merge_commit": "1bccbfba7c3315af81722589361b64afc05fc6d5",
+    "merged_at": "2026-07-25T23:07:40Z",
+    "merged_by": "ykorets",
+    "pull_request_number": 14,
+    "pull_request_url": "https://github.com/ykorets/computerecord/pull/14",
+    "repository": "ykorets/computerecord"
+  },
+  "input": {
+    "entity_seeds_sha256": "7ced15447aa48389b18fd68578252ea784a1c098ac4d820ac1c69c99ba9a7765",
+    "review_id": "9a5ea3df-f0a9-52cb-94c9-2ba3b6d33565",
+    "review_manifest_sha256": "6478e73ae7630ad6fedd201d969e2920eb68447856e5bf4d134fb33b915a7566"
+  },
+  "policy": {
+    "database_writes_allowed": false,
+    "fact_creation_allowed": false,
+    "promotion_allowed": false,
+    "staging_allowed": true
+  },
+  "rationale": "PR #14 approved the three source-supported Delta Forge identity candidates for a future staging transaction. The 430 MW capacity and construction-status assertions remain blocked from fact normalization pending typed capacity and phase/scope evidence.",
+  "reviewer": {
+    "display_name": "Yaro Korets",
+    "github_login": "ykorets",
+    "github_node_id": "U_kgDOCj_EJA"
+  },
+  "schema": "computerecord.review-decision.v1"
+}
