@@ -204,3 +204,16 @@ jobs:
           --spec research/m3/claim-reviews/childress-sec-10q/spec.json
           --receipt
           research/m3/evidence-captures/2026-07-25/childress-sec-10q/receipt.json
+      - name: Verify the Childress immutable review decision
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.research.decision verify
+          --spec
+          research/m3/claim-reviews/childress-sec-10q/decision-spec.json
+          --review-manifest
+          research/m3/claim-reviews/childress-sec-10q/review-manifest.json
+          --entity-seeds
+          research/m3/claim-reviews/childress-sec-10q/entity-seeds.json
+          --decision
+          research/m3/claim-reviews/childress-sec-10q/review-decision.json

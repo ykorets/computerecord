@@ -44,9 +44,11 @@ The manifest pins:
 - three deterministic entity-candidate IDs;
 - exact hashes of `claims.json` and `entity-seeds.json`.
 
-Merging the PR requests an approval decision. It does not promote rows or
-perform a database write. A later decision artifact must record the merge
-commit before any atomic promotion.
+PR #6 merged the packet at commit
+`5edb1b9a9d3a3b30e081376f4a54d3a489aa5677`. The separate immutable
+decision approves the three entity candidates only for a future staging
+transaction. It does not promote rows or perform a database write. The
+750 MW capacity normalization remains blocked.
 
 ## Verify
 
@@ -61,3 +63,13 @@ python3 -m engine.research.claims verify \
 
 Archive-byte verification additionally supplies `--object-file` with the
 downloaded private R2 object.
+
+Decision verification:
+
+```bash
+python3 -m engine.research.decision verify \
+  --spec research/m3/claim-reviews/childress-sec-10q/decision-spec.json \
+  --review-manifest research/m3/claim-reviews/childress-sec-10q/review-manifest.json \
+  --entity-seeds research/m3/claim-reviews/childress-sec-10q/entity-seeds.json \
+  --decision research/m3/claim-reviews/childress-sec-10q/review-decision.json
+```

@@ -1,0 +1,41 @@
+{
+  "approved_entity_candidate_ids": [
+    "162c5443-42e7-5fb3-ac7f-3b39cfb64663",
+    "353995af-a86b-5fc7-bb37-15c06827ee54",
+    "4d856c85-aeab-5169-b374-2f40f2602a6e"
+  ],
+  "blocked_normalization_claim_ids": [
+    "0625854c-52e2-5051-a77f-3d6c5717e44f"
+  ],
+  "classification": "immutable_review_decision",
+  "decided_at": "2026-07-25T21:26:44Z",
+  "decision": "approved_for_entity_seed_staging",
+  "decision_id": "b18fe95c-e5c3-53ab-8866-51e7e2e2f923",
+  "github_review": {
+    "approved_head_commit": "4da830215c28afd13d8ab5ec57fcfa9399c1ac96",
+    "merge_commit": "5edb1b9a9d3a3b30e081376f4a54d3a489aa5677",
+    "merged_at": "2026-07-25T21:26:44Z",
+    "merged_by": "ykorets",
+    "pull_request_number": 6,
+    "pull_request_url": "https://github.com/ykorets/computerecord/pull/6",
+    "repository": "ykorets/computerecord"
+  },
+  "input": {
+    "entity_seeds_sha256": "d1c56d793e0ddb71a6b1eda2c493d96e87762011a98e8dc4a2071b4e589e9634",
+    "review_id": "b034c0d8-239f-59ee-a915-c5844d7385ba",
+    "review_manifest_sha256": "5ad68e713576fdda5c263c1118ce2398591bc056796aa23d8f6cc39d2129084b"
+  },
+  "policy": {
+    "database_writes_allowed": false,
+    "fact_creation_allowed": false,
+    "promotion_allowed": false,
+    "staging_allowed": true
+  },
+  "rationale": "PR #6 approved the three source-supported identity candidates for a future staging transaction. The filing's 750 MW assertion remains blocked from fact normalization pending capacity-type and service-scope evidence.",
+  "reviewer": {
+    "display_name": "Yaro Korets",
+    "github_login": "ykorets",
+    "github_node_id": "U_kgDOCj_EJA"
+  },
+  "schema": "computerecord.review-decision.v1"
+}
