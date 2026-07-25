@@ -1,0 +1,131 @@
+{
+  "anchors": [
+    {
+      "anchor_id": "registrant_name",
+      "concept": "dei:EntityRegistrantName",
+      "kind": "xbrl_fact",
+      "value": "IREN Limited"
+    },
+    {
+      "anchor_id": "registrant_has_sites",
+      "kind": "quote",
+      "normalized_text_end": 148947,
+      "normalized_text_start": 148916,
+      "quote": "We have seven data center sites",
+      "quote_sha256": "502d9bffd36228f36cf83fe68e47bb0e054c659fba701e68bbfb69d2d27cd2fd"
+    },
+    {
+      "anchor_id": "childress_location_capacity",
+      "kind": "quote",
+      "normalized_text_end": 149177,
+      "normalized_text_start": 149073,
+      "quote": "three in Texas, United States, namely Childress (750MW), Sweetwater 1 (1,400MW) and Sweetwater 2 (600MW)",
+      "quote_sha256": "f2610afea1808e6a0751951ddeed316ef4719859f2e0d97f8fdb3dd79017b6c9"
+    }
+  ],
+  "claims": [
+    {
+      "anchor_ids": [
+        "registrant_name"
+      ],
+      "claim_id": "2fabb117-8d7a-501b-8dd8-b4b16af93985",
+      "claim_key": "iren_legal_name",
+      "predicate": "legal_name",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "IREN",
+      "value": {
+        "text": "IREN Limited",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "registrant_has_sites",
+        "childress_location_capacity"
+      ],
+      "claim_id": "b2e269b8-6059-5d11-ab15-f9014263023b",
+      "claim_key": "iren_reports_childress_site",
+      "predicate": "registrant_reports_data_center_site",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "IREN Limited",
+      "value": {
+        "text": "Childress",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "childress_location_capacity"
+      ],
+      "claim_id": "8517178c-5ca3-5d91-a25c-f93f938e7baa",
+      "claim_key": "childress_city",
+      "predicate": "place_city",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Childress",
+      "value": {
+        "text": "Childress",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "childress_location_capacity"
+      ],
+      "claim_id": "2008738f-6861-503d-b71a-1e619269b5cc",
+      "claim_key": "childress_state",
+      "predicate": "place_state",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Childress",
+      "value": {
+        "code": "TX",
+        "text": "Texas",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "childress_location_capacity"
+      ],
+      "claim_id": "5d6a651b-253a-5467-b0cf-99f48a7f0ea8",
+      "claim_key": "childress_country",
+      "predicate": "place_country",
+      "qualifier": null,
+      "status": "validated",
+      "subject_hint": "Childress",
+      "value": {
+        "code": "US",
+        "text": "United States",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_ids": [
+        "childress_location_capacity"
+      ],
+      "claim_id": "0625854c-52e2-5051-a77f-3d6c5717e44f",
+      "claim_key": "childress_reported_power_capacity",
+      "predicate": "reported_power_capacity_mw",
+      "qualifier": "exact",
+      "status": "validated",
+      "subject_hint": "Childress",
+      "value": {
+        "number": 750,
+        "type": "number",
+        "unit": "MW"
+      }
+    }
+  ],
+  "classification": "validated_source_assertions",
+  "document": {
+    "normalized_text_sha256": "18c56c389d072c64d5616a0b7574466dbb3506a0c8046a5a171e38c3c2c26d7e",
+    "receipt_sha256": "8649dc3d08a189cd045f07bbcf69a06b3dad02323399735a16d76be4fe1e3b23",
+    "source_sha256": "3d59f51f926263a28997dc3647d97dd9312febcb7a4611e809bcfc498dcafd27"
+  },
+  "extractor_version": "m3-anchored-claims-v1",
+  "schema": "computerecord.anchored-source-assertions.v1",
+  "validation_scope": "Anchors and source values only. Validation does not make a source assertion a canonical fact."
+}

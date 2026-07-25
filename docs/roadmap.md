@@ -78,8 +78,11 @@ sealed intake queue now schedules all 49 unresolved targets while keeping 195
 competitor-provided links explicitly unverified. The first independently
 discovered Childress SEC filing is now content-addressed in the shared private
 archive and sealed by a remote-byte-verified receipt. It remains document-only:
-no claim, entity seed, database write, or publication occurred. The next step
-is anchored identity extraction and review, followed by the remaining P0
+no database write or publication occurred. A proposed review packet now binds
+six exact anchored source assertions to three Childress entity-seed candidates.
+The filing's reported 750 MW is retained as a source assertion but blocked from
+fact normalization because its capacity type and service scope are ambiguous.
+The next step is recording the merge decision, followed by the remaining P0
 captures.
 
 Deliverables:

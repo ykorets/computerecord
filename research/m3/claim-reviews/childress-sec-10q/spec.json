@@ -1,0 +1,157 @@
+{
+  "anchors": [
+    {
+      "anchor_key": "registrant_name",
+      "concept": "dei:EntityRegistrantName",
+      "kind": "xbrl_fact",
+      "value": "IREN Limited"
+    },
+    {
+      "anchor_key": "registrant_has_sites",
+      "kind": "quote",
+      "quote": "We have seven data center sites"
+    },
+    {
+      "anchor_key": "childress_location_capacity",
+      "kind": "quote",
+      "quote": "three in Texas, United States, namely Childress (750MW), Sweetwater 1 (1,400MW) and Sweetwater 2 (600MW)"
+    }
+  ],
+  "blocked_normalizations": [
+    {
+      "claim_key": "childress_reported_power_capacity",
+      "proposed_fact_kind": "capacity",
+      "reason": "The filing says total power capacity and references executed grid connection agreements, letters of agreement, or equivalents. It does not establish one unambiguous Compute Record capacity type or service scope."
+    }
+  ],
+  "claims": [
+    {
+      "anchor_keys": [
+        "registrant_name"
+      ],
+      "claim_key": "iren_legal_name",
+      "predicate": "legal_name",
+      "subject_hint": "IREN",
+      "value": {
+        "text": "IREN Limited",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "registrant_has_sites",
+        "childress_location_capacity"
+      ],
+      "claim_key": "iren_reports_childress_site",
+      "predicate": "registrant_reports_data_center_site",
+      "subject_hint": "IREN Limited",
+      "value": {
+        "text": "Childress",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "childress_location_capacity"
+      ],
+      "claim_key": "childress_city",
+      "predicate": "place_city",
+      "subject_hint": "Childress",
+      "value": {
+        "text": "Childress",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "childress_location_capacity"
+      ],
+      "claim_key": "childress_state",
+      "predicate": "place_state",
+      "subject_hint": "Childress",
+      "value": {
+        "code": "TX",
+        "text": "Texas",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "childress_location_capacity"
+      ],
+      "claim_key": "childress_country",
+      "predicate": "place_country",
+      "subject_hint": "Childress",
+      "value": {
+        "code": "US",
+        "text": "United States",
+        "type": "text"
+      }
+    },
+    {
+      "anchor_keys": [
+        "childress_location_capacity"
+      ],
+      "claim_key": "childress_reported_power_capacity",
+      "predicate": "reported_power_capacity_mw",
+      "qualifier": "exact",
+      "subject_hint": "Childress",
+      "value": {
+        "number": 750,
+        "type": "number",
+        "unit": "MW"
+      }
+    }
+  ],
+  "document_sha256": "3d59f51f926263a28997dc3647d97dd9312febcb7a4611e809bcfc498dcafd27",
+  "entity_candidates": [
+    {
+      "candidate_key": "organization-iren-limited",
+      "canonical_name": "IREN Limited",
+      "entity_type": "organization",
+      "proposed_attributes": {
+        "organization_type": "operator"
+      },
+      "support_claim_keys": [
+        "iren_legal_name",
+        "iren_reports_childress_site"
+      ]
+    },
+    {
+      "candidate_key": "place-childress-texas",
+      "canonical_name": "Childress, Texas, United States",
+      "entity_type": "place",
+      "proposed_attributes": {
+        "city": "Childress",
+        "country_code": "US",
+        "geo_precision": "city",
+        "state": "TX"
+      },
+      "support_claim_keys": [
+        "childress_city",
+        "childress_state",
+        "childress_country"
+      ]
+    },
+    {
+      "aliases": [
+        "Childress"
+      ],
+      "candidate_key": "campus-iren-childress",
+      "canonical_name": "IREN Childress",
+      "entity_type": "campus",
+      "place_candidate_key": "place-childress-texas",
+      "proposed_attributes": {
+        "canonical_slug": "iren-childress"
+      },
+      "support_claim_keys": [
+        "iren_reports_childress_site",
+        "childress_city",
+        "childress_state",
+        "childress_country"
+      ]
+    }
+  ],
+  "packet_key": "childress-sec-10q-2026-03-31",
+  "schema": "computerecord.anchored-claim-spec.v1"
+}
