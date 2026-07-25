@@ -93,7 +93,10 @@ construction-status normalizations remain blocked pending typed scope
 evidence. Current progress: two captured and reviewed tasks, six approved
 identity candidates, three blocked normalizations, and zero facts. A third
 independently discovered complete SEC submission now preserves Hut 8's Beacon
-Point filing in private R2; Beacon Point anchored claims are next.
+Point filing in private R2. Eight anchored source assertions and four entity
+seeds are proposed. Its 352 MW measure is explicitly reported as combined
+critical IT capacity across six data halls and is eligible for later typed
+normalization; this packet still creates no fact.
 
 Deliverables:
 

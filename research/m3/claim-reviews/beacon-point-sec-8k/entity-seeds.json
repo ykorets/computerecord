@@ -1,0 +1,80 @@
+{
+  "blocked_normalizations": [],
+  "candidates": [
+    {
+      "aliases": [
+        "Hut 8",
+        "HUT"
+      ],
+      "candidate_id": "14a6e0aa-66e0-5752-8cc2-0833066b9dd9",
+      "candidate_key": "organization-hut-8-corporation",
+      "canonical_name": "Hut 8 Corporation",
+      "entity_type": "organization",
+      "proposed_attributes": {},
+      "review_state": "proposed",
+      "support_claim_ids": [
+        "44cecdea-b8a0-59e2-a81b-47ccaf61c547",
+        "c0d7e2b4-20f0-5ff1-b73b-e52c7e63e34b"
+      ]
+    },
+    {
+      "candidate_id": "1577c689-09aa-5b3a-8580-406d64b57524",
+      "candidate_key": "organization-beacon-point-dc-llc",
+      "canonical_name": "Beacon Point DC LLC",
+      "entity_type": "organization",
+      "proposed_attributes": {
+        "organization_type": "project_company"
+      },
+      "review_state": "proposed",
+      "support_claim_ids": [
+        "3a820f35-20fd-53ca-8575-ec199b4f0105",
+        "c0d7e2b4-20f0-5ff1-b73b-e52c7e63e34b"
+      ]
+    },
+    {
+      "candidate_id": "c562f3b9-b4c1-561c-8069-92e3309643b7",
+      "candidate_key": "place-nueces-county-texas",
+      "canonical_name": "Nueces County, Texas",
+      "entity_type": "place",
+      "proposed_attributes": {
+        "county": "Nueces",
+        "geo_precision": "county",
+        "state": "TX"
+      },
+      "review_state": "proposed",
+      "support_claim_ids": [
+        "87ddb2b0-b09f-5ddd-b06a-ad982eb17bfb",
+        "22f4ee94-3e9c-5901-a580-a8e083f8dd40"
+      ]
+    },
+    {
+      "aliases": [
+        "Beacon Point Data Center Project"
+      ],
+      "candidate_id": "4f885400-dd74-556e-9f8a-30156f844385",
+      "candidate_key": "campus-beacon-point",
+      "canonical_name": "Beacon Point",
+      "entity_type": "campus",
+      "place_candidate_id": "c562f3b9-b4c1-561c-8069-92e3309643b7",
+      "proposed_attributes": {
+        "canonical_slug": "beacon-point"
+      },
+      "review_state": "proposed",
+      "support_claim_ids": [
+        "3a820f35-20fd-53ca-8575-ec199b4f0105",
+        "f86ea41d-12d8-5c92-aade-24608f36d007",
+        "d7589b50-1cb5-5783-b3aa-b01204a21d39",
+        "06071593-0d7b-5e54-a542-9962871080d2",
+        "87ddb2b0-b09f-5ddd-b06a-ad982eb17bfb",
+        "22f4ee94-3e9c-5901-a580-a8e083f8dd40"
+      ]
+    }
+  ],
+  "classification": "staging_entity_seed_candidates",
+  "policy": {
+    "database_writes_allowed": false,
+    "fact_creation_allowed": false,
+    "promotion_allowed": false
+  },
+  "schema": "computerecord.entity-seed-candidates.v1"
+}

@@ -42,6 +42,7 @@ engine, immutable source archive, review discipline, and publication model.
 - [First M3 evidence capture](research/m3/evidence-captures/2026-07-25/README.md)
 - [Childress claim review](research/m3/claim-reviews/childress-sec-10q/README.md)
 - [Delta Forge 1 claim review](research/m3/claim-reviews/delta-forge-1-sec-8k/README.md)
+- [Beacon Point claim review](research/m3/claim-reviews/beacon-point-sec-8k/README.md)
 - [Primary-source registry](sources/README.md)
 - [Current M3 research progress](research/m3/progress.json)
 
@@ -62,7 +63,8 @@ submission is also preserved. Six anchored assertions and three entity seeds
 passed GitHub review; its 430 MW and construction-status normalizations remain
 blocked.
 The independently discovered Hut 8 Beacon Point complete SEC submission is
-also preserved and awaits anchored claim review.
+also preserved. Eight anchored assertions and four entity seeds are proposed;
+the reported 352 MW is explicitly typed as combined critical IT capacity.
 No database row or canonical fact has been created. The public site still
 waits for an end-to-end published data path.
 

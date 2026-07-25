@@ -1,0 +1,39 @@
+{
+  "classification": "proposed_review",
+  "inputs": {
+    "receipt_sha256": "6371c8b5b2ec6600f826f8dc0e5a506539c87b83e23b14646cee14557570cbf4",
+    "source_sha256": "f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed",
+    "spec_sha256": "24ba6286671ddf4ecc5b79032652f1ed1f6a9060753e4ff0001bed6ce6ffa29e"
+  },
+  "outputs": {
+    "claim_ids": [
+      "06071593-0d7b-5e54-a542-9962871080d2",
+      "22f4ee94-3e9c-5901-a580-a8e083f8dd40",
+      "3a820f35-20fd-53ca-8575-ec199b4f0105",
+      "44cecdea-b8a0-59e2-a81b-47ccaf61c547",
+      "87ddb2b0-b09f-5ddd-b06a-ad982eb17bfb",
+      "c0d7e2b4-20f0-5ff1-b73b-e52c7e63e34b",
+      "d7589b50-1cb5-5783-b3aa-b01204a21d39",
+      "f86ea41d-12d8-5c92-aade-24608f36d007"
+    ],
+    "claims_sha256": "caa6e58dba6d26de9f4b09111084083aeb7d57a35d2927f5743999a49f0781fa",
+    "entity_candidate_ids": [
+      "14a6e0aa-66e0-5752-8cc2-0833066b9dd9",
+      "1577c689-09aa-5b3a-8580-406d64b57524",
+      "4f885400-dd74-556e-9f8a-30156f844385",
+      "c562f3b9-b4c1-561c-8069-92e3309643b7"
+    ],
+    "entity_seeds_sha256": "26e7e29936861522fb81a8cb55272414b1000406ad22d6209da701c05b92b6c9"
+  },
+  "packet_key": "beacon-point-sec-8k-2026-06-10",
+  "policy": {
+    "database_writes": false,
+    "facts_created": false,
+    "merge_requests_review_decision": true,
+    "promotion_allowed": false,
+    "source_assertions_only": true
+  },
+  "review_id": "770e202d-a8d0-5077-b532-107121a2350e",
+  "review_state": "proposed",
+  "schema": "computerecord.claim-review-manifest.v1"
+}
