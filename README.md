@@ -33,6 +33,7 @@ engine, immutable source archive, review discipline, and publication model.
 
 - [Target architecture](docs/architecture.md)
 - [ADR-001: shared evidence platform](docs/adr/ADR-001-shared-evidence-platform.md)
+- [ADR-002: measurement and market semantics](docs/adr/ADR-002-measurement-and-market-semantics.md)
 - [Data Foundation roadmap](docs/roadmap.md)
 - [Production database deployment](docs/runbooks/database-deployment.md)
 - [Evidence capture runbook](docs/runbooks/evidence-capture.md)
@@ -48,25 +49,18 @@ engine, immutable source archive, review discipline, and publication model.
 
 ## Current phase
 
-`Data Foundation · M3` — the Compute domain schema is implemented and
-regression-tested; production application awaits the protected GitHub
-credentials. The first 50-campus coverage benchmark is sealed and compared
-against the pinned BTW public mirror. Its 49 unresolved campuses now have a
-sealed, reproducible primary-source intake queue; every entity seed remains
-blocked until independent evidence is captured. The first independently
-discovered Childress SEC filing is now preserved in the shared private archive
-with a byte-verified receipt. Six anchored source assertions and three entity
-seeds passed GitHub review; an immutable decision approves the seeds only for
-future staging. The ambiguous 750 MW capacity normalization remains blocked.
-The independently rediscovered Applied Digital Delta Forge 1 complete SEC
-submission is also preserved. Six anchored assertions and three entity seeds
-passed GitHub review; its 430 MW and construction-status normalizations remain
-blocked.
-The independently discovered Hut 8 Beacon Point complete SEC submission is
-also preserved. Eight anchored assertions and four entity seeds are proposed;
-the reported 352 MW is explicitly typed as combined critical IT capacity.
-No database row or canonical fact has been created. The public site still
-waits for an end-to-end published data path.
+`Data Foundation · M2.1/M3/M4` — the core Compute schema is implemented and
+regression-tested; production application awaits the additive measurement
+semantics in ADR-002 and protected GitHub credentials. The 50-campus benchmark
+and 49-task independent intake queue are sealed. Childress and Delta Forge 1
+have private byte-verified SEC captures, anchored claims, and immutable review
+decisions approving six identity candidates for future staging while unsafe
+normalizations remain blocked. Beacon Point has a private capture and anchored
+packet; its 352 MW is explicitly reported as combined critical IT capacity
+across six data halls, but its immutable decision and normalization are still
+pending. Ten Tier-1 SEC watchers now have a deterministic schedule, recorded
+health, and a discovery adapter. No database row, canonical fact, public
+snapshot, or Compute site has been created.
 
 Database migrations live in `supabase/migrations/`. Production schema
 deployment is manual and runs only through the protected GitHub workflow.
