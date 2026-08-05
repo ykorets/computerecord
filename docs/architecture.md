@@ -1,7 +1,7 @@
-# The Compute Record — target architecture v0.1
+# The Compute Record — target architecture v0.2
 
-**Status:** Proposed foundation
-**Date:** 2026-07-13
+**Status:** Accepted foundation
+**Updated:** 2026-08-05
 **Owner:** Yaro Korets
 
 ## 1. Purpose
@@ -51,6 +51,10 @@ is presented as an endorsement by the other. Both are attributed to
 8. Promote reviewed rows in one idempotent database transaction.
 9. Generate independent public snapshots for Compute Record and BTW.
 10. Serve the same snapshot through site, files, API, MCP, feeds, and alerts.
+11. Distinguish observed, administrative, reported, estimated, modeled,
+    forecast, and derived values independently of verification state.
+12. Generate every market metric, time series, and infrastructure layer from
+    registered definitions and published facts rather than frontend logic.
 
 ### Non-functional
 
@@ -234,10 +238,12 @@ entity(id, entity_type, canonical_name, created_at)
 
 organization(entity_id, organization_type, website, jurisdiction)
 place(entity_id, address, county, state, country, geometry, geo_precision)
+market(entity_id, place_id, market_type, methodology_version)
 campus(entity_id, place_id, canonical_slug)
 campus_phase(entity_id, campus_id, phase_name)
 building(entity_id, phase_id, building_name)
 power_asset(entity_id, campus_id, asset_type)
+infrastructure_node(entity_id, place_id, node_type)
 equipment_cohort(entity_id, power_asset_id)
 permit(entity_id, authority, permit_no, permit_type)
 ```
@@ -260,6 +266,12 @@ fact_version
   valid_from
   valid_to
   recorded_at
+  epistemic_type
+  period_start
+  period_end
+  issued_at
+  forecast_horizon
+  scenario_id
   verification_state
   publication_state
   supersedes_fact_id
@@ -273,6 +285,72 @@ milestone_fact(fact_id, milestone_type, milestone_date, date_precision)
 equipment_fact(fact_id, oem, model, unit_count, mw_each, total_mw, basis)
 observation_fact(fact_id, observation_type, observed_at, value, geometry)
 ```
+
+### 9.1 Measurement mode is not verification state
+
+Every fact version declares how the value was produced:
+
+- `observed`: a direct sensor, image, or physical observation;
+- `administrative`: a registry, permit, docket, or utility record;
+- `reported`: a party's explicit statement;
+- `estimated`: a bounded estimate from incomplete observations;
+- `modeled`: output of a documented statistical or engineering model;
+- `forecast`: a future projection with issue date and horizon;
+- `derived`: a deterministic calculation over published input facts.
+
+This axis is independent of verification. A source-supported forecast can be
+verified as a faithful forecast assertion without becoming current capacity.
+Actual aggregates exclude forecast, modeled, and estimated inputs unless the
+metric definition explicitly requests them.
+
+### 9.2 Reproducible indicators and series
+
+Repeated market and campus indicators use a definition registry rather than
+ad hoc publisher code:
+
+```text
+metric_definition
+  id
+  version
+  name
+  unit
+  geography_type
+  accepted_fact_kinds
+  accepted_capacity_types
+  accepted_epistemic_types
+  formula
+  methodology
+
+metric_observation
+  metric_definition_id
+  subject_entity_id
+  period_start / period_end
+  issued_at
+  value / lower_bound / upper_bound
+  coverage_numerator / coverage_denominator
+  input_fact_ids[]
+  review_id
+```
+
+Examples include delivered critical IT capacity, announced-to-energized
+conversion, source coverage, median power lead time, and delivery velocity.
+Every public point carries period, release vintage, coverage, uncertainty, and
+exact input lineage. Dense series may live in Parquet on R2 while PostgreSQL
+retains definitions, reviewed summaries, and content hashes.
+
+### 9.3 Infrastructure dependencies and remote observations
+
+Utility territories, substations, transmission upgrades, fuel, water, fiber,
+and cable infrastructure are typed nodes connected to campuses through
+supported relationship facts. Website-only overlays are prohibited.
+
+Satellite scenes remain preserved documents with acquisition and license
+metadata. Derived observations may record construction activity, equipment
+presence, or asset counts. A scene cannot establish MW or operation without a
+separate explicit corroboration rule and compatible evidence.
+
+The complete decision is recorded in
+[`ADR-002`](adr/ADR-002-measurement-and-market-semantics.md).
 
 Evidence uses real foreign keys:
 
@@ -416,6 +494,9 @@ Astro builds crawlable static pages from the generated snapshot:
 - home dashboard;
 - map and data explorer;
 - campus and phase dossiers;
+- market and submarket dossiers;
+- delivery funnels and compatible market comparisons;
+- utility, grid, water, fuel, fiber, and satellite map layers;
 - chronological change feed;
 - state and regulator coverage;
 - organization/vendor/tenant graph;
@@ -574,6 +655,11 @@ architecture theater is avoided.
 - No vector database until a measured search problem requires one.
 - No fake 3D campus geometry presented as observation.
 - No combining gross generation, utility service, or critical IT capacity.
+- No mixing forecasts or modeled estimates into actual/current totals.
+- No opaque market aggregate without definition, coverage, vintage, and
+  inspectable input facts.
+- No satellite-derived MW or operating status without compatible independent
+  evidence.
 
 ## 23. Revisit triggers
 
@@ -586,4 +672,3 @@ architecture theater is avoided.
   quotas, or contractual API SLOs.
 - Add streaming only when event volume makes snapshot/diff delivery visibly
   insufficient.
-
