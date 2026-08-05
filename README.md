@@ -51,8 +51,8 @@ engine, immutable source archive, review discipline, and publication model.
 
 `Data Foundation · M2.1/M3/M4` — the core Compute schema and additive
 measurement semantics are implemented and regression-tested; production
-application awaits review, merge, and protected GitHub credentials. The
-50-campus benchmark and 49-task independent intake queue are sealed. Childress,
+application awaits the guarded GitHub deployment and protected credentials.
+The 50-campus benchmark and 49-task independent intake queue are sealed. Childress,
 Delta Forge 1, and
 Beacon Point have private byte-verified SEC captures, anchored claims, and
 immutable review decisions approving ten identity candidates for future

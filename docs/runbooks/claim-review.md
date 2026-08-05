@@ -74,3 +74,36 @@ python3 -m engine.research.decision build \
 The verifier requires the complete entity-candidate set and preserves every
 blocked normalization. The decision permits only a future staging
 transaction: it cannot create facts, promote data, or write to the database.
+
+## Typed fact-normalization review
+
+Do not add typed facts to an already merged claim-review packet. Those packets
+and their GitHub decisions are immutable. Create a second review-only packet
+that pins the validated claims and entity seeds by SHA-256:
+
+```bash
+python3 -m engine.research.normalizations build \
+  --spec "$NORMALIZATION_DIR/spec.json" \
+  --claims "$CLAIM_PACKET/claims.json" \
+  --entity-seeds "$CLAIM_PACKET/entity-seeds.json" \
+  --output-dir "$NORMALIZATION_DIR"
+```
+
+Every candidate explicitly declares `epistemic_type`, `verification_state`,
+period, issue vintage, forecast horizon, scenario, exact support claims, and a
+typed payload. Version 1 accepts capacity payloads and rejects incompatible
+capacity type/basis pairs or MW values absent from the supporting claims.
+Forecasts require a UTC `issued_at` and a horizon; non-forecasts cannot carry
+forecast-only fields.
+
+```bash
+python3 -m engine.research.normalizations verify \
+  --packet-dir "$NORMALIZATION_DIR" \
+  --spec "$NORMALIZATION_DIR/spec.json" \
+  --claims "$CLAIM_PACKET/claims.json" \
+  --entity-seeds "$CLAIM_PACKET/entity-seeds.json"
+```
+
+The generated `fact-normalizations.json` and
+`normalization-review-manifest.json` remain staging candidates only. They
+cannot write database rows, create facts, or authorize promotion.

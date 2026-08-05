@@ -20,7 +20,7 @@ order is recorded as partial implementation, not as a closed milestone.
 | M0 Foundation | Closed | Repository, domain, architecture, CI, brand, and product boundary exist. |
 | M1 Shared truth baseline | Closed | GitHub review manifest, atomic promotion, replay-safe mirror, and BTW compatibility baseline are proven. |
 | M2 Core Compute schema | Implemented; deployment pending | Typed entities/facts and SQL regression tests are merged; production credentials and deployment are pending. |
-| M2.1 Measurement semantics | Implemented; deployment pending | Additive schema, truth gates, and regression scenarios exist; review, merge, and production deployment are pending. |
+| M2.1 Measurement semantics | Implemented; deployment pending | Additive schema, truth gates, regression scenarios, and typed normalization packets exist; production deployment is pending. |
 | M3 Coverage and identity | In progress | 50-target benchmark, 49-task independent intake queue, three private SEC captures, three immutable review decisions, and ten approved identity candidates exist. |
 | M4 Source operations | In progress | Ten SEC watchers, deterministic schedule, recorded observations/health, and SEC discovery adapter exist; non-SEC source classes and continuous deployment remain. |
 | M5 First published dossiers | Partially implemented | Archive, anchored-claim, review-packet, and decision tooling exist; no database rows or canonical facts have been written. |
@@ -117,11 +117,9 @@ Implemented:
 
 Remaining:
 
-- extend normalization and review packets with epistemic semantics;
 - draft the snapshot contract for metrics, markets, infrastructure, and
   satellite observations;
-- merge the reviewed migration and deploy M2 + M2.1 through the guarded GitHub
-  workflow.
+- deploy M2 + M2.1 through the guarded GitHub workflow.
 
 Definition of done:
 
@@ -355,7 +353,8 @@ The next ten implementation sprints should be small, reviewable PRs:
    write.
 2. **Completed:** implement ADR-002 additive schema migration and SQL regression
    scenarios.
-3. Extend claim normalization and review packets with epistemic semantics.
+3. **Completed:** extend claim normalization and review packets with explicit
+   epistemic type, period, vintage, horizon, scenario, and pinned source inputs.
 4. Configure and execute the guarded M2 + M2.1 production deployment.
 5. Stage approved Childress, Delta Forge, and Beacon Point identities.
 6. Stage Beacon Point's scoped 352 MW critical IT fact and compatible
