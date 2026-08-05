@@ -1,5 +1,5 @@
 {
-  "as_of": "2026-07-25T23:11:45Z",
+  "as_of": "2026-07-25T23:17:15Z",
   "classification": "generated_research_progress",
   "inputs": {
     "capture_manifests": [
@@ -22,6 +22,11 @@
     },
     "review_packets": [
       {
+        "path": "research/m3/claim-reviews/beacon-point-sec-8k",
+        "review_decision_sha256": "4c297b7937317c752a4c6e32e27e5977915ecfd13d5caa75d969daa3402921bb",
+        "review_manifest_sha256": "81729136e6036a4e1ae10076fdb2797020cf600480163229fae27744a562324f"
+      },
+      {
         "path": "research/m3/claim-reviews/childress-sec-10q",
         "review_decision_sha256": "8f4b41b883cdfa2fb9d5e499af9da3786735d1c03ba18f54fc34c38f91d93255",
         "review_manifest_sha256": "5ad68e713576fdda5c263c1118ce2398591bc056796aa23d8f6cc39d2129084b"
@@ -40,12 +45,12 @@
   },
   "schema": "computerecord.research-progress.v1",
   "summary": {
-    "approved_entity_candidates": 6,
+    "approved_entity_candidates": 10,
     "blocked_normalizations": 3,
     "canonical_facts_created": 0,
     "captured_documents": 3,
     "database_rows_written": 0,
-    "reviewed_tasks": 2,
+    "reviewed_tasks": 3,
     "tasks": 49
   },
   "tasks": [
@@ -350,14 +355,14 @@
       "task_id": "m3-primary-source-intake:helios"
     },
     {
-      "approved_entity_candidates": 0,
+      "approved_entity_candidates": 4,
       "benchmark_target_id": "neocloud-buildout-registry:hut8-beacon-point-tx",
       "blocked_normalizations": 0,
-      "claim_review_state": "not_reviewed",
+      "claim_review_state": "reviewed_source_assertions",
       "document_state": "captured_private",
-      "entity_seed_state": "blocked_pending_independent_evidence",
+      "entity_seed_state": "approved_for_staging",
       "priority": "p0",
-      "review_decision_id": null,
+      "review_decision_id": "464efbc6-bf7f-5f8c-b4a7-145f337c71b2",
       "source_sha256": "f547559e83c5b13c230bb1f7a6625da4ba423470223bcf973c17f6539e82a0ed",
       "task_id": "m3-primary-source-intake:hut8-beacon-point-tx"
     },

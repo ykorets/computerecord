@@ -1,0 +1,37 @@
+{
+  "approved_entity_candidate_ids": [
+    "14a6e0aa-66e0-5752-8cc2-0833066b9dd9",
+    "1577c689-09aa-5b3a-8580-406d64b57524",
+    "4f885400-dd74-556e-9f8a-30156f844385",
+    "c562f3b9-b4c1-561c-8069-92e3309643b7"
+  ],
+  "blocked_normalization_claim_ids": [],
+  "decision": "approved_for_entity_seed_staging",
+  "github_review": {
+    "approved_head_commit": "41307533d046684001f4ede6a2a0897299e6677a",
+    "merge_commit": "3a9948a11cf6ebc130aa276ea697d14fa9709969",
+    "merged_at": "2026-07-25T23:17:15Z",
+    "merged_by": "ykorets",
+    "pull_request_number": 17,
+    "pull_request_url": "https://github.com/ykorets/computerecord/pull/17",
+    "repository": "ykorets/computerecord"
+  },
+  "input": {
+    "entity_seeds_sha256": "26e7e29936861522fb81a8cb55272414b1000406ad22d6209da701c05b92b6c9",
+    "review_manifest_sha256": "81729136e6036a4e1ae10076fdb2797020cf600480163229fae27744a562324f"
+  },
+  "policy": {
+    "database_writes_allowed": false,
+    "fact_creation_allowed": false,
+    "promotion_allowed": false,
+    "staging_allowed": true
+  },
+  "rationale": "PR #17 approved the four source-supported Beacon Point identity candidates for a future staging transaction. The 352 MW assertion remains eligible for a separate typed normalization review as reported planned critical IT capacity; this decision creates no fact and authorizes no promotion.",
+  "review_id": "770e202d-a8d0-5077-b532-107121a2350e",
+  "reviewer": {
+    "display_name": "Yaro Korets",
+    "github_login": "ykorets",
+    "github_node_id": "U_kgDOCj_EJA"
+  },
+  "schema": "computerecord.review-decision-spec.v1"
+}
