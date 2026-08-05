@@ -120,7 +120,7 @@ PostgreSQL stores definitions, summaries, and lineage.
 
 ## Action items
 
-1. [ ] Add the additive semantic migration and regression scenarios.
+1. [x] Add the additive semantic migration and regression scenarios.
 2. [ ] Extend normalization and review manifests with `epistemic_type`.
 3. [ ] Register the first capacity and delivery-funnel metric definitions.
 4. [ ] Normalize Beacon Point's eligible 352 MW assertion only after its

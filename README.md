@@ -49,10 +49,11 @@ engine, immutable source archive, review discipline, and publication model.
 
 ## Current phase
 
-`Data Foundation · M2.1/M3/M4` — the core Compute schema is implemented and
-regression-tested; production application awaits the additive measurement
-semantics in ADR-002 and protected GitHub credentials. The 50-campus benchmark
-and 49-task independent intake queue are sealed. Childress, Delta Forge 1, and
+`Data Foundation · M2.1/M3/M4` — the core Compute schema and additive
+measurement semantics are implemented and regression-tested; production
+application awaits review, merge, and protected GitHub credentials. The
+50-campus benchmark and 49-task independent intake queue are sealed. Childress,
+Delta Forge 1, and
 Beacon Point have private byte-verified SEC captures, anchored claims, and
 immutable review decisions approving ten identity candidates for future
 staging while three unsafe Childress/Delta Forge normalizations remain blocked.

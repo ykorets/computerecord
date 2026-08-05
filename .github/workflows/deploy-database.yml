@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       confirmation:
-        description: Type deploy-compute-001
+        description: Type deploy-compute-002
         required: true
         type: string
 
@@ -30,15 +30,17 @@ jobs:
     steps:
       - name: Enforce the reviewed target and explicit confirmation
         run: |
-          test "$CONFIRMATION" = "deploy-compute-001"
+          test "$CONFIRMATION" = "deploy-compute-002"
           test -n "$SUPABASE_ACCESS_TOKEN"
           test -n "$SUPABASE_DB_PASSWORD"
           test "$SUPABASE_PROJECT_ID" = "$EXPECTED_PROJECT_ID"
 
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
-      - name: Verify the reviewed migration artifact
-        run: sha256sum --check deploy/manifests/001_compute_domain.sha256
+      - name: Verify the reviewed migration artifacts
+        run: |
+          sha256sum --check deploy/manifests/001_compute_domain.sha256
+          sha256sum --check deploy/manifests/002_measurement_market_semantics.sha256
 
       - name: Install the pinned Supabase CLI
         uses: supabase/setup-cli@ab058987d8d6c725971f6cf9d0b5c98467e30bd1 # v1

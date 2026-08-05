@@ -19,7 +19,7 @@ repository, workflow inputs, artifacts, issue comments, or logs.
 
 1. Confirm CI is green on the exact merge commit.
 2. Run **deploy database** from `main`.
-3. Enter `deploy-compute-001` as the confirmation.
+3. Enter `deploy-compute-002` as the confirmation.
 4. Review the dry-run and migration-history artifacts.
 5. Run the external Supabase security/performance advisors and the
    post-deployment audit queries.
