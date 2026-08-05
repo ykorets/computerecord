@@ -52,15 +52,15 @@ engine, immutable source archive, review discipline, and publication model.
 `Data Foundation · M2.1/M3/M4` — the core Compute schema is implemented and
 regression-tested; production application awaits the additive measurement
 semantics in ADR-002 and protected GitHub credentials. The 50-campus benchmark
-and 49-task independent intake queue are sealed. Childress and Delta Forge 1
-have private byte-verified SEC captures, anchored claims, and immutable review
-decisions approving six identity candidates for future staging while unsafe
-normalizations remain blocked. Beacon Point has a private capture and anchored
-packet; its 352 MW is explicitly reported as combined critical IT capacity
-across six data halls, but its immutable decision and normalization are still
-pending. Ten Tier-1 SEC watchers now have a deterministic schedule, recorded
-health, and a discovery adapter. No database row, canonical fact, public
-snapshot, or Compute site has been created.
+and 49-task independent intake queue are sealed. Childress, Delta Forge 1, and
+Beacon Point have private byte-verified SEC captures, anchored claims, and
+immutable review decisions approving ten identity candidates for future
+staging while three unsafe Childress/Delta Forge normalizations remain blocked.
+Beacon Point's 352 MW is explicitly reported as combined critical IT capacity
+across six data halls and remains eligible for a separate typed normalization
+review after M2.1. Ten Tier-1 SEC watchers now have a deterministic schedule,
+recorded health, and a discovery adapter. No database row, canonical fact,
+public snapshot, or Compute site has been created.
 
 Database migrations live in `supabase/migrations/`. Production schema
 deployment is manual and runs only through the protected GitHub workflow.

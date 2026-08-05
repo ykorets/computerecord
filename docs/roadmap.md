@@ -21,7 +21,7 @@ order is recorded as partial implementation, not as a closed milestone.
 | M1 Shared truth baseline | Closed | GitHub review manifest, atomic promotion, replay-safe mirror, and BTW compatibility baseline are proven. |
 | M2 Core Compute schema | Implemented; deployment pending | Typed entities/facts and SQL regression tests are merged; production credentials and deployment are pending. |
 | M2.1 Measurement semantics | Next | ADR-002 is accepted; migration and regression tests are not implemented. |
-| M3 Coverage and identity | In progress | 50-target benchmark, 49-task independent intake queue, three private SEC captures, two immutable review decisions, and six approved identity candidates exist. |
+| M3 Coverage and identity | In progress | 50-target benchmark, 49-task independent intake queue, three private SEC captures, three immutable review decisions, and ten approved identity candidates exist. |
 | M4 Source operations | In progress | Ten SEC watchers, deterministic schedule, recorded observations/health, and SEC discovery adapter exist; non-SEC source classes and continuous deployment remain. |
 | M5 First published dossiers | Partially implemented | Archive, anchored-claim, review-packet, and decision tooling exist; no database rows or canonical facts have been written. |
 | M6 Public snapshot | Not started | No Compute snapshot or generated mirror exists. |
@@ -138,16 +138,16 @@ Implemented:
 - three complete SEC submissions preserved in private R2 with byte-verified,
   content-addressed receipts: Childress, Delta Forge 1, and Beacon Point;
 - anchored packets for all three captures;
-- immutable review decisions for Childress and Delta Forge 1;
-- six identity candidates approved for future staging;
+- immutable review decisions for Childress, Delta Forge 1, and Beacon Point;
+- ten identity candidates approved for future staging;
 - three unsafe capacity/status normalizations explicitly blocked;
 - Beacon Point's reported 352 MW identified as combined critical IT capacity
-  across six data halls, but not yet decided or normalized;
+  across six data halls and eligible for a separate M2.1 typed normalization
+  review;
 - generated progress ledger proving zero database writes and zero facts.
 
 Remaining:
 
-- seal the Beacon Point immutable review decision;
 - stage approved identity seeds through the ordinary database review path;
 - independently source and resolve the remaining queue, P0 before P2;
 - record `resolved`, `unresolved with searched sources`, or `out_of_scope` for
@@ -344,7 +344,8 @@ Definition of done:
 
 The next ten implementation sprints should be small, reviewable PRs:
 
-1. Seal Beacon Point's immutable review decision; no database write.
+1. **Completed:** seal Beacon Point's immutable review decision; no database
+   write.
 2. Implement ADR-002 additive schema migration and SQL regression scenarios.
 3. Extend claim normalization and review packets with epistemic semantics.
 4. Configure and execute the guarded M2 + M2.1 production deployment.
