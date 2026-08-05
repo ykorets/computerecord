@@ -20,7 +20,7 @@ order is recorded as partial implementation, not as a closed milestone.
 | M0 Foundation | Closed | Repository, domain, architecture, CI, brand, and product boundary exist. |
 | M1 Shared truth baseline | Closed | GitHub review manifest, atomic promotion, replay-safe mirror, and BTW compatibility baseline are proven. |
 | M2 Core Compute schema | Implemented; deployment pending | Typed entities/facts and SQL regression tests are merged; production credentials and deployment are pending. |
-| M2.1 Measurement semantics | Next | ADR-002 is accepted; migration and regression tests are not implemented. |
+| M2.1 Measurement semantics | Implemented; deployment pending | Additive schema, truth gates, and regression scenarios exist; review, merge, and production deployment are pending. |
 | M3 Coverage and identity | In progress | 50-target benchmark, 49-task independent intake queue, three private SEC captures, three immutable review decisions, and ten approved identity candidates exist. |
 | M4 Source operations | In progress | Ten SEC watchers, deterministic schedule, recorded observations/health, and SEC discovery adapter exist; non-SEC source classes and continuous deployment remain. |
 | M5 First published dossiers | Partially implemented | Archive, anchored-claim, review-packet, and decision tooling exist; no database rows or canonical facts have been written. |
@@ -98,10 +98,10 @@ Remaining:
 
 ## M2.1 — Measurement, forecast, metric, and infrastructure semantics
 
-**Status: NEXT.** Architectural decision is recorded in
+**Status: IMPLEMENTED; PRODUCTION DEPLOYMENT PENDING.** Architectural decision is recorded in
 [`ADR-002`](adr/ADR-002-measurement-and-market-semantics.md).
 
-Deliverables:
+Implemented:
 
 - `epistemic_type`: observed, administrative, reported, estimated, modeled,
   forecast, and derived;
@@ -113,8 +113,15 @@ Deliverables:
 - typed market/submarket and infrastructure nodes for utility, grid,
   transmission, water, fuel, fiber, and cable dependencies;
 - satellite observation metadata and fail-closed inference rules;
-- additive migration, regression tests, review-manifest contract changes, and
-  snapshot schema draft.
+- additive migration and regression tests proving the semantic truth gates.
+
+Remaining:
+
+- extend normalization and review packets with epistemic semantics;
+- draft the snapshot contract for metrics, markets, infrastructure, and
+  satellite observations;
+- merge the reviewed migration and deploy M2 + M2.1 through the guarded GitHub
+  workflow.
 
 Definition of done:
 
@@ -346,7 +353,8 @@ The next ten implementation sprints should be small, reviewable PRs:
 
 1. **Completed:** seal Beacon Point's immutable review decision; no database
    write.
-2. Implement ADR-002 additive schema migration and SQL regression scenarios.
+2. **Completed:** implement ADR-002 additive schema migration and SQL regression
+   scenarios.
 3. Extend claim normalization and review packets with epistemic semantics.
 4. Configure and execute the guarded M2 + M2.1 production deployment.
 5. Stage approved Childress, Delta Forge, and Beacon Point identities.

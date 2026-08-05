@@ -58,14 +58,18 @@ jobs:
           for file in _deps/btw/engine/schema/00{2..8}_*.sql; do
             psql "$PGURL" -v ON_ERROR_STOP=1 -f "$file"
           done
-      - name: Apply the Compute Record domain migration
-        run: >-
-          psql "$PGURL" -v ON_ERROR_STOP=1
-          -f supabase/migrations/20260714180000_compute_domain.sql
+      - name: Apply the Compute Record migrations
+        run: |
+          psql "$PGURL" -v ON_ERROR_STOP=1 \
+            -f supabase/migrations/20260714180000_compute_domain.sql
+          psql "$PGURL" -v ON_ERROR_STOP=1 \
+            -f supabase/migrations/20260805210924_measurement_market_semantics.sql
       - name: Run Compute Record SQL regression scenarios
-        run: >-
-          psql "$PGURL" -v ON_ERROR_STOP=1
-          -f schema/regression/001_compute_domain_regression.sql
+        run: |
+          psql "$PGURL" -v ON_ERROR_STOP=1 \
+            -f schema/regression/001_compute_domain_regression.sql
+          psql "$PGURL" -v ON_ERROR_STOP=1 \
+            -f schema/regression/002_measurement_market_semantics_regression.sql
       - name: Prove the external baseline cannot be faked
         run: |
           psql "$PGURL" -v ON_ERROR_STOP=1 -c 'create database external_baseline_guard'
@@ -100,18 +104,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
-      - name: Verify the reviewed migration artifact
-        run: sha256sum --check deploy/manifests/001_compute_domain.sha256
-      - name: Validate the deployment manifest
+      - name: Verify the reviewed migration artifacts
         run: |
-          actual_sha="$(cut -d ' ' -f 1 deploy/manifests/001_compute_domain.sha256)"
-          manifest_sha="$(jq -r '.migration.sha256' deploy/manifests/001_compute_domain.json)"
-          test "$actual_sha" = "$manifest_sha"
+          sha256sum --check deploy/manifests/001_compute_domain.sha256
+          sha256sum --check deploy/manifests/002_measurement_market_semantics.sha256
+      - name: Validate the deployment manifests
+        run: |
+          for manifest in 001_compute_domain 002_measurement_market_semantics; do
+            actual_sha="$(cut -d ' ' -f 1 "deploy/manifests/$manifest.sha256")"
+            manifest_sha="$(jq -r '.migration.sha256' "deploy/manifests/$manifest.json")"
+            test "$actual_sha" = "$manifest_sha"
+          done
           jq -e '
             .target_project_ref == "txglwhwnmjtbijbgcpwd"
             and .migration.version == "20260714180000"
             and (.external_baseline | length) == 9
           ' deploy/manifests/001_compute_domain.json >/dev/null
+          jq -e '
+            .target_project_ref == "txglwhwnmjtbijbgcpwd"
+            and .migration.version == "20260805210924"
+            and .depends_on.version == "20260714180000"
+            and (.external_baseline | length) == 9
+          ' deploy/manifests/002_measurement_market_semantics.json >/dev/null
 
   benchmark:
     runs-on: ubuntu-latest
