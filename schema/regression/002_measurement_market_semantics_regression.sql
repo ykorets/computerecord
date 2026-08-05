@@ -117,7 +117,7 @@ values
 insert into compute.capacity_fact
   (fact_id, capacity_type, capacity_basis, qualifier, value_mw, scope_entity_id)
 values
-  (:'forecast_fact_id', 'critical_it_mw', 'planned_it', 'exact', 500,
+  (:'forecast_fact_id', 'critical_it_mw', 'critical_it', 'exact', 500,
    :'campus_id');
 insert into core.fact_support (fact_id, support_kind, claim_id)
 values (:'forecast_fact_id', 'direct', :'forecast_claim_id');
