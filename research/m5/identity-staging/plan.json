@@ -1,0 +1,263 @@
+{
+  "batch_id": "0e19f055-e1a9-5153-b7fd-e28be6a0ebff",
+  "classification": "sealed_identity_staging_plan",
+  "inputs": [
+    {
+      "claims_sha256": "caa6e58dba6d26de9f4b09111084083aeb7d57a35d2927f5743999a49f0781fa",
+      "decision_id": "464efbc6-bf7f-5f8c-b4a7-145f337c71b2",
+      "entity_seeds_sha256": "26e7e29936861522fb81a8cb55272414b1000406ad22d6209da701c05b92b6c9",
+      "merge_commit": "3a9948a11cf6ebc130aa276ea697d14fa9709969",
+      "packet_key": "beacon-point-sec-8k",
+      "review_decision_sha256": "4c297b7937317c752a4c6e32e27e5977915ecfd13d5caa75d969daa3402921bb",
+      "review_id": "770e202d-a8d0-5077-b532-107121a2350e",
+      "review_manifest_sha256": "81729136e6036a4e1ae10076fdb2797020cf600480163229fae27744a562324f"
+    },
+    {
+      "claims_sha256": "12cab1cec8aad7bab571965c6eb5e97c01d79250d7787a60d5e9ba56abe2d96d",
+      "decision_id": "b18fe95c-e5c3-53ab-8866-51e7e2e2f923",
+      "entity_seeds_sha256": "d1c56d793e0ddb71a6b1eda2c493d96e87762011a98e8dc4a2071b4e589e9634",
+      "merge_commit": "5edb1b9a9d3a3b30e081376f4a54d3a489aa5677",
+      "packet_key": "childress-sec-10q",
+      "review_decision_sha256": "8f4b41b883cdfa2fb9d5e499af9da3786735d1c03ba18f54fc34c38f91d93255",
+      "review_id": "b034c0d8-239f-59ee-a915-c5844d7385ba",
+      "review_manifest_sha256": "5ad68e713576fdda5c263c1118ce2398591bc056796aa23d8f6cc39d2129084b"
+    },
+    {
+      "claims_sha256": "3a8e5665db44758b0afaab5bf3953f7f16ea23156816f0888d38d725fd593fee",
+      "decision_id": "06aeb18d-e80f-5062-91b5-ff7668c2977f",
+      "entity_seeds_sha256": "7ced15447aa48389b18fd68578252ea784a1c098ac4d820ac1c69c99ba9a7765",
+      "merge_commit": "1bccbfba7c3315af81722589361b64afc05fc6d5",
+      "packet_key": "delta-forge-1-sec-8k",
+      "review_decision_sha256": "bd5c2cd9197cb64d75f4b71f6d44707f6833b039293c6494fd1f87cf577b35f3",
+      "review_id": "9a5ea3df-f0a9-52cb-94c9-2ba3b6d33565",
+      "review_manifest_sha256": "6478e73ae7630ad6fedd201d969e2920eb68447856e5bf4d134fb33b915a7566"
+    }
+  ],
+  "policy": {
+    "canonical_writes_allowed": false,
+    "data_review_required": true,
+    "database_writes_allowed": false,
+    "fact_creation_allowed": false,
+    "promotion_allowed": false
+  },
+  "rows": [
+    {
+      "aliases": [
+        "HUT",
+        "Hut 8"
+      ],
+      "candidate_id": "14a6e0aa-66e0-5752-8cc2-0833066b9dd9",
+      "candidate_key": "organization-hut-8-corporation",
+      "canonical_blockers": [
+        "missing_organization_type"
+      ],
+      "canonical_name": "Hut 8 Corporation",
+      "dependency_candidate_ids": [],
+      "entity_type": "organization",
+      "proposed_attributes": {},
+      "source_decision_id": "464efbc6-bf7f-5f8c-b4a7-145f337c71b2",
+      "support_claim_ids": [
+        "44cecdea-b8a0-59e2-a81b-47ccaf61c547",
+        "c0d7e2b4-20f0-5ff1-b73b-e52c7e63e34b"
+      ]
+    },
+    {
+      "aliases": [],
+      "candidate_id": "1577c689-09aa-5b3a-8580-406d64b57524",
+      "candidate_key": "organization-beacon-point-dc-llc",
+      "canonical_blockers": [
+        "unsupported_organization_type:project_company"
+      ],
+      "canonical_name": "Beacon Point DC LLC",
+      "dependency_candidate_ids": [],
+      "entity_type": "organization",
+      "proposed_attributes": {
+        "organization_type": "project_company"
+      },
+      "source_decision_id": "464efbc6-bf7f-5f8c-b4a7-145f337c71b2",
+      "support_claim_ids": [
+        "3a820f35-20fd-53ca-8575-ec199b4f0105",
+        "c0d7e2b4-20f0-5ff1-b73b-e52c7e63e34b"
+      ]
+    },
+    {
+      "aliases": [],
+      "candidate_id": "162c5443-42e7-5fb3-ac7f-3b39cfb64663",
+      "candidate_key": "place-childress-texas",
+      "canonical_blockers": [],
+      "canonical_name": "Childress, Texas, United States",
+      "dependency_candidate_ids": [],
+      "entity_type": "place",
+      "proposed_attributes": {
+        "city": "Childress",
+        "country_code": "US",
+        "geo_precision": "city",
+        "state": "TX"
+      },
+      "source_decision_id": "b18fe95c-e5c3-53ab-8866-51e7e2e2f923",
+      "support_claim_ids": [
+        "2008738f-6861-503d-b71a-1e619269b5cc",
+        "5d6a651b-253a-5467-b0cf-99f48a7f0ea8",
+        "8517178c-5ca3-5d91-a25c-f93f938e7baa"
+      ]
+    },
+    {
+      "aliases": [
+        "Childress"
+      ],
+      "candidate_id": "353995af-a86b-5fc7-bb37-15c06827ee54",
+      "candidate_key": "campus-iren-childress",
+      "canonical_blockers": [],
+      "canonical_name": "IREN Childress",
+      "dependency_candidate_ids": [
+        "162c5443-42e7-5fb3-ac7f-3b39cfb64663"
+      ],
+      "entity_type": "campus",
+      "proposed_attributes": {
+        "canonical_slug": "iren-childress"
+      },
+      "source_decision_id": "b18fe95c-e5c3-53ab-8866-51e7e2e2f923",
+      "support_claim_ids": [
+        "2008738f-6861-503d-b71a-1e619269b5cc",
+        "5d6a651b-253a-5467-b0cf-99f48a7f0ea8",
+        "8517178c-5ca3-5d91-a25c-f93f938e7baa",
+        "b2e269b8-6059-5d11-ab15-f9014263023b"
+      ]
+    },
+    {
+      "aliases": [],
+      "candidate_id": "4d856c85-aeab-5169-b374-2f40f2602a6e",
+      "candidate_key": "organization-iren-limited",
+      "canonical_blockers": [],
+      "canonical_name": "IREN Limited",
+      "dependency_candidate_ids": [],
+      "entity_type": "organization",
+      "proposed_attributes": {
+        "organization_type": "operator"
+      },
+      "source_decision_id": "b18fe95c-e5c3-53ab-8866-51e7e2e2f923",
+      "support_claim_ids": [
+        "2fabb117-8d7a-501b-8dd8-b4b16af93985",
+        "b2e269b8-6059-5d11-ab15-f9014263023b"
+      ]
+    },
+    {
+      "aliases": [
+        "Beacon Point Data Center Project"
+      ],
+      "candidate_id": "4f885400-dd74-556e-9f8a-30156f844385",
+      "candidate_key": "campus-beacon-point",
+      "canonical_blockers": [],
+      "canonical_name": "Beacon Point",
+      "dependency_candidate_ids": [
+        "c562f3b9-b4c1-561c-8069-92e3309643b7"
+      ],
+      "entity_type": "campus",
+      "proposed_attributes": {
+        "canonical_slug": "beacon-point"
+      },
+      "source_decision_id": "464efbc6-bf7f-5f8c-b4a7-145f337c71b2",
+      "support_claim_ids": [
+        "06071593-0d7b-5e54-a542-9962871080d2",
+        "22f4ee94-3e9c-5901-a580-a8e083f8dd40",
+        "3a820f35-20fd-53ca-8575-ec199b4f0105",
+        "87ddb2b0-b09f-5ddd-b06a-ad982eb17bfb",
+        "d7589b50-1cb5-5783-b3aa-b01204a21d39",
+        "f86ea41d-12d8-5c92-aade-24608f36d007"
+      ]
+    },
+    {
+      "aliases": [
+        "APLD",
+        "Applied Digital"
+      ],
+      "candidate_id": "77bfdbce-c1de-5af0-abea-c08cee7572c5",
+      "candidate_key": "organization-applied-digital-corporation",
+      "canonical_blockers": [
+        "missing_organization_type"
+      ],
+      "canonical_name": "Applied Digital Corporation",
+      "dependency_candidate_ids": [],
+      "entity_type": "organization",
+      "proposed_attributes": {},
+      "source_decision_id": "06aeb18d-e80f-5062-91b5-ff7668c2977f",
+      "support_claim_ids": [
+        "9300a802-402c-54c4-9df4-6b6fdb89fdd7",
+        "ef8f8442-5068-54f0-8b55-d5093ffe3f14"
+      ]
+    },
+    {
+      "aliases": [],
+      "candidate_id": "b171ccc4-476a-5f67-b17f-c612d9c9cfec",
+      "candidate_key": "place-alexandria-louisiana",
+      "canonical_blockers": [
+        "missing_country_code"
+      ],
+      "canonical_name": "Alexandria, Louisiana",
+      "dependency_candidate_ids": [],
+      "entity_type": "place",
+      "proposed_attributes": {
+        "city": "Alexandria",
+        "geo_precision": "city",
+        "state": "LA"
+      },
+      "source_decision_id": "06aeb18d-e80f-5062-91b5-ff7668c2977f",
+      "support_claim_ids": [
+        "a6c5540b-3e00-5827-a53c-eff4eebc8ccb",
+        "b0ad5d36-817d-5b2d-870f-320f35e95ad1"
+      ]
+    },
+    {
+      "aliases": [],
+      "candidate_id": "c562f3b9-b4c1-561c-8069-92e3309643b7",
+      "candidate_key": "place-nueces-county-texas",
+      "canonical_blockers": [
+        "missing_country_code"
+      ],
+      "canonical_name": "Nueces County, Texas",
+      "dependency_candidate_ids": [],
+      "entity_type": "place",
+      "proposed_attributes": {
+        "county": "Nueces",
+        "geo_precision": "county",
+        "state": "TX"
+      },
+      "source_decision_id": "464efbc6-bf7f-5f8c-b4a7-145f337c71b2",
+      "support_claim_ids": [
+        "22f4ee94-3e9c-5901-a580-a8e083f8dd40",
+        "87ddb2b0-b09f-5ddd-b06a-ad982eb17bfb"
+      ]
+    },
+    {
+      "aliases": [
+        "DF1",
+        "Delta Forge 1"
+      ],
+      "candidate_id": "f898b314-b8d6-54c8-9a75-6f3bf1dd1bd7",
+      "candidate_key": "campus-applied-digital-delta-forge-1",
+      "canonical_blockers": [],
+      "canonical_name": "Applied Digital Delta Forge 1",
+      "dependency_candidate_ids": [
+        "b171ccc4-476a-5f67-b17f-c612d9c9cfec"
+      ],
+      "entity_type": "campus",
+      "proposed_attributes": {
+        "canonical_slug": "applied-digital-delta-forge-1"
+      },
+      "source_decision_id": "06aeb18d-e80f-5062-91b5-ff7668c2977f",
+      "support_claim_ids": [
+        "a6c5540b-3e00-5827-a53c-eff4eebc8ccb",
+        "b0ad5d36-817d-5b2d-870f-320f35e95ad1",
+        "ef8f8442-5068-54f0-8b55-d5093ffe3f14"
+      ]
+    }
+  ],
+  "schema": "computerecord.identity-staging-plan.v1",
+  "summary": {
+    "blocker_count": 5,
+    "canonical_blocked": 5,
+    "canonical_ready": 5,
+    "identity_candidates": 10,
+    "review_packets": 3
+  }
+}

@@ -107,3 +107,15 @@ python3 -m engine.research.normalizations verify \
 The generated `fact-normalizations.json` and
 `normalization-review-manifest.json` remain staging candidates only. They
 cannot write database rows, create facts, or authorize promotion.
+
+## Seal an identity-staging plan
+
+After one or more immutable review decisions approve entity seeds, combine
+them with `engine.research.staging`. The builder re-verifies the complete hash
+chain from validated claims through GitHub decisions, requires exact candidate
+sets and support claims, resolves only within-batch dependencies, and reports
+canonical-schema blockers without filling them in.
+
+The resulting plan remains review-only: its policy forbids database writes,
+facts, canonical rows, and promotion. CI must reproduce it byte-for-byte before
+a separate data-review transaction can be proposed.
