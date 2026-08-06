@@ -36,6 +36,7 @@ engine, immutable source archive, review discipline, and publication model.
 - [ADR-002: measurement and market semantics](docs/adr/ADR-002-measurement-and-market-semantics.md)
 - [Data Foundation roadmap](docs/roadmap.md)
 - [Production database deployment](docs/runbooks/database-deployment.md)
+- [Compute production baseline](docs/baselines/compute-production-v1.md)
 - [Evidence capture runbook](docs/runbooks/evidence-capture.md)
 - [Anchored claim review runbook](docs/runbooks/claim-review.md)
 - [M3 coverage benchmark](benchmarks/neocloud-buildout-registry/2026-07-14/README.md)
@@ -49,19 +50,20 @@ engine, immutable source archive, review discipline, and publication model.
 
 ## Current phase
 
-`Data Foundation · M2.1/M3/M4` — the core Compute schema and additive
-measurement semantics are implemented and regression-tested; production
-application awaits the guarded GitHub deployment and protected credentials.
-The 50-campus benchmark and 49-task independent intake queue are sealed. Childress,
+`Data Foundation · M3/M4/M5` — the core Compute schema and additive
+measurement semantics are deployed in production through the guarded GitHub
+workflow, with the deployment receipt and read-only audit recorded. The
+50-campus benchmark and 49-task independent intake queue are sealed. Childress,
 Delta Forge 1, and
 Beacon Point have private byte-verified SEC captures, anchored claims, and
-immutable review decisions approving ten identity candidates for future
-staging while three unsafe Childress/Delta Forge normalizations remain blocked.
+immutable review decisions approving ten identity candidates for staging while
+three unsafe Childress/Delta Forge normalizations remain blocked.
 Beacon Point's 352 MW is explicitly reported as combined critical IT capacity
 across six data halls and remains eligible for a separate typed normalization
-review after M2.1. Ten Tier-1 SEC watchers now have a deterministic schedule,
-recorded health, and a discovery adapter. No database row, canonical fact,
-public snapshot, or Compute site has been created.
+review. Ten Tier-1 SEC watchers now have a deterministic schedule, recorded
+health, and a discovery adapter. The production schemas contain only their
+reviewed vocabularies; no canonical Compute entity or fact, public snapshot, or
+Compute site has been created.
 
 Database migrations live in `supabase/migrations/`. Production schema
 deployment is manual and runs only through the protected GitHub workflow.

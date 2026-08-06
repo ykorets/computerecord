@@ -1,8 +1,8 @@
 # The Compute Record — implementation roadmap
 
-**Version:** 0.2
+**Version:** 0.3
 
-**Updated:** 2026-08-05
+**Updated:** 2026-08-06
 
 **Owner:** Yaro Korets
 
@@ -19,8 +19,8 @@ order is recorded as partial implementation, not as a closed milestone.
 |---|---|---|
 | M0 Foundation | Closed | Repository, domain, architecture, CI, brand, and product boundary exist. |
 | M1 Shared truth baseline | Closed | GitHub review manifest, atomic promotion, replay-safe mirror, and BTW compatibility baseline are proven. |
-| M2 Core Compute schema | Implemented; deployment pending | Typed entities/facts and SQL regression tests are merged; production credentials and deployment are pending. |
-| M2.1 Measurement semantics | Implemented; deployment pending | Additive schema, truth gates, regression scenarios, and typed normalization packets exist; production deployment is pending. |
+| M2 Core Compute schema | Closed | Typed entities/facts are deployed in production through the guarded GitHub workflow and independently audited. |
+| M2.1 Measurement semantics | Closed | Measurement, forecast, metric, market, infrastructure, and satellite semantics are deployed with their truth gates. |
 | M3 Coverage and identity | In progress | 50-target benchmark, 49-task independent intake queue, three private SEC captures, three immutable review decisions, and ten approved identity candidates exist. |
 | M4 Source operations | In progress | Ten SEC watchers, deterministic schedule, recorded observations/health, and SEC discovery adapter exist; non-SEC source classes and continuous deployment remain. |
 | M5 First published dossiers | Partially implemented | Archive, anchored-claim, review-packet, and decision tooling exist; no database rows or canonical facts have been written. |
@@ -76,7 +76,7 @@ BTW product changes.
 
 ## M2 — Core Compute domain schema
 
-**Status: IMPLEMENTED; PRODUCTION DEPLOYMENT PENDING.**
+**Status: CLOSED 2026-08-06.**
 
 Completed:
 
@@ -87,18 +87,14 @@ Completed:
 - FK-backed evidence support and derived-input lineage;
 - capacity and multidimensional status vocabularies;
 - SQL regression scenarios;
-- checksum-bound GitHub production deployment workflow.
-
-Remaining:
-
-- configure protected GitHub deployment credentials;
-- add M2.1 semantics before first production Compute facts;
-- run the checksum-bound migration through GitHub;
-- record deployment receipt and post-deploy read-only audit.
+- checksum-bound GitHub production deployment workflow;
+- protected production credentials with short-lived Supabase CLI login roles;
+- atomic production deployment and post-deploy read-only audit recorded in
+  [`compute-production-v1.md`](baselines/compute-production-v1.md).
 
 ## M2.1 — Measurement, forecast, metric, and infrastructure semantics
 
-**Status: IMPLEMENTED; PRODUCTION DEPLOYMENT PENDING.** Architectural decision is recorded in
+**Status: CLOSED 2026-08-06.** Architectural decision is recorded in
 [`ADR-002`](adr/ADR-002-measurement-and-market-semantics.md).
 
 Implemented:
@@ -115,11 +111,8 @@ Implemented:
 - satellite observation metadata and fail-closed inference rules;
 - additive migration and regression tests proving the semantic truth gates.
 
-Remaining:
-
-- draft the snapshot contract for metrics, markets, infrastructure, and
-  satellite observations;
-- deploy M2 + M2.1 through the guarded GitHub workflow.
+The public snapshot contract for these objects remains an M6 deliverable; it
+does not block closing the deployed operational schema.
 
 Definition of done:
 
@@ -355,7 +348,8 @@ The next ten implementation sprints should be small, reviewable PRs:
    scenarios.
 3. **Completed:** extend claim normalization and review packets with explicit
    epistemic type, period, vintage, horizon, scenario, and pinned source inputs.
-4. Configure and execute the guarded M2 + M2.1 production deployment.
+4. **Completed:** configure and execute the guarded M2 + M2.1 production
+   deployment and record its independent audit.
 5. Stage approved Childress, Delta Forge, and Beacon Point identities.
 6. Stage Beacon Point's scoped 352 MW critical IT fact and compatible
    relationship/milestone facts.
