@@ -1,0 +1,31 @@
+{
+  "manifest_version": 1,
+  "target_project_ref": "txglwhwnmjtbijbgcpwd",
+  "source_repository": "ykorets/computerecord",
+  "migration": {
+    "version": "20260806044836",
+    "name": "identity_staging",
+    "path": "supabase/migrations/20260806044836_identity_staging.sql",
+    "sha256": "637b4c40299e4f831684bebc004711792703be135b920b6a92edd18c88348700"
+  },
+  "depends_on": {
+    "version": "20260805210924",
+    "name": "measurement_market_semantics",
+    "sha256": "5aa4094ce29d3ed1d4cddef3b9b11186728d47430a51ee33fa71259cf3ef823c"
+  },
+  "external_baseline": [
+    {"version": "20260711012826", "name": "init_engine_schema_v2"},
+    {"version": "20260711013048", "name": "enable_rls_lockdown"},
+    {"version": "20260711173736", "name": "llm_call_ledger"},
+    {"version": "20260711190128", "name": "candidate_table"},
+    {"version": "20260711191424", "name": "source_created_at"},
+    {"version": "20260712184938", "name": "005_claim_quorum"},
+    {"version": "20260713225658", "name": "add_third_party_announcements"},
+    {"version": "20260713230544", "name": "index_announcement_source_document"},
+    {"version": "20260714011746", "name": "truth_integrity_review_manifest"}
+  ],
+  "rollback": {
+    "before_commit": "The SQL migration is transactional and rolls back on error.",
+    "after_commit": "Forward-only corrective migration; canonical entities and facts are unaffected by this staging-only release."
+  }
+}
