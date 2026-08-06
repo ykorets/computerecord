@@ -23,7 +23,9 @@ jobs:
     environment: production
     env:
       SUPABASE_ACCESS_TOKEN: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
-      SUPABASE_DB_PASSWORD: ${{ secrets.PRODUCTION_DB_PASSWORD }}
+      # Temporary Access lets the reviewed service PAT authenticate as postgres.
+      # The mapping is renewed below before any database connection is opened.
+      SUPABASE_DB_PASSWORD: ${{ secrets.SUPABASE_ACCESS_TOKEN }}
       SUPABASE_PROJECT_ID: ${{ secrets.PRODUCTION_PROJECT_ID }}
       EXPECTED_PROJECT_ID: txglwhwnmjtbijbgcpwd
       CONFIRMATION: ${{ inputs.confirmation }}
@@ -46,6 +48,38 @@ jobs:
         uses: supabase/setup-cli@ab058987d8d6c725971f6cf9d0b5c98467e30bd1 # v1
         with:
           version: 2.109.1
+
+      - name: Enable scoped Temporary Access for this service token
+        env:
+          SUPABASE_API_ORIGIN: https://api.supabase.com
+        run: |
+          profile="$(curl --fail-with-body --silent --show-error \
+            "$SUPABASE_API_ORIGIN/v1/profile" \
+            --header "Authorization: Bearer $SUPABASE_ACCESS_TOKEN")"
+          user_id="$(jq --exit-status --raw-output '.gotrue_id // .id' <<<"$profile")"
+          test -n "$user_id"
+
+          curl --fail-with-body --silent --show-error \
+            --request PUT \
+            "$SUPABASE_API_ORIGIN/v1/projects/$SUPABASE_PROJECT_ID/jit-access" \
+            --header "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
+            --header "Content-Type: application/json" \
+            --data '{"state":"enabled"}' \
+            | jq --exit-status '.state == "enabled" and .appliedSuccessfully == true'
+
+          expires_at="$(( ($(date +%s) + 7776000) * 1000 ))"
+          mapping="$(jq --null-input \
+            --arg user_id "$user_id" \
+            --argjson expires_at "$expires_at" \
+            '{user_id: $user_id, user_roles: [{role: "postgres", expires_at: $expires_at}]}')"
+          curl --fail-with-body --silent --show-error \
+            --request PUT \
+            "$SUPABASE_API_ORIGIN/v1/projects/$SUPABASE_PROJECT_ID/database/jit" \
+            --header "Authorization: Bearer $SUPABASE_ACCESS_TOKEN" \
+            --header "Content-Type: application/json" \
+            --data "$mapping" \
+            | jq --exit-status --arg user_id "$user_id" \
+                '.user_id == $user_id and any(.user_roles[]; .role == "postgres")'
 
       - name: Link the exact production project
         run: supabase link --project-ref "$SUPABASE_PROJECT_ID"

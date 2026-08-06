@@ -9,11 +9,19 @@ and merge to `main`. The workflow is manual, serialized, bound to the
 Add these encrypted environment secrets to `production`:
 
 - `SUPABASE_ACCESS_TOKEN`
-- `PRODUCTION_DB_PASSWORD`
 - `PRODUCTION_PROJECT_ID` = `txglwhwnmjtbijbgcpwd`
 
 Restrict the environment to the `main` branch. Never put credentials in the
 repository, workflow inputs, artifacts, issue comments, or logs.
+
+The access token must belong to a project member and include the Management
+API permissions needed to administer Temporary Access. The workflow enables
+Temporary Access, maps that user to the existing `postgres` role for 90 days,
+and renews the mapping on each deployment. The token is also used as the
+temporary database password, so the long-lived Postgres password never needs
+to be copied into GitHub. GitHub-hosted runner addresses are dynamic, therefore
+the mapping has no IP allowlist; the token, protected environment, `main`-only
+rule, explicit confirmation, and serialized job are the access controls.
 
 ## Release
 
