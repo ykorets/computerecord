@@ -36,3 +36,9 @@ step failed, rerunning it performs a no-op push and repeats verification.
 The migration is a single SQL transaction and takes an advisory lock. An
 error before commit rolls back the whole change. After commit, use a reviewed
 forward-only migration; do not drop the shared schemas as a rollback.
+
+## Production baseline
+
+The first production deployment and its independent audit are recorded in
+[`compute-production-v1.md`](../baselines/compute-production-v1.md). Future
+schema releases append a new receipt; they do not rewrite that baseline.
