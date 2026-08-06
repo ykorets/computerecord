@@ -14,14 +14,12 @@ Add these encrypted environment secrets to `production`:
 Restrict the environment to the `main` branch. Never put credentials in the
 repository, workflow inputs, artifacts, issue comments, or logs.
 
-The access token must belong to a project member and include the Management
-API permissions needed to administer Temporary Access. The workflow enables
-Temporary Access, maps that user to the existing `postgres` role for 90 days,
-and renews the mapping on each deployment. The token is also used as the
-temporary database password, so the long-lived Postgres password never needs
-to be copied into GitHub. GitHub-hosted runner addresses are dynamic, therefore
-the mapping has no IP allowlist; the token, protected environment, `main`-only
-rule, explicit confirmation, and serialized job are the access controls.
+The access token must belong to a project owner or administrator and permit
+database writes through the Management API. No database password is stored in
+GitHub. When no `SUPABASE_DB_PASSWORD` is present, the pinned Supabase CLI
+creates a short-lived `cli_login_postgres` role for the deployment and uses its
+temporary credential. The protected environment, `main`-only rule, explicit
+confirmation, and serialized job remain the outer access controls.
 
 ## Release
 
