@@ -35,3 +35,37 @@ python3 -m engine.research.staging build \
 CI rebuilds the plan and requires byte-identical output. A later reviewed
 transaction may stage exact approved rows, but this artifact cannot authorize
 canonical insertion or publication.
+
+## Reviewed database load
+
+`load-manifest.json` is the separate, target-bound request to write this exact
+plan to the private staging tables. It permits database writes only for the
+staging operation and keeps canonical writes, fact creation, and promotion
+disabled. The request becomes executable only after review and merge to
+`main`.
+
+`stage.sql` is generated from the reproduced plan and load manifest. It:
+
+- takes a database advisory lock and runs in one transaction;
+- loads the three reviewed inputs and all ten candidates with aliases,
+  dependencies, blockers, and claim support;
+- verifies the plan checksum and seals the batch;
+- asserts that canonical entity and fact counts do not change;
+- is replay-safe only for the same already-sealed batch and checksum.
+
+Reproduce both load artifacts:
+
+```bash
+python3 -m engine.research.staging build-load \
+  --packet-dir research/m3/claim-reviews/childress-sec-10q \
+  --packet-dir research/m3/claim-reviews/delta-forge-1-sec-8k \
+  --packet-dir research/m3/claim-reviews/beacon-point-sec-8k \
+  --plan research/m5/identity-staging/plan.json \
+  --load-manifest /tmp/identity-staging-load.json \
+  --sql /tmp/identity-staging.sql \
+  --target-project-ref txglwhwnmjtbijbgcpwd
+```
+
+Merging the load request does not resolve any canonical blockers. The five
+blocked candidates require a separate data-review artifact before any
+canonical promotion can be proposed.
