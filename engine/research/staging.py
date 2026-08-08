@@ -292,6 +292,7 @@ def render_load_sql(plan: dict[str, Any], manifest: dict[str, Any]) -> str:
                 f"    {batch_id}, {_sql_uuid(row['candidate_id'])}, {_sql_uuid(claim_id)}",
                 "  );",
             ])
+    for row in plan["rows"]:
         for dependency_id in row["dependency_candidate_ids"]:
             lines.extend([
                 "  insert into core.identity_staging_dependency",

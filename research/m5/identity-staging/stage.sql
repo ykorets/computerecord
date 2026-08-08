@@ -166,10 +166,6 @@ begin
     (batch_id, candidate_id, claim_id) values (
     '0e19f055-e1a9-5153-b7fd-e28be6a0ebff'::uuid, '353995af-a86b-5fc7-bb37-15c06827ee54'::uuid, 'b2e269b8-6059-5d11-ab15-f9014263023b'::uuid
   );
-  insert into core.identity_staging_dependency
-    (batch_id, candidate_id, dependency_candidate_id) values (
-    '0e19f055-e1a9-5153-b7fd-e28be6a0ebff'::uuid, '353995af-a86b-5fc7-bb37-15c06827ee54'::uuid, '162c5443-42e7-5fb3-ac7f-3b39cfb64663'::uuid
-  );
   insert into core.identity_staging_candidate (
     batch_id, candidate_id, candidate_key, entity_type, canonical_name,
     proposed_attributes, canonical_blockers, source_decision_id
@@ -225,10 +221,6 @@ begin
   insert into core.identity_staging_support
     (batch_id, candidate_id, claim_id) values (
     '0e19f055-e1a9-5153-b7fd-e28be6a0ebff'::uuid, '4f885400-dd74-556e-9f8a-30156f844385'::uuid, 'f86ea41d-12d8-5c92-aade-24608f36d007'::uuid
-  );
-  insert into core.identity_staging_dependency
-    (batch_id, candidate_id, dependency_candidate_id) values (
-    '0e19f055-e1a9-5153-b7fd-e28be6a0ebff'::uuid, '4f885400-dd74-556e-9f8a-30156f844385'::uuid, 'c562f3b9-b4c1-561c-8069-92e3309643b7'::uuid
   );
   insert into core.identity_staging_candidate (
     batch_id, candidate_id, candidate_key, entity_type, canonical_name,
@@ -321,6 +313,14 @@ begin
   insert into core.identity_staging_support
     (batch_id, candidate_id, claim_id) values (
     '0e19f055-e1a9-5153-b7fd-e28be6a0ebff'::uuid, 'f898b314-b8d6-54c8-9a75-6f3bf1dd1bd7'::uuid, 'ef8f8442-5068-54f0-8b55-d5093ffe3f14'::uuid
+  );
+  insert into core.identity_staging_dependency
+    (batch_id, candidate_id, dependency_candidate_id) values (
+    '0e19f055-e1a9-5153-b7fd-e28be6a0ebff'::uuid, '353995af-a86b-5fc7-bb37-15c06827ee54'::uuid, '162c5443-42e7-5fb3-ac7f-3b39cfb64663'::uuid
+  );
+  insert into core.identity_staging_dependency
+    (batch_id, candidate_id, dependency_candidate_id) values (
+    '0e19f055-e1a9-5153-b7fd-e28be6a0ebff'::uuid, '4f885400-dd74-556e-9f8a-30156f844385'::uuid, 'c562f3b9-b4c1-561c-8069-92e3309643b7'::uuid
   );
   insert into core.identity_staging_dependency
     (batch_id, candidate_id, dependency_candidate_id) values (
