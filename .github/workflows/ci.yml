@@ -454,6 +454,34 @@ jobs:
             /tmp/rebuilt-identity-staging-load.json
           cmp research/m5/identity-staging/stage.sql \
             /tmp/rebuilt-identity-staging.sql
+      - name: Verify the separate identity-blocker data review
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.research.identity_blocker_review verify
+          --spec research/m5/identity-blocker-review/spec.json
+          --plan research/m5/identity-staging/plan.json
+          --load-manifest research/m5/identity-staging/load-manifest.json
+          --production-receipt
+          research/m5/identity-staging/production-receipt.json
+          --stage-sql research/m5/identity-staging/stage.sql
+          --review research/m5/identity-blocker-review/review.json
+      - name: Rebuild the separate identity-blocker data review
+        env:
+          PYTHONDONTWRITEBYTECODE: "1"
+        run: >-
+          python3 -m engine.research.identity_blocker_review build
+          --spec research/m5/identity-blocker-review/spec.json
+          --plan research/m5/identity-staging/plan.json
+          --load-manifest research/m5/identity-staging/load-manifest.json
+          --production-receipt
+          research/m5/identity-staging/production-receipt.json
+          --stage-sql research/m5/identity-staging/stage.sql
+          --output /tmp/rebuilt-identity-blocker-review.json
+      - name: Prove deterministic identity-blocker review
+        run: >-
+          cmp research/m5/identity-blocker-review/review.json
+          /tmp/rebuilt-identity-blocker-review.json
       - name: Verify the generated M3 research progress
         env:
           PYTHONDONTWRITEBYTECODE: "1"
