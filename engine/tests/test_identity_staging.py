@@ -2,7 +2,12 @@ import copy
 import unittest
 
 from engine.research.decision import build_decision, sha256_json
-from engine.research.staging import build_staging_plan, verify_staging_plan
+from engine.research.staging import (
+    build_load_manifest,
+    build_staging_plan,
+    render_load_sql,
+    verify_staging_plan,
+)
 
 
 class IdentityStagingTest(unittest.TestCase):
@@ -112,6 +117,47 @@ class IdentityStagingTest(unittest.TestCase):
         plan["policy"]["database_writes_allowed"] = True
         with self.assertRaisesRegex(ValueError, "does not reproduce"):
             verify_staging_plan(plan, [packet])
+
+    def loadable_plan(self):
+        plan = build_staging_plan([self.packet()])
+        plan["batch_id"] = "00000000-0000-4000-8000-000000000001"
+        plan["inputs"][0]["review_id"] = (
+            "00000000-0000-4000-8000-000000000002"
+        )
+        plan["inputs"][0]["decision_id"] = (
+            "00000000-0000-4000-8000-000000000003"
+        )
+        plan["rows"][0]["candidate_id"] = (
+            "00000000-0000-4000-8000-000000000004"
+        )
+        plan["rows"][0]["source_decision_id"] = (
+            "00000000-0000-4000-8000-000000000003"
+        )
+        plan["rows"][0]["support_claim_ids"] = [
+            "00000000-0000-4000-8000-000000000005"
+        ]
+        return plan
+
+    def test_load_request_is_staging_only_and_deterministic(self):
+        plan = self.loadable_plan()
+        manifest = build_load_manifest(plan, "projectref123")
+        sql = render_load_sql(plan, manifest)
+        self.assertEqual(sql, render_load_sql(plan, manifest))
+        self.assertTrue(manifest["policy"]["database_writes_allowed"])
+        self.assertTrue(manifest["policy"]["staging_tables_only"])
+        self.assertFalse(manifest["policy"]["canonical_writes_allowed"])
+        self.assertIn("insert into core.identity_staging_candidate", sql)
+        self.assertIn("seal_identity_staging_batch", sql)
+        self.assertNotIn("insert into core.entity", sql)
+        self.assertNotIn("insert into core.fact_version", sql)
+        self.assertNotIn("insert into compute.", sql)
+
+    def test_load_manifest_drift_fails_closed(self):
+        plan = self.loadable_plan()
+        manifest = build_load_manifest(plan, "projectref123")
+        manifest["expected"]["identity_candidates"] = 2
+        with self.assertRaisesRegex(ValueError, "does not reproduce"):
+            render_load_sql(plan, manifest)
 
 
 if __name__ == "__main__":

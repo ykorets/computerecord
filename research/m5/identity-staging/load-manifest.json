@@ -1,0 +1,25 @@
+{
+  "classification": "identity_staging_load_request",
+  "expected": {
+    "blocker_count": 5,
+    "canonical_blocked": 5,
+    "canonical_ready": 5,
+    "identity_candidates": 10,
+    "review_packets": 3
+  },
+  "operation": "stage_and_seal",
+  "plan": {
+    "batch_id": "0e19f055-e1a9-5153-b7fd-e28be6a0ebff",
+    "sha256": "a75762db08e915835df63c5dacdd7228bfa8e831d6f713313e0405e33322587e"
+  },
+  "policy": {
+    "canonical_writes_allowed": false,
+    "database_writes_allowed": true,
+    "fact_creation_allowed": false,
+    "merge_to_main_required": true,
+    "promotion_allowed": false,
+    "staging_tables_only": true
+  },
+  "schema": "computerecord.identity-staging-load.v1",
+  "target_project_ref": "txglwhwnmjtbijbgcpwd"
+}
