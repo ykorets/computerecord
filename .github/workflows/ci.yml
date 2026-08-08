@@ -64,12 +64,16 @@ jobs:
             -f supabase/migrations/20260714180000_compute_domain.sql
           psql "$PGURL" -v ON_ERROR_STOP=1 \
             -f supabase/migrations/20260805210924_measurement_market_semantics.sql
+          psql "$PGURL" -v ON_ERROR_STOP=1 \
+            -f supabase/migrations/20260806044836_identity_staging.sql
       - name: Run Compute Record SQL regression scenarios
         run: |
           psql "$PGURL" -v ON_ERROR_STOP=1 \
             -f schema/regression/001_compute_domain_regression.sql
           psql "$PGURL" -v ON_ERROR_STOP=1 \
             -f schema/regression/002_measurement_market_semantics_regression.sql
+          psql "$PGURL" -v ON_ERROR_STOP=1 \
+            -f schema/regression/003_identity_staging_regression.sql
       - name: Prove the external baseline cannot be faked
         run: |
           psql "$PGURL" -v ON_ERROR_STOP=1 -c 'create database external_baseline_guard'
@@ -108,9 +112,10 @@ jobs:
         run: |
           sha256sum --check deploy/manifests/001_compute_domain.sha256
           sha256sum --check deploy/manifests/002_measurement_market_semantics.sha256
+          sha256sum --check deploy/manifests/003_identity_staging.sha256
       - name: Validate the deployment manifests
         run: |
-          for manifest in 001_compute_domain 002_measurement_market_semantics; do
+          for manifest in 001_compute_domain 002_measurement_market_semantics 003_identity_staging; do
             actual_sha="$(cut -d ' ' -f 1 "deploy/manifests/$manifest.sha256")"
             manifest_sha="$(jq -r '.migration.sha256' "deploy/manifests/$manifest.json")"
             test "$actual_sha" = "$manifest_sha"
@@ -126,6 +131,12 @@ jobs:
             and .depends_on.version == "20260714180000"
             and (.external_baseline | length) == 9
           ' deploy/manifests/002_measurement_market_semantics.json >/dev/null
+          jq -e '
+            .target_project_ref == "txglwhwnmjtbijbgcpwd"
+            and .migration.version == "20260806044836"
+            and .depends_on.version == "20260805210924"
+            and (.external_baseline | length) == 9
+          ' deploy/manifests/003_identity_staging.json >/dev/null
 
   benchmark:
     runs-on: ubuntu-latest

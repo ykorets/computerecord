@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       confirmation:
-        description: Type deploy-compute-002
+        description: Type deploy-compute-003
         required: true
         type: string
 
@@ -29,7 +29,7 @@ jobs:
     steps:
       - name: Enforce the reviewed target and explicit confirmation
         run: |
-          test "$CONFIRMATION" = "deploy-compute-002"
+          test "$CONFIRMATION" = "deploy-compute-003"
           test -n "$SUPABASE_ACCESS_TOKEN"
           test "$SUPABASE_PROJECT_ID" = "$EXPECTED_PROJECT_ID"
 
@@ -39,6 +39,7 @@ jobs:
         run: |
           sha256sum --check deploy/manifests/001_compute_domain.sha256
           sha256sum --check deploy/manifests/002_measurement_market_semantics.sha256
+          sha256sum --check deploy/manifests/003_identity_staging.sha256
 
       - name: Install the pinned Supabase CLI
         uses: supabase/setup-cli@ab058987d8d6c725971f6cf9d0b5c98467e30bd1 # v1
