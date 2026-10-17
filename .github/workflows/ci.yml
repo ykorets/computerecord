@@ -2,14 +2,21 @@ name: ci
 
 on:
   push:
+    branches: [main]
   pull_request:
+    types: [opened, synchronize, reopened, ready_for_review, converted_to_draft]
 
 permissions:
   contents: read
 
+concurrency:
+  group: computerecord-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 jobs:
   database:
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     services:
       postgres:
         image: postgis/postgis:17-3.5-alpine
@@ -87,7 +94,9 @@ jobs:
           grep -F 'missing external BTW migration 20260711012826' external-baseline-guard.txt
 
   btw-mirror-compatibility:
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - name: Checkout the immutable BTW truth baseline
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
@@ -107,7 +116,9 @@ jobs:
           -m btw_engine.compat --data _deps/btw-mirror/data
 
   deployment-policy:
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
       - name: Verify the reviewed migration artifacts
@@ -141,7 +152,9 @@ jobs:
           ' deploy/manifests/003_identity_staging.json >/dev/null
 
   benchmark:
+    if: github.event_name != 'pull_request' || github.event.pull_request.draft == false
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
       - name: Checkout the pinned BTW public mirror
