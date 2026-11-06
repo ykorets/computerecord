@@ -65,8 +65,10 @@ health, and a discovery adapter. The production schemas contain only their
 reviewed vocabularies; no canonical Compute entity or fact, public snapshot, or
 Compute site has been created.
 
-Database migrations live in `supabase/migrations/`. Production schema
-deployment is manual and runs only through the protected GitHub workflow.
+Database migrations live in `supabase/migrations/` (folder name kept for
+history). Production runs on the owned BTW PostgreSQL; migrations are applied
+on the server as described in
+[`docs/runbooks/database-deployment.md`](docs/runbooks/database-deployment.md).
 
 ## Public identity
 
