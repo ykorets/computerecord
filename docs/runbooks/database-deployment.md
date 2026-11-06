@@ -24,8 +24,9 @@ cannot reach it directly.
    (`ykorets/infrastructure`).
 4. Run the post-deployment audit queries.
 
-A nightly offsite backup of the database runs before any risky change can be
-restored (`/data/btw-backups`, R2 `btw-db-backups/nightly/`).
+A nightly offsite backup of the database is kept in R2
+(`btw-db-backups/nightly/`); check that last night's backup succeeded before
+applying a migration.
 
 Each migration is a single SQL transaction and takes an advisory lock. An
 error before commit rolls back the whole change. After commit, use a reviewed
