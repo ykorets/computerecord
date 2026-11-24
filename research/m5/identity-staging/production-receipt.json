@@ -1,0 +1,24 @@
+{
+  "batch_id": "0e19f055-e1a9-5153-b7fd-e28be6a0ebff",
+  "classification": "production_staging_execution_receipt",
+  "executed_from_merge_commit": "0ae8ced0090baf97e62d6c0c85f31f4f3f89eb90",
+  "plan_sha256": "a75762db08e915835df63c5dacdd7228bfa8e831d6f713313e0405e33322587e",
+  "post_execution_audit": {
+    "aliases": 8,
+    "anon_select": false,
+    "authenticated_select": false,
+    "blocked": 5,
+    "candidates": 10,
+    "canonical_entities": 0,
+    "dependencies": 3,
+    "facts": 0,
+    "inputs": 3,
+    "ready": 5,
+    "state": "sealed",
+    "support": 28
+  },
+  "schema": "computerecord.identity-staging-production-receipt.v1",
+  "stage_sql_sha256": "299484c72e1aa9d0f4cac01481c4fa78d321913d62076e4a4b363b0b97fdb26f",
+  "target_project_ref": "txglwhwnmjtbijbgcpwd",
+  "verified_at": "2026-08-08T19:41:55Z"
+}

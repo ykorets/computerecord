@@ -211,6 +211,8 @@ Already implemented as filesystem/engine capability:
 - private immutable R2 capture with remote-byte verification;
 - anchored claim extraction and numeric/source checks;
 - sealed review packets and immutable review decisions;
+- separate review of the five initial identity blockers without implicit role
+  inference or canonical promotion;
 - reproducible research progress projection.
 
 Remaining:

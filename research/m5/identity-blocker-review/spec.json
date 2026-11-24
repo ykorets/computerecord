@@ -1,0 +1,98 @@
+{
+  "assessments": [
+    {
+      "candidate_id": "14a6e0aa-66e0-5752-8cc2-0833066b9dd9",
+      "candidate_key": "organization-hut-8-corporation",
+      "current_blockers": [
+        "missing_organization_type"
+      ],
+      "evidence_assessment": "The reviewed SEC filing proves the registrant legal name and that Beacon Point DC LLC is its indirect wholly owned subsidiary. Those claims do not uniquely establish Hut 8's canonical role as operator, developer, tenant, or investor.",
+      "next_action": "Capture and review a primary-source assertion that explicitly states Hut 8's role at Beacon Point before assigning organization_type.",
+      "proposed_attribute_patch": {},
+      "resolution_route": "additional_primary_evidence",
+      "support_claim_ids": [
+        "44cecdea-b8a0-59e2-a81b-47ccaf61c547",
+        "c0d7e2b4-20f0-5ff1-b73b-e52c7e63e34b"
+      ]
+    },
+    {
+      "candidate_id": "1577c689-09aa-5b3a-8580-406d64b57524",
+      "candidate_key": "organization-beacon-point-dc-llc",
+      "current_blockers": [
+        "unsupported_organization_type:project_company"
+      ],
+      "evidence_assessment": "The reviewed SEC filing identifies Beacon Point DC LLC as the issuer and an indirect wholly owned Hut 8 subsidiary. The proposed project_company role preserves that legal and project-specific distinction, but the canonical enum does not currently contain it.",
+      "next_action": "Make an explicit schema decision whether project_company is a first-class organization type or must be represented by a typed relationship; do not coerce it to other.",
+      "proposed_attribute_patch": {},
+      "resolution_route": "schema_vocabulary_decision",
+      "support_claim_ids": [
+        "3a820f35-20fd-53ca-8575-ec199b4f0105",
+        "c0d7e2b4-20f0-5ff1-b73b-e52c7e63e34b"
+      ]
+    },
+    {
+      "candidate_id": "77bfdbce-c1de-5af0-abea-c08cee7572c5",
+      "candidate_key": "organization-applied-digital-corporation",
+      "current_blockers": [
+        "missing_organization_type"
+      ],
+      "evidence_assessment": "The reviewed SEC filing proves the registrant legal name and that the registrant reports the Delta Forge 1 campus. Reporting a campus does not uniquely prove the canonical role operator or developer.",
+      "next_action": "Capture and review a primary-source assertion that explicitly states Applied Digital's role at Delta Forge 1 before assigning organization_type.",
+      "proposed_attribute_patch": {},
+      "resolution_route": "additional_primary_evidence",
+      "support_claim_ids": [
+        "9300a802-402c-54c4-9df4-6b6fdb89fdd7",
+        "ef8f8442-5068-54f0-8b55-d5093ffe3f14"
+      ]
+    },
+    {
+      "candidate_id": "b171ccc4-476a-5f67-b17f-c612d9c9cfec",
+      "candidate_key": "place-alexandria-louisiana",
+      "current_blockers": [
+        "missing_country_code"
+      ],
+      "evidence_assessment": "The reviewed source explicitly locates the campus in Alexandria, Louisiana and the staged candidate already carries state code LA. A country value should be derived through a versioned subdivision crosswalk, not silently inferred in the seed packet.",
+      "next_action": "Add a reviewed ISO 3166-2 subdivision crosswalk mapping US-LA to country_code US, then regenerate the candidate through the normalizer.",
+      "proposed_attribute_patch": {
+        "country_code": "US"
+      },
+      "resolution_route": "controlled_geography_normalization",
+      "support_claim_ids": [
+        "a6c5540b-3e00-5827-a53c-eff4eebc8ccb",
+        "b0ad5d36-817d-5b2d-870f-320f35e95ad1"
+      ]
+    },
+    {
+      "candidate_id": "c562f3b9-b4c1-561c-8069-92e3309643b7",
+      "candidate_key": "place-nueces-county-texas",
+      "current_blockers": [
+        "missing_country_code"
+      ],
+      "evidence_assessment": "The reviewed source explicitly locates the property in Nueces County, Texas and the staged candidate already carries state code TX. A country value should be derived through a versioned subdivision crosswalk, not silently inferred in the seed packet.",
+      "next_action": "Add a reviewed ISO 3166-2 subdivision crosswalk mapping US-TX to country_code US, then regenerate the candidate through the normalizer.",
+      "proposed_attribute_patch": {
+        "country_code": "US"
+      },
+      "resolution_route": "controlled_geography_normalization",
+      "support_claim_ids": [
+        "22f4ee94-3e9c-5901-a580-a8e083f8dd40",
+        "87ddb2b0-b09f-5ddd-b06a-ad982eb17bfb"
+      ]
+    }
+  ],
+  "input": {
+    "load_manifest_sha256": "031f07906d1d7fddcd499f42a6cf4be631121a502341e755cf5857564402e8c3",
+    "plan_sha256": "a75762db08e915835df63c5dacdd7228bfa8e831d6f713313e0405e33322587e",
+    "production_receipt_sha256": "3396bf553f5b94b8c74304e22e3deba2b0e85b7c120f8f2973fadd505756888c",
+    "stage_sql_sha256": "299484c72e1aa9d0f4cac01481c4fa78d321913d62076e4a4b363b0b97fdb26f"
+  },
+  "policy": {
+    "canonical_writes_allowed": false,
+    "database_writes_allowed": false,
+    "fact_creation_allowed": false,
+    "promotion_allowed": false,
+    "review_decision_required": true
+  },
+  "review_id": "f81e7798-d450-5bb2-a28d-54f1665a512d",
+  "schema": "computerecord.identity-blocker-review-spec.v1"
+}
